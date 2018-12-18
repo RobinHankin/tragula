@@ -62,7 +62,7 @@
   \usepackage[authoryear,round,longnamesfirst]{natbib}
 \fi
 \bibpunct{(}{)}{;}{a}{}{,}
-\bibliographystyle{jss}
+\bibliographystyle{tragula}
 %% page layout
 \topmargin 0pt
 \textheight 46\baselineskip

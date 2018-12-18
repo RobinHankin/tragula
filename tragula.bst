@@ -1,12 +1,12 @@
 %%
-%% This is file `jss.bst',
+%% This is file `tragula.bst',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
 %% merlin.mbs  (with options: `ay,nat,nm-rvx,keyxyr,dt-beg,yr-par,note-yr,tit-qq,atit-u,trnum-it,vol-bf,volp-com,num-xser,pre-edn,isbn,issn,edpar,pp,ed,xedn,xand,etal-it,revdata,eprint,url,url-blk,doi,nfss')
 %% 
-%% ** BibTeX style file for JSS publications (http://www.jstatsoft.org/)
+%% ** BibTeX style file for tragula (originally JSS publications (http://www.jstatsoft.org/)
 %% 
 %% Copyright 1994-2007 Patrick W Daly
 %% License: GPL-2
@@ -1628,4 +1628,4 @@ FUNCTION {end.bib}
 EXECUTE {end.bib}
 %% End of customized bst file
 %%
-%% End of file `jss.bst'.
+%% End of file `tragula.bst'.
