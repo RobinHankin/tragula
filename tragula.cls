@@ -1,7 +1,7 @@
 %%
 %% This is file `jss.cls',
 \def\fileversion{2.2}
-\def\filename{jss}
+\def\filename{tragula}
 \def\filedate{2013/04/06}
 %%
 %% Package `jss' to use with LaTeX2e for JSS publications (http://www.jstatsoft.org/)
@@ -10,7 +10,7 @@
 %% Please report errors to Achim.Zeileis@R-project.org
 %%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jss}[\filedate\space\fileversion\space jss class by Achim Zeileis]
+\ProvidesClass{tragula}[\filedate\space\fileversion\space tragula class by Achim Zeileis and modified by Robin Hankin]
 %% options
 \newif\if@article
 \newif\if@codesnippet
@@ -53,6 +53,7 @@
 %% required packages
 \RequirePackage{graphicx,color,ae,fancyvrb}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{hyperref}
 \IfFileExists{upquote.sty}{\RequirePackage{upquote}}{}
 %% bibliography
 \if@shortnames
@@ -86,6 +87,7 @@
 \newcommand{\Month}[1]{\def\@Month{#1}}
 \newcommand{\Issue}[1]{\def\@Issue{#1}}
 \newcommand{\Submitdate}[1]{\def\@Submitdate{#1}}
+\newcommand{\Repository}[1]{\def\@Repository{#1}}
 %% for articles and code snippets
 \newcommand{\Acceptdate}[1]{\def\@Acceptdate{#1}}
 \newcommand{\Abstract}[1]{\def\@Abstract{#1}}
@@ -123,12 +125,12 @@
 \Issue{II}
 \Submitdate{yyyy-mm-dd}
 \Acceptdate{yyyy-mm-dd}
+\Repository{http://placeholder_repository.com}
 \Address{
   Firstname Lastname\\
   Affiliation\\
   Address, Country\\
   E-mail: \email{name@address}\\
-  URL: \url{http://link/to/webpage/}
 }
 
 \Reviewer{Firstname Lastname\\Affiliation}
@@ -144,7 +146,8 @@
 \URL{http://link/to/webpage/}
 \if@article
   \Seriesname{Issue}
-  \Hypersubject{Journal of Statistical Software}
+%%  \Hypersubject{Tragula     {Volume~\@Volume, \@Seriesname~\@Issue}}
+  \Hypersubject{Tragula}
   \Plaintitle{\@title}
   \Shorttitle{\@title}
   \Plainkeywords{\@Keywords}
@@ -152,7 +155,7 @@
 
 \if@codesnippet
   \Seriesname{Code Snippet}
-  \Hypersubject{Journal of Statistical Software -- Code Snippets}
+  \Hypersubject{Tragula -- Code Snippets}
   \Plaintitle{\@title}
   \Shorttitle{\@title}
   \Plainkeywords{\@Keywords}
@@ -160,7 +163,7 @@
 
 \if@bookreview
   \Seriesname{Book Review}
-  \Hypersubject{Journal of Statistical Software -- Book Reviews}
+  \Hypersubject{Tragula -- Book Reviews}
   \Plaintitle{\@Booktitle}
   \Shorttitle{\@Booktitle}
   \Reviewauthor{\@Bookauthor\\
@@ -173,7 +176,7 @@
 
 \if@softwarereview
   \Seriesname{Software Review}
-  \Hypersubject{Journal of Statistical Software -- Software Reviews}
+  \Hypersubject{Tragula -- Software Reviews}
   \Plaintitle{\@Softwaretitle}
   \Shorttitle{\@Softwaretitle}
   \Booktitle{\@Softwaretitle}
@@ -225,20 +228,23 @@
     \vfill
     \hrule \nopagebreak
     \vspace{.1\baselineskip}
-    {\fontfamily{pzc} \fontsize{13}{15} \selectfont Journal of Statistical Software}
+    \begin{minipage}{0.06\textwidth}
+      \includegraphics[height=19mm,keepaspectratio]{tragula_shell}
+      \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+    \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
+    Published by AUT\\
+    {Volume~\@Volume, \@Seriesname~\@Issue, \@Year}
+%%    {\@Month{} \@Year}
+    \end{minipage}
     \hfill
-    \url{http://www.jstatsoft.org/}\\ \nopagebreak
-    published by the American Statistical Association
-    \hfill
-    \url{http://www.amstat.org/}\\[.3\baselineskip] \nopagebreak
-    {Volume~\@Volume, \@Seriesname~\@Issue}
-    \hfill
-    \@Firstdate\\ \nopagebreak
-    {\@Month{} \@Year}
-    \hfill
-    \@Seconddate  \nopagebreak
+    \begin{minipage}{0.4\textwidth}
+    \hfill\url{http://aut.ac.nz/}\\[.3\baselineskip] \nopagebreak
+    \hfill\@Firstdate\\ \nopagebreak
+    \hfill\@Seconddate  \nopagebreak
     \vspace{.3\baselineskip}
-    \hrule
+    \end{minipage}
+%%    \hrule
     \end{samepage}
   \fi
 }
@@ -251,15 +257,23 @@
 \RequirePackage{hyperref}
 %% new \maketitle
 \def\@myoddhead{
-  {\color{white} JSS}\\[-1.42cm]
-  \hspace{-2em} \includegraphics[height=23mm,keepaspectratio]{jsslogo} \hfill
-  \parbox[b][23mm]{118mm}{\hrule height 3pt
-   \center{
-   {\fontfamily{pzc} \fontsize{28}{32} \selectfont Journal of Statistical Software}
-   \vfill
-   {\it \small \@Month{} \@Year, Volume~\@Volume, \@Seriesname~\@Issue.%
-            \hfill \href{http://www.jstatsoft.org/}{http://www.jstatsoft.org/}}}\\[0.1cm]
-     \hrule height 3pt}}
+  %%  {\color{white} JSS}\\[-1.42cm]
+  %%  \rule{10mm}{1mm}
+  \vspace{-2em}
+  \parbox[b][10mm]{\textwidth}{%{\color{mygray}\hrule height 1pt}
+    {
+      %%   {\fontfamily{pzc} \fontsize{28}{32} \selectfont Journal of Statistical Software}
+      \includegraphics[height=3mm,keepaspectratio]{tragula}
+%%      \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Month{} \@Year}\\[-3mm]
+      \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Year}\\[-3mm]
+      %%   {\small\it \@Month{} \@Year, Volume~\@Volume, \@Seriesname~\@Issue.%
+      %%     \hfill \tt\href{http://tuwhera.aut.ac.nz/}{http://tuwhera.aut.ac.nz/}}
+    }
+    {\color{mygray}\hrule height 1pt}
+    \hfill\vphantom{$h^{h^{h^h}}$}
+    \url{\@Repository}\\
+  }
+}
 \if@review
   \renewcommand{\maketitle}{
   \if@nojss
@@ -326,7 +340,7 @@
   \if@nojss
     %% \vskip 1in
   \else
-    \vskip 1in
+    \vskip 0.1in
   \fi
    {\centering
    {\LARGE\bf \@title\par}
@@ -414,8 +428,10 @@
   \renewcommand{\subsubsection}{\secdef \jsssubsubsec \jsssubsubsecnn}
 \fi
 %% colors
-\definecolor{Red}{rgb}{0.5,0,0}
+\definecolor{Red}{rgb}{0.4,0.1,0.1}
 \definecolor{Blue}{rgb}{0,0,0.5}
+\definecolor{mygray}{gray}{0.6}
+
 \if@review
   \hypersetup{%
     hyperindex = {true},
