@@ -1,0 +1,109 @@
+% -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
+\documentclass[article]{tragula}
+\usepackage{dsfont}
+\usepackage{bbm}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+\usepackage{xypic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% declarations for jss.cls %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% just as usual
+\author{Joe Bloggs\and Jane Doe\\University of Utopia}
+\title{Title goes here}
+%\VignetteIndexEntry{The foo package}
+
+%% for pretty printing and a nice hypersummary also set:
+\Plainauthor{Joe Bloggs}
+\Plaintitle{Plain title goes here, you cannot use markup}
+\Shorttitle{Short title here, can use markup for example \proglang{R}}
+
+%% an abstract and keywords
+\Abstract{Abstract goes here, not more than a couple of paragraphs.
+  You can follow ISO 214:1976 if you wish, no obligation.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+
+}
+    
+\Keywords{key word one, key word two, squares \proglang{R}}
+\Plainkeywords{key word one, key word two, squares, R}
+
+%% publication information
+%% NOTE: This needs to filled out ONLY IF THE PAPER WAS ACCEPTED.
+%% If it was not (yet) accepted, leave them commented.
+ \Volume{13}
+ \Issue{9}
+ \Month{September}
+ \Year{2004}
+ \Submitdate{2004-09-29}
+ \Acceptdate{2004-09-29}
+%% \Repository{https://github.com/RobinHankin/schwarzschild}
+
+%% The address of (at least) one author should be given
+%% in the following format:
+\Address{
+  Joe Bloggs\\
+  University of Utopia\\
+  62 West Wallaby Street\\
+  E-mail: \email{purple.magenta@gmail.com}\\
+  URL: \url{http://optional.webaddress.com}
+}
+
+
+%% It is also possible to add a telephone and fax number
+%% before the e-mail in the following format:
+%% Telephone: +43/1/31336-5053
+%% Fax: +43/1/31336-734
+
+%% for those who use Sweave please include the following line (with % symbols):
+%% need no \usepackage{Sweave.sty}
+
+%% end of declarations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newsymbol\leqslant 1336
+
+\begin{document}
+
+\section{Introduction}
+
+Lorem ipsum dolor sit amet~\citep{lowry1951}, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. \citet{lowry1951} ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat:               
+
+<<squares_one_to_ten>>=
+(1:10)^2
+@
+
+\begin{figure}[htbp]
+  \begin{center}
+<<square_plot,fig=TRUE>>=
+plot((1:10)^2)
+@
+\caption{The squares of\label{square_int} integers 1-10}
+  \end{center}
+\end{figure}
+
+\section{Conclusions}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua
+(figure~\ref{square_int}). Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.
+
+\bibliography{template}
+
+\end{document}
+
+
