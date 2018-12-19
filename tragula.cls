@@ -263,7 +263,7 @@
   \parbox[b][10mm]{\textwidth}{%{\color{mygray}\hrule height 1pt}
     {
       %%   {\fontfamily{pzc} \fontsize{28}{32} \selectfont Journal of Statistical Software}
-      \includegraphics[height=3mm,keepaspectratio]{tragula}
+      \includegraphics[height=3mm,keepaspectratio]{tragula_word}
 %%      \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Month{} \@Year}\\[-3mm]
       \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Year}\\[-3mm]
       %%   {\small\it \@Month{} \@Year, Volume~\@Volume, \@Seriesname~\@Issue.%

@@ -22,15 +22,10 @@
 \Shorttitle{Short title here, can use markup for example \proglang{R}}
 
 %% an abstract and keywords
-\Abstract{Abstract goes here, not more than a couple of paragraphs.
-  You can follow ISO 214:1976 if you wish, no obligation.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+\Abstract{Abstract goes here, not more than a couple of paragraphs.
+  You can follow ISO 214:1976 if you wish, no obligation.  It's
+  probably best not to include citations here.
 
 }
     
@@ -75,20 +70,86 @@ pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 
 \section{Introduction}
 
-Lorem ipsum dolor sit amet~\citep{lowry1951}, consectetur adipiscing
-elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. \citet{lowry1951} ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat:               
+Good submissions to Tragula showcase novel software that demonstrates
+or otherwise enhances mathematical knowledge; ``mathematics'' is
+interpreted in the broadest sense.  The emphasis is on quality
+open-source software, written in \proglang{R}.  Submissions are
+expected to include a software component (typically in the form of an
+\proglang{R} package), and this will be reviewed alongside the
+manuscript and considered jointly.  Packages are expected to pass
+\code{R CMD check} cleanly.
+
+Tragula is {\em not} limited to statistics or data science.  The
+\proglang{R} programming language is a general-purpose language and
+can be used for topology, recreational mathematics, combinatorics,
+finite geometry, mechanics, etc; submissions may reflect any branch or
+discipline of mathematics.  There is no requirement for a submission
+to be ``useful''; criteria such as beauty, elegance, computational
+slickness, curiosity, pedagogical value, etc, are more important here.
+
+Submitted software and indeed the
+manuscript must be available under an open-source license such as
+\proglang{GPL} or \proglang{BSD}, and preferably maintained under
+version control such as \proglang{git}.  Reproducibility is required,
+and using \proglang{Sweave} on \code{Rnw} files facilitates this.
+
+Manuscripts are expected to be carefully prepared, and clearly linked
+with the associated software.  Submissions will be fully peer-reviewed
+and as such are expected to contain a literature review in which the
+submission is compared with similar existing work and the benefits of
+the current approach (one benefit might be that the submission is
+open-source and other functionality is proprietary).
+
+There are few typesetting restrictions other than an exhortation to be
+consistent throughout the document; and to use provided macros
+($\Prob$, $\COV$, etc) where possible.  Packages should be indicated
+using the \verb+\pkg+ macro.  Citation management must be via BibTeX,
+as in~\citet{lowry1951}; subsequent citations of many-author articles
+should be abbreviated as in~\citet{lowry1951}.  \proglang{CRAN}
+packages may be cited as in ``the \pkg{mvp} package~\citep{mvp2018}''.
+
+Authors are expected to provide a range of slick \proglang{R} idiom
+that showcases their software with propitious examples, as in:
 
 <<squares_one_to_ten>>=
-(1:10)^2
+(1:10)^2   # short inline comments are fine
 @
+
+Note that readers can actually execute these commands in an
+\proglang{R} session with minimal preparation (perhaps after loading a
+package).  A good Tragula submission bears many similarities to an
+\proglang{R} package vignette.  Hadley Wickham, writing at
+\url{http://r-pkgs.had.co.nz/vignettes.html}, phrases it well:
+
+\begin{quote} A vignette is a long-form guide to your
+package. Function documentation is great if you know the name of the
+function you need, but it is useless otherwise. A vignette is like a
+book chapter or an academic paper: it can describe the problem that
+your package is designed to solve, and then show the reader how to
+solve it. A vignette should divide functions into useful categories,
+and demonstrate how to coordinate multiple functions to solve
+problems. Vignettes are also useful if you want to explain the details
+of your package. For example, if you have implemented a complex
+statistical algorithm, you might want to describe all the details in a
+vignette so that users of your package can understand what is going on
+under the hood, and be confident that you have implemented the
+algorithm correctly.  \end{quote}
+
+(although note carefully that it is not necessary to ``solve a
+problem'': a manuscript might ``verify a theorem'' or ``demonstrate a
+theory'').  Please do not supply a long list of command arguments that
+reproduce the \code{Rd} documentation: a vignette should be a
+structured document.
+
+Figures can enhance a submission very much (figure~\ref{square_int},
+for example).  It is possible to use \verb+\includegraphics+ but it is
+better to generate  PDFs on the fly:
+
 
 \begin{figure}[htbp]
   \begin{center}
 <<square_plot,fig=TRUE>>=
-plot((1:10)^2)
+plot((1:10)^2)  # R provides basic arithmetic functions
 @
 \caption{The squares of\label{square_int} integers 1-10}
   \end{center}
@@ -96,11 +157,8 @@ plot((1:10)^2)
 
 \section{Conclusions}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua
-(figure~\ref{square_int}). Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
+It is always good to have a conclusions section (note the plural) in
+which an overall summary of the software may be given.
 
 \bibliography{template}
 
