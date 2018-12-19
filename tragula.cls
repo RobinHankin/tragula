@@ -228,8 +228,8 @@
     \vfill
     \hrule \nopagebreak
     \vspace{.1\baselineskip}
-    \begin{minipage}{0.06\textwidth}
-      \includegraphics[height=19mm,keepaspectratio]{tragula_shell}
+    \begin{minipage}{0.16\textwidth}
+      \includegraphics[height=19mm,keepaspectratio]{tragula_knot} # library(knotR); knotplot(ornamental20,gap=2)
       \end{minipage}
     \begin{minipage}{0.5\textwidth}
     \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
