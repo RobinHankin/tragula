@@ -70,16 +70,16 @@
 
 \section{Introduction}
 
-Good submissions to Tragula showcase novel software that demonstrates
-or otherwise enhances mathematical knowledge; ``mathematics'' is
-interpreted in the broadest sense.  The emphasis is on quality
-open-source software, written in \proglang{R}.  Submissions are
-expected to include a software component (typically in the form of an
-\proglang{R} package), and this will be reviewed alongside the
+Good submissions to {\em Tragula} showcase novel software that
+demonstrates or otherwise enhances mathematical knowledge;
+``mathematics'' is interpreted in the broadest sense.  The emphasis is
+on quality open-source software, written in \proglang{R}.  Submissions
+are expected to include a software component (typically in the form of
+an \proglang{R} package), and this will be reviewed alongside the
 manuscript and considered jointly.  Packages are expected to pass
 \code{R CMD check} cleanly.
 
-Tragula is {\em not} limited to statistics or data science.  The
+{\em Tragula} is not limited to statistics or data science.  The
 \proglang{R} programming language is a general-purpose language and
 can be used for topology, recreational mathematics, combinatorics,
 finite geometry, mechanics, etc; submissions may reflect any branch or
@@ -87,11 +87,11 @@ discipline of mathematics.  There is no requirement for a submission
 to be ``useful''; criteria such as beauty, elegance, computational
 slickness, curiosity, pedagogical value, etc, are more important here.
 
-Submitted software and indeed the
-manuscript must be available under an open-source license such as
-\proglang{GPL} or \proglang{BSD}, and preferably maintained under
-version control such as \proglang{git}.  Reproducibility is required,
-and using \proglang{Sweave} on \code{Rnw} files facilitates this.
+Submitted software and indeed the manuscript must be available under
+an open-source license such as \proglang{GPL} or \proglang{BSD}, and
+preferably maintained under version control such as \proglang{git}.
+Reproducibility is required, and using \proglang{Sweave} on \code{Rnw}
+files facilitates this.
 
 Manuscripts are expected to be carefully prepared, and clearly linked
 with the associated software.  Submissions will be fully peer-reviewed
@@ -104,12 +104,14 @@ There are few typesetting restrictions other than an exhortation to be
 consistent throughout the document; and to use provided macros
 ($\Prob$, $\COV$, etc) where possible.  Packages should be indicated
 using the \verb+\pkg+ macro.  Citation management must be via BibTeX,
-as in~\citet{lowry1951}; subsequent citations of many-author articles
-should be abbreviated as in~\citet{lowry1951}.  \proglang{CRAN}
-packages may be cited as in ``the \pkg{mvp} package~\citep{mvp2018}''.
+for example, \citet{lowry1951}; subsequent citations of many-author
+articles should be abbreviated as in~\citet{lowry1951}.
+\proglang{CRAN} packages may be cited as in ``the \pkg{mvp}
+package~\citep{mvp2018}''.
 
 Authors are expected to provide a range of slick \proglang{R} idiom
-that showcases their software with propitious examples, as in:
+that showcases their software with apt and informative examples, as
+in:
 
 <<squares_one_to_ten>>=
 (1:10)^2   # short inline comments are fine
@@ -117,8 +119,8 @@ that showcases their software with propitious examples, as in:
 
 Note that readers can actually execute these commands in an
 \proglang{R} session with minimal preparation (perhaps after loading a
-package).  A good Tragula submission bears many similarities to an
-\proglang{R} package vignette.  Hadley Wickham, writing at
+package).  A good {\em Tragula} submission bears many similarities to
+an \proglang{R} package vignette.  Hadley Wickham, writing at
 \url{http://r-pkgs.had.co.nz/vignettes.html}, phrases it well:
 
 \begin{quote} A vignette is a long-form guide to your
@@ -141,15 +143,14 @@ theory'').  Please do not supply a long list of command arguments that
 reproduce the \code{Rd} documentation: a vignette should be a
 structured document.
 
-Figures can enhance a submission very much (figure~\ref{square_int},
-for example).  It is possible to use \verb+\includegraphics+ but it is
-better to generate  PDFs on the fly:
-
+Figures can enhance a submission very much.  It is possible to use
+\verb+\includegraphics+ but it is better to generate PDFs on the fly,
+as in figure~\ref{square_int}.
 
 \begin{figure}[htbp]
   \begin{center}
-<<square_plot,fig=TRUE>>=
-plot((1:10)^2)  # R provides basic arithmetic functions
+<<square_plot,echo=TRUE,fig=TRUE>>=
+plot((1:10)^2)  
 @
 \caption{The squares of\label{square_int} integers 1-10}
   \end{center}
