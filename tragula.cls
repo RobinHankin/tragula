@@ -1,10 +1,11 @@
 %%
-%% This is file `jss.cls',
+%% This is file tragula.cls.  It is a slight modification of jss.cls by Achim Zeileis.
+%% File tragula.cls is maintained at https://github.com/RobinHankin/tragula.git
 \def\fileversion{2.2}
 \def\filename{tragula}
 \def\filedate{2013/04/06}
 %%
-%% Package `jss' to use with LaTeX2e for JSS publications (http://www.jstatsoft.org/)
+%% Package `tragula' to use with LaTeX2e for use in the  Tragula journal
 %% License: GPL-2
 %% Copyright: (C) Achim Zeileis
 %% Please report errors to Achim.Zeileis@R-project.org
