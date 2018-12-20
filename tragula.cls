@@ -230,7 +230,7 @@
     \vspace{.1\baselineskip}
     \noindent
     \begin{minipage}{0.1\textwidth}
-      \includegraphics[width=0.9\textwidth,keepaspectratio]{tragula_knot}% library(knotR); knotplot(ornamental20,gap=2)
+      \includegraphics[width=0.75\textwidth,keepaspectratio]{tragula_knot}% library(knotR); knotplot(ornamental20,gap=2)
       \end{minipage}%
     \begin{minipage}{0.5\textwidth}
     \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
