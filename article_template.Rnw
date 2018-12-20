@@ -16,6 +16,9 @@
   A. N. Other\\National University of Ruritania\AND
   N. O. Body\\Loamshire Polytechnic
 }
+%% the \author{} macro specifes a list of authors; use \And to
+%% separate authors and \AND to indicate a new line. 
+
 \title{Guide to authors}
 %\VignetteIndexEntry{The foo package}
 
@@ -164,35 +167,79 @@ plot((1:10)^2)  # echo the commands used if practicable
 
 \section{Typesetting}
 
+Submissions must be in clean seven bit ascii and follow the house
+style.  Currently only \code{article} styles are supported; start the
+file with
+
+\verb+\documentclass[article]{tragula}+
+  
+Generally, a submission will be an \verb+.Rnw+ file which may be
+processed using \proglang{Sweave} to produce a \verb+.tex+ file.  It
+is a good idea to use this file (\verb+article_template.Rnw+) as a
+starting point, and gradually replace the content with your own work.
+
 The \LaTeXe{} document class \pkg{tragula} is a (slight, cosmetic)
 modification of the \pkg{jss} document class, used for publications in
 the Journal of Statistical Software (JSS,
 \url{http://www.jstatsoft.org/}; see the ``instructions to authors''
-tab).  I would like to thank Achim Zeleis again for his help and
+tab and the \code{jss.pdf} style guide).
+
+I would like to thank Achim Zeileis again for his help and
 encouragement.  For {\em Tragula}, follow \pkg{jss} typesetting
 requirements, with one exception: do not capitalize unless absolutely
-necessary; use sentence case everywhere, including headings.
+necessary.  Use sentence case everywhere, including headings.  New
+sentences are indicated with {\em two} spaces; use \verb+\colon+
+instead of ``\verb+:+'' to indicate mappings.  Commands such as
+\verb+\author+ and \verb+title+ are unchanged from jss; they are
+largely self-evident but the jss style guide gives some more technical
+information.
 
-Citation management must be via BibTeX; use \verb+\citet+ or
-\verb+\citep+ as appropriate.  For example, ``see \citet{lowry1951}
-for details''.  Subsequent citations of many-author articles should be
-abbreviated as in ``\citet{lowry1951} provide details''.  Packages
-(whether or not on \proglang{CRAN}) should be indicated using the
-\verb+\pkg+ macro, as in ``the \pkg{mvp} package~\citep{mvp2018}''.
+Citation management must be via BibTeX; most of the time \verb+\citet+
+or \verb+\citep+ will be appropriate, but macros \verb+\citealt+,
+\verb+\citealp+, \verb+\citeauthor+, \verb+\citeyear+ give greater
+control over punctuation.  A good citation might be: ``see
+\citet{lowry1951} for an example''.  Subsequent citations of
+many-author articles should be abbreviated as in ``\citet{lowry1951}
+provide details''.  Packages (whether or not on \proglang{CRAN})
+should be indicated using the \verb+\pkg+ macro, as in ``the \pkg{mvp}
+package~\citep{mvp2018}''.
+
+Inline equations should use dollars, as in $y=x^2$; but if an equation
+is too high (e.g., a fraction or complicated integral), use display
+mode.  All displayed equations must be numbered and labelled, for ease
+of review, and use the \code{equation} environment, as in:
+
+\begin{equation}\label{complex_gaussian}
+  \int_{z\in\mathbb{C}}
+  \frac{\exp\left(-z^*\Gamma z\right)\,dz}{\left|\pi\Gamma\right|}=1.
+    \end{equation}
+
+Sometimes a code segment includes an \proglang{R} variable \code{x}
+which refers to algebraic concept $x$, as in ``if \code{x <-
+runif(1)}, then $0\leqslant x\leqslant 1$''.  Sometimes it makes sense
+to typeset the equation as ``$0\leqslant\mbox{\code{x}}\leqslant 1$'',
+that is, using the same font for the symbol in the equation and the
+code segment.  Decide this on a case-by-case basis, but aim for
+consistency if possible.
+
+
+
 
 \section{Review and publication process}
 
 The submission process is managed via email but a more formal system
 may be introduced in the future.  Submissions are made in the first
 instance to the editor in chief, who will delegate (if in scope) to a
-member of the editorial board.  The software and manuscript will be
-reviewed together by at least two reviewers, one of whom can be the
-editor.  Referees' confidentiality is absolute and will be respected
-(although the referee can waive anonymity if in the interests of a
-better publication).  It is strongly suggested that software be
-presented as a working \proglang{R} package, which is expected to pass
-\code{R CMD check} cleanly.  Decisions will be made in the light of
-reviews and possibly rebuttals.  The typical flow is as follows:
+member of the editorial board.  {\em Tragula} review cannot be
+double-blind due to the nature of open-source repositories.  The
+software and manuscript will be reviewed jointly by at least two
+reviewers, one of whom can be the editor.  Referees' confidentiality
+is absolute and will be respected (although referees may, at their
+discretion, waive anonymity in the interests of a better publication).
+It is strongly suggested that software be presented as a working
+\proglang{R} package, which is expected to pass \code{R CMD check}
+cleanly.  Decisions will be made in the light of reviews and rebuttals
+if appropriate.  The typical flow is as follows:
 
 \begin{enumerate}
 \item Author submits manuscript and software to editor-in-chief.
@@ -207,13 +254,21 @@ reviews and possibly rebuttals.  The typical flow is as follows:
     an extremely effective way of doing this).
   \item Reject.
   \end{itemize}
-\item Repeat point (4) as necessary.
+\item Repeat point (4) as necessary, either with or without further
+  input from referees at the editor's discretion.
 \end{enumerate}
 
 Rejected manuscripts may not be resubmitted.  Details of current
 editorial board membership can be found at \url{http://www.aut.ac.nz}.
 
+\subsection{Post-publication maintenance}
 
+The accepted manuscript will be hosted online alongside the
+accompanying software; but it is inevitable that the software and
+possibly the manuscript will be modified on post-acceptance.  The
+\verb+\Repository+ field appears on the final document and points
+readers to the accepted version and furnish easy access to subsequent
+modifications.
 
 \bibliography{template}
 
