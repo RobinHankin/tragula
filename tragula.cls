@@ -1,5 +1,6 @@
 %%
-%% This is file tragula.cls.  It is a slight modification of jss.cls by Achim Zeileis.
+%% This is file tragula.cls.  It is a slight modification of jss.cls
+%% version 2.2, by Achim Zeileis.
 %% File tragula.cls is maintained at https://github.com/RobinHankin/tragula.git
 \def\fileversion{2.2}
 \def\filename{tragula}
@@ -7,8 +8,8 @@
 %%
 %% Package `tragula' to use with LaTeX2e for use in the  Tragula journal
 %% License: GPL-2
-%% Copyright: (C) Achim Zeileis
-%% Please report errors to Achim.Zeileis@R-project.org
+%% Copyright: (C) Achim Zeileis and Robin Hankin
+%% Please report errors to hankin.robin@gmail.com
 %%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{tragula}[\filedate\space\fileversion\space tragula class by Achim Zeileis and modified by Robin Hankin]
