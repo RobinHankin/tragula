@@ -12,12 +12,12 @@
 
 
 %% just as usual
-\author{Joe Bloggs\and Jane Doe\\University of Utopia}
+\author{Robin K. S. Hankin\\Auckland University of Technology \And A. N. Other\\National University of Ruritania}
 \title{Guide to authors}
 %\VignetteIndexEntry{The foo package}
 
 %% for pretty printing and a nice hypersummary also set:
-\Plainauthor{Joe Bloggs}
+\Plainauthor{Robin K. S. Hankin}
 \Plaintitle{Plain title goes here, you cannot use markup}
 \Shorttitle{Short title here, markup allowed}
 
@@ -35,22 +35,23 @@
 %% publication information
 %% NOTE: This needs to filled out ONLY IF THE PAPER WAS ACCEPTED.
 %% If it was not (yet) accepted, leave them commented.
- \Volume{13}
- \Issue{9}
- \Month{September}
- \Year{2004}
- \Submitdate{2004-09-29}
- \Acceptdate{2004-09-29}
-%% \Repository{https://github.com/RobinHankin/schwarzschild}
+ \Volume{VOL}
+ \Issue{ISS}
+ \Month{MONTH}
+ \Year{YEAR}
+ \Submitdate{yyyy-mm-dd}
+ \Acceptdate{yyyy-mm-dd}
+ \Repository{https://github.com/RobinHankin/tragula}
 
 %% The address of (at least) one author should be given
 %% in the following format:
 \Address{
-  Joe Bloggs\\
-  University of Utopia\\
-  62 West Wallaby Street\\
-  E-mail: \email{purple.magenta@gmail.com}\\
-  URL: \url{http://optional.webaddress.com}
+  Robin K. S. Hankin\\
+  Auckland University of Technology\\
+  2-14 Wakefield Street\\
+  Auckland, New Zealand\\
+  E-mail: \email{hankin.robin@gmail.com}\\
+  URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}
 }
 
 
