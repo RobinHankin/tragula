@@ -236,7 +236,8 @@
     \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
     Published by AUT\\
     {Volume~\@Volume, \@Seriesname~\@Issue, \@Year}
-%%    {\@Month{} \@Year}
+    %%    {\@Month{} \@Year}
+    \vspace{.3\baselineskip}
     \end{minipage}%
     \begin{minipage}{0.4\textwidth}
     \hfill\url{http://aut.ac.nz/}\\[.3\baselineskip] \nopagebreak
