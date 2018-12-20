@@ -98,9 +98,9 @@ curiosity, pedagogical value, etc, etc.
 
 Submitted software and indeed the manuscript must be available under
 an open-source license such as \proglang{GPL} or \proglang{BSD}, and
-preferably maintained under version control such as \proglang{git}.
-Reproducibility is required, and using \proglang{Sweave} on \code{Rnw}
-files facilitates this.
+preferably maintained under a version control system such as
+\proglang{git}.  Reproducibility is required, and using
+\proglang{Sweave} on \code{Rnw} files facilitates this.
 
 Manuscripts are expected to be carefully prepared, and clearly linked
 with the associated software.  There is no upper or lower limit on the
@@ -154,8 +154,8 @@ figure~\ref{square_int}.
 
 \begin{figure}[htbp]
   \begin{center}
-<<square_plot,echo=TRUE,fig=TRUE>>=
-plot((1:10)^2)  
+<<square_plot,echo=TRUE, fig=TRUE>>=
+plot((1:10)^2)  # echo the commands used if practicable  
 @
 \caption{The squares of\label{square_int} integers 1-10}
   \end{center}
@@ -187,7 +187,7 @@ may be introduced in the future.  Submissions are made in the first
 instance to the editor in chief, who will delegate (if in scope) to a
 member of the editorial board.  The software and manuscript will be
 reviewed together by at least two reviewers, one of whom can be the
-editor.  Referees confidentiality is absolute and will be respected
+editor.  Referees' confidentiality is absolute and will be respected
 (although the referee can waive anonymity if in the interests of a
 better publication).  It is strongly suggested that software be
 presented as a working \proglang{R} package, which is expected to pass
@@ -203,7 +203,8 @@ reviews and possibly rebuttals.  The typical flow is as follows:
   \item Accept: submission passed to typesetting and hosting
   \item Revise and resubmit: reviews passed to author for
     consideration.  Author responds to the comments with a
-    point-by-point rebuttal.
+    point-by-point rebuttal (note that providing a git commit hash is
+    an extremely effective way of doing this).
   \item Reject.
   \end{itemize}
 \item Repeat point (4) as necessary.
