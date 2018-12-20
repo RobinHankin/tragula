@@ -224,7 +224,7 @@
   \else
     \begin{samepage}
     \textbf{\large \@Footername: \nopagebreak}\\[.3\baselineskip] \nopagebreak
-    \@Address \nopagebreak
+    \@Address\\ \nopagebreak
     \vfill
     \hrule \nopagebreak
     \vspace{.1\baselineskip}
