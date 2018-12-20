@@ -228,22 +228,22 @@
     \vfill
     \hrule \nopagebreak
     \vspace{.1\baselineskip}
-    \begin{minipage}{0.16\textwidth}
-      \includegraphics[height=19mm,keepaspectratio]{tragula_knot} % library(knotR); knotplot(ornamental20,gap=2)
-      \end{minipage}
+    \noindent
+    \begin{minipage}{0.1\textwidth}
+      \includegraphics[width=0.9\textwidth,keepaspectratio]{tragula_knot}% library(knotR); knotplot(ornamental20,gap=2)
+      \end{minipage}%
     \begin{minipage}{0.5\textwidth}
     \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
     Published by AUT\\
     {Volume~\@Volume, \@Seriesname~\@Issue, \@Year}
 %%    {\@Month{} \@Year}
-    \end{minipage}
-    \hfill
+    \end{minipage}%
     \begin{minipage}{0.4\textwidth}
     \hfill\url{http://aut.ac.nz/}\\[.3\baselineskip] \nopagebreak
     \hfill\@Firstdate\\ \nopagebreak
     \hfill\@Seconddate  \nopagebreak
     \vspace{.3\baselineskip}
-    \end{minipage}
+    \end{minipage}%
 %%    \hrule
     \end{samepage}
   \fi
