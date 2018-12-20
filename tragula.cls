@@ -232,7 +232,7 @@
     \noindent
     \begin{minipage}{0.1\textwidth}
       \includegraphics[width=0.75\textwidth,keepaspectratio]{tragula_knot}% library(knotR); knotplot(ornamental20,gap=2)
-      \end{minipage}%
+\vfill      \end{minipage}%
     \begin{minipage}{0.5\textwidth}
     \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
     Published by AUT\\
@@ -265,13 +265,13 @@
   \parbox[b][10mm]{\textwidth}{%{\color{mygray}\hrule height 1pt}
     {
       %%   {\fontfamily{pzc} \fontsize{28}{32} \selectfont Journal of Statistical Software}
-      \includegraphics[height=3mm,keepaspectratio]{tragula_word}
-%%      \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Month{} \@Year}\\[-3mm]
-      \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Year}\\[-3mm]
-      %%   {\small\it \@Month{} \@Year, Volume~\@Volume, \@Seriesname~\@Issue.%
-      %%     \hfill \tt\href{http://tuwhera.aut.ac.nz/}{http://tuwhera.aut.ac.nz/}}
+      \includegraphics[height=6mm,keepaspectratio]{tragula_word}\\[-3mm]
+      %% \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Month{} \@Year}\\[-3mm]
+      %% {\small\it \@Month{} \@Year, Volume~\@Volume, \@Seriesname~\@Issue.%
+      %% \hfill \tt\href{http://tuwhera.aut.ac.nz/}{http://tuwhera.aut.ac.nz/}}
     }
     {\color{mygray}\hrule height 1pt}
+{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Year}
     \hfill\vphantom{$h^{h^{h^h}}$}
     \url{\@Repository}\\
   }
