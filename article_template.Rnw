@@ -169,20 +169,21 @@ plot((1:10)^2)  # echo the commands used if practicable
 
 Submissions must be in clean seven bit ascii and follow the house
 style.  Currently only \code{article} styles are supported; start the
-file with
-
-\verb+\documentclass[article]{tragula}+
+file with \verb+\documentclass[article]{tragula}+.
   
 Generally, a submission will be an \verb+.Rnw+ file which may be
-processed using \proglang{Sweave} to produce a \verb+.tex+ file.  It
-is a good idea to use this file (\verb+article_template.Rnw+) as a
-starting point, and gradually replace the content with your own work.
+processed using \proglang{Sweave} to produce a \verb+.tex+ file; then
+use pdf\LaTeX\ to create a PDF document.  These steps may be performed
+more straightforwardly using Rstudio.  It is a good idea to use this
+file (\verb+article_template.Rnw+) as a starting point, and gradually
+replace the content with your own work.
 
 The \LaTeXe{} document class \pkg{tragula} is a (slight, cosmetic)
-modification of the \pkg{jss} document class, used for publications in
-the Journal of Statistical Software (JSS,
-\url{http://www.jstatsoft.org/}; see the ``instructions to authors''
-tab and the \code{jss.pdf} style guide).
+modification of the \pkg{jss} document class, which is used for
+publications in the Journal of Statistical Software (JSS,
+\url{http://www.jstatsoft.org/}).  There, the ``instructions to
+authors'' tab and the \code{jss.pdf} style guide give technical
+advice.
 
 I would like to thank Achim Zeileis again for his help and
 encouragement.  For {\em Tragula}, follow \pkg{jss} typesetting
