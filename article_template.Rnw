@@ -29,13 +29,15 @@
 
 %% an abstract and keywords
 
-\Abstract{Use file \verb+article_template.Rnw+ as a starting point for
-  a {\em Tragula} submssion; gradually replace the content with your
-  own work.  The abstract goes here, not more than a few sentences.
-  You can follow ISO 214:1976 if you wish, no obligation.  Do not
-  include citations here.  Editorial policy in a nutshell: {\em
-    Tragula} is a peer-reviewed journal that showcases novel
-  mathematical applications of \proglang{R}}
+\Abstract{This document outlines the academic and typesetting
+  conventions for {\em Tragula}.  Use file
+  \code{article\_template.Rnw} as a starting point for a {\em Tragula}
+  submission; gradually replace the content with your own work.  The
+  abstract goes here, not more than a few sentences.  You can follow
+  ISO 214:1976 if you wish, no obligation.  Do not include citations
+  here.  Editorial policy in a nutshell: {\em Tragula} is a
+  peer-reviewed journal that showcases novel mathematical applications
+  of \proglang{R}.}
    
 \Keywords{key word one, key word two, squares \proglang{R}}
 \Plainkeywords{key word one, key word two, squares, R}
