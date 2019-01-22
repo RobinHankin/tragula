@@ -8,10 +8,18 @@
 *.tex~
 
 # Files copied from submodule permutations:
-permutations/
+permutations
 megaminx_net.svg
 permutations.Rnw
 permutations.bib
 start.jpg
 superflip.jpg
+
+# Files copied from submodule knotR:
+1280px-Knot_table.png
+four_knots.svg
+inkscape_screenshot.png
+knot.Rnw
+knot.bib
+screenshot_inkscape_7_6.png
 
