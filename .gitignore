@@ -8,7 +8,7 @@
 *.tex~
 
 # Files copied from submodule permutations:
-permutations
+
 megaminx_net.svg
 permutations.Rnw
 permutations.bib
