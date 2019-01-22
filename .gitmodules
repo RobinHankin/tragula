@@ -1,0 +1,3 @@
+[submodule "permutations"]
+	path = permutations
+	url = https://github.com/RobinHankin/permutations.git
