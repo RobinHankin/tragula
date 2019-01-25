@@ -1,0 +1,12 @@
+## git submodule add https://github.com/RobinHankin/permutations.git permutations
+cp permutations/vignettes/* .
+./tragularize permutations.Rnw 
+R CMD Sweave example_article_permutations.Rnw
+pdflatex example_article_permutations
+bibtex example_article_permutations
+pdflatex example_article_permutations
+pdflatex example_article_permutations
+
+
+
+
