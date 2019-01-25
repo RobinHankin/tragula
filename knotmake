@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-## git submodule add https://github.com/RobinHankin/permutations.git permutations
+## see README.md
+
 cp knotR/vignettes/* .
 cat knot.Rnw |sed -e s/nojss/article/ |sed -e s/jss/tragula/ > example_article_knot.Rnw
 R CMD Sweave example_article_knot.Rnw

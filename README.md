@@ -13,4 +13,7 @@ git submodule add https://github.com/RobinHankin/permutations.git permutations
 Same for knot.Rnw:
 
 git submodule add https://github.com/RobinHankin/knotR.git knotR
-cp knotR/vignettes/* .
+
+and lorentz.Rnw:
+
+git submodule add https://github.com/RobinHankin/lorentz.git lorentz
