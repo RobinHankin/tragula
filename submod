@@ -1,0 +1,17 @@
+#! /bin/bash
+
+## Executing this file adds submodules.  The submodules are R package
+## directories.  Shell scripts like 'lorentzmaker' use the package
+## vignettes to and create example Tragula articles with names like
+## "example_article_lorentz.pdf".
+
+## You only need to execute this file once.
+
+git submodule add https://github.com/RobinHankin/knotR.git knotR
+git submodule add https://github.com/RobinHankin/lorentz.git lorentz
+git submodule add https://github.com/RobinHankin/permutations.git permutations
+
+
+
+
+
