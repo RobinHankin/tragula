@@ -7,10 +7,17 @@
 
 ## You only need to execute this file once.
 
-git submodule add https://github.com/RobinHankin/knotR.git knotR
-git submodule add https://github.com/RobinHankin/lorentz.git lorentz
-git submodule add https://github.com/RobinHankin/permutations.git permutations
+if [ ! -d "knotR" ]; then 
+    git submodule add https://github.com/RobinHankin/knotR.git knotR
+fi
 
+if [ ! -d "lorentz" ]; then 
+    git submodule add https://github.com/RobinHankin/lorentz.git lorentz
+fi
+
+if [ ! -d "permutations" ]; then
+    git submodule add https://github.com/RobinHankin/permutations.git permutations
+fi
 
 
 
