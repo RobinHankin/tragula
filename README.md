@@ -1,11 +1,14 @@
 # tragula
 
-To compile permutations.Rnw you will need to copy some files from the
-permutations submodule to the working directory:
+To compile the example papers, use shell scripts knotmaker and
+permmaker.  These will copy Rnw files from existing package vignettes
+and modify the first line so that latex will use Tragula style rather
+than jss style.
+
 
 
 git submodule add https://github.com/RobinHankin/permutations.git permutations
-cp permutations/vignettes/* .
+
 
 Same for knot.Rnw:
 
