@@ -1,4 +1,4 @@
-## git submodule add https://github.com/RobinHankin/permutations.git permutations
+## git submodule add https://github.com/RobinHankin/knotR.git knotR
 cp knotR/vignettes/* .
 ./tragularize knot.Rnw 
 R CMD Sweave example_article_knot.Rnw
