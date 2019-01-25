@@ -1,4 +1,7 @@
-## git submodule add https://github.com/RobinHankin/lorentz.git lorentz
+#! /bin/bash
+
+## remember you have to execute submod once
+
 cp lorentz/vignettes/* .
 ./tragularize lorentz.Rnw 
 R CMD Sweave example_article_lorentz.Rnw
@@ -6,7 +9,4 @@ pdflatex example_article_lorentz
 bibtex example_article_lorentz
 pdflatex example_article_lorentz
 pdflatex example_article_lorentz
-
-
-
 

@@ -1,4 +1,7 @@
-## git submodule add https://github.com/RobinHankin/permutations.git permutations
+#! /bin/bash
+
+## remember you have to execute submod once
+
 cp permutations/vignettes/* .
 ./tragularize permutations.Rnw 
 R CMD Sweave example_article_permutations.Rnw
