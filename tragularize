@@ -1,0 +1,3 @@
+#! /bin/bash
+
+cat $1 |sed -e s/nojss/article/ |sed -e s/jss/tragula/ > example_article_$1
