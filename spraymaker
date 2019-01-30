@@ -1,0 +1,15 @@
+#! /bin/bash
+
+## remember you have to execute submod once
+
+cp spray/vignettes/* .
+./tragularize spray.Rnw 
+R CMD Sweave example_article_spray.Rnw
+pdflatex example_article_spray
+bibtex example_article_spray
+pdflatex example_article_spray
+pdflatex example_article_spray
+
+
+
+

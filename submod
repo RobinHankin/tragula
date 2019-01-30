@@ -19,6 +19,10 @@ if [ ! -d "permutations" ]; then
     git submodule add https://github.com/RobinHankin/permutations.git permutations
 fi
 
+if [ ! -d "spray" ]; then
+    git submodule add https://github.com/RobinHankin/spray.git spray
+fi
+
 
 
 
