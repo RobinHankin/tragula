@@ -4,3 +4,5 @@ all: tragula.bst tragula.cls
 	permmaker
 	lorentzmaker
 
+clean:
+	rm *.log *.out *.aux *.tex *.bbl *.blg
