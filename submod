@@ -23,6 +23,10 @@ if [ ! -d "spray" ]; then
     git submodule add https://github.com/RobinHankin/spray.git spray
 fi
 
+if [ ! -d "freegroup" ]; then
+    git submodule add https://github.com/RobinHankin/freegroup.git freegroup
+fi
+
 
 
 
