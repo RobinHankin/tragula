@@ -5,6 +5,7 @@ all: tragula.bst tragula.cls
 	./lorentzmaker
 	./spraymaker
 	./freemaker
+	./authorguidelinesmaker
 	mv example_article_knot.pdf example_article_permutations.pdf example_article_lorentz.pdf example_article_spray.pdf example_article_freegroup.pdf ./example_articles/
 
 clean:
