@@ -1,10 +1,10 @@
 #! /bin/bash
 
 
-R CMD Sweave au.Rnw
-pdflatex article_template
-bibtex article_template
-pdflatex article_template
-pdflatex article_template
+R CMD Sweave author_guidelines.Rnw
+pdflatex author_guidelines
+bibtex author_guidelines
+pdflatex author_guidelines
+pdflatex author_guidelines
 
 
