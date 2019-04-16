@@ -273,10 +273,34 @@ editorial board membership can be found at \url{http://www.aut.ac.nz}.
 
 The accepted manuscript will be hosted online alongside the
 accompanying software; but it is inevitable that the software and
-possibly the manuscript will be modified on post-acceptance.  The
+possibly the manuscript will be modified post-acceptance.  The
 \verb+\Repository+ field appears on the final document and points
 readers to the accepted version and furnish easy access to subsequent
-modifications.
+modifications.  Tragula papers are ``static'', that is, the accepted
+version does not change with time.  However, the associated software
+will almost certainly be modified.
+
+We strongly recommend that every \proglang{R} package associated with
+a Tragula article includes a vignette.  This vignette should be based
+on the Tragula article, although it might include extra material.  A
+good way to do this is to use the \proglang{jss} headers (use the the
+\code{nojss} option: ``\verb+\documentclass[nojss]{jss}+''; an example
+may be found at \url{https://github.com/RobinHankin/permutations}).
+In the vignette, cite the Tragula article along with the other
+references.  This device maintains a distinction between the static
+Tragula article and the mutable vignette; and states, low-key, that
+the work has been rigorously peer-reviewed.
+
+Post-acceptance, you should include pointers to the Tragula article in
+the \proglang{R} package documentation: include a reference to the
+article in the \verb+\references{}+ section of any appropriate
+\verb+.Rd+ files; and also include a \verb+CITATION+ file in the
+\verb+inst/+ directory, which will be given to you in a standard
+format when the article becomes live.
+
+
+
+
 
 \bibliography{template}
 
