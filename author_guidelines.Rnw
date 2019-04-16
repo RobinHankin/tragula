@@ -178,9 +178,9 @@ file with \verb+\documentclass[article]{tragula}+.
 Generally, a submission will be an \verb+.Rnw+ file which may be
 processed using \proglang{Sweave} to produce a \verb+.tex+ file; then
 use pdf\LaTeX\ to create a PDF document.  These steps may be performed
-more straightforwardly using Rstudio.  It is a good idea to use this
-file (\verb+article_template.Rnw+) as a starting point, and gradually
-replace the content with your own work.
+more straightforwardly using \proglang{RStudio}.  It is a good idea to
+use this file (\verb+article_template.Rnw+) as a starting point, and
+gradually replace the content with your own work.
 
 The \LaTeXe{} document class \pkg{tragula} is a (slight, cosmetic)
 modification of the \pkg{jss} document class, which is used for
@@ -190,8 +190,8 @@ authors'' tab and the \code{jss.pdf} style guide give technical
 advice.
 
 I would like to thank Achim Zeileis again for his help and
-encouragement.  For {\em Tragula}, follow \pkg{jss} typesetting
-requirements, with one exception: do not capitalize unless absolutely
+encouragement.  For {\em Tragula}, the typesetting are generally those
+of JSS, with one exception: do not capitalize unless absolutely
 necessary.  Use sentence case everywhere, including headings.  New
 sentences are indicated with {\em two} spaces; use \verb+\colon+
 instead of ``\verb+:+'' to indicate mappings.  Commands such as
@@ -207,7 +207,10 @@ control over punctuation.  A good citation might be: ``see
 many-author articles should be abbreviated as in ``\citet{lowry1951}
 provide details''.  Packages (whether or not on \proglang{CRAN})
 should be indicated using the \verb+\pkg+ macro, as in ``the \pkg{mvp}
-package~\citep{mvp2018}''.
+package~\citep{mvp2018}''.  Citing of software can be problematic but
+try to follow the citation guidelines provided by the software itself
+(in the case of \proglang{R} packages, \code{citation("pkgname")}
+gives the preferred \proglang{BibTeX} entry).
 
 Inline equations should use dollars, as in $y=x^2$; but if an equation
 is too high (e.g., a fraction or complicated integral), use display
