@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{wasysym}
 \usepackage{xypic}
+\newcommand{\tragula}{{\em Tragula}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% declarations for tragula.cls
@@ -30,14 +31,13 @@
 %% an abstract and keywords
 
 \Abstract{This document outlines the academic and typesetting
-  conventions for {\em Tragula}.  Use file
-  \code{article\_template.Rnw} as a starting point for a {\em Tragula}
-  submission; gradually replace the content with your own work.  The
-  abstract goes here, not more than a few sentences.  You can follow
-  ISO 214:1976 if you wish, no obligation.  Do not include citations
-  here.  Editorial policy in a nutshell: {\em Tragula} is a
-  peer-reviewed journal that showcases novel mathematical applications
-  of \proglang{R}.}
+  conventions for \tragula.  Use file \code{author\_guidelines.Rnw} as
+  a starting point for a \tragula\ submission; gradually replace the
+  content with your own work.  The abstract goes here, not more than a
+  few sentences.  You can follow ISO 214:1976 if you wish, no
+  obligation.  Do not include citations here.  Editorial policy in a
+  nutshell: \tragula\ is a peer-reviewed journal that showcases
+  novel mathematical applications of \proglang{R}.}
    
 \Keywords{key word one, key word two, squares \proglang{R}}
 \Plainkeywords{key word one, key word two, squares, R}
@@ -81,7 +81,7 @@
 
 \section{Introduction}
 
-Good submissions to {\em Tragula} showcase novel software that
+Good submissions to \tragula\ showcase novel software that
 demonstrates or otherwise enhances mathematical knowledge;
 ``mathematics'' is interpreted in the broadest sense.  The emphasis is
 on quality open-source software, written in \proglang{R}.  Submissions
@@ -90,7 +90,7 @@ an \proglang{R} package), and this will be reviewed alongside the
 manuscript and considered jointly.  Packages are expected to pass
 \code{R CMD check} cleanly.
 
-{\em Tragula} is an inclusive publication and welcomes submissions
+\tragula\ is an inclusive publication and welcomes submissions
 that add value to the \proglang{R} community through mathematics, or
 conversely add value to the mathematical community through use of
 \proglang{R} (or preferably both).  \proglang{R} is a programming
@@ -120,8 +120,8 @@ with similar existing work, and the benefits of the current approach
 outlined (one benefit might be that the submission is open-source and
 existing software is proprietary).
 
-A good {\em Tragula} submission bears many similarities to an
-\proglang{R} package vignette.  Hadley Wickham, writing at
+A good \tragula\ submission bears many similarities to an \proglang{R}
+package vignette.  Hadley Wickham, writing at
 \url{http://r-pkgs.had.co.nz/vignettes.html}, phrases it well:
 
 \begin{quote} A vignette is a long-form guide to your
@@ -190,8 +190,8 @@ authors'' tab and the \code{jss.pdf} style guide give technical
 advice.
 
 I would like to thank Achim Zeileis again for his help and
-encouragement.  For {\em Tragula}, the typesetting are generally those
-of JSS, with one exception: do not capitalize unless absolutely
+encouragement.  For \tragula\, the typesetting are generally those of
+JSS, with one exception: do not capitalize unless absolutely
 necessary.  Use sentence case everywhere, including headings.  New
 sentences are indicated with {\em two} spaces; use \verb+\colon+
 instead of ``\verb+:+'' to indicate mappings.  Commands such as
@@ -238,7 +238,7 @@ consistency if possible.
 The submission process is managed via email but a more formal system
 may be introduced in the future.  Submissions are made in the first
 instance to the editor in chief, who will delegate (if in scope) to a
-member of the editorial board.  {\em Tragula} review cannot be
+member of the editorial board.  \tragula\ review cannot be
 double-blind due to the nature of open-source repositories.  The
 software and manuscript will be reviewed jointly by at least two
 reviewers, one of whom can be the editor.  Referees' confidentiality
@@ -276,24 +276,26 @@ accompanying software; but it is inevitable that the software and
 possibly the manuscript will be modified post-acceptance.  The
 \verb+\Repository+ field appears on the final document and points
 readers to the accepted version and furnish easy access to subsequent
-modifications.  Tragula papers are ``static'', that is, the accepted
+modifications.  \tragula\ papers are ``static'', that is, the accepted
 version does not change with time.  However, the associated software
 will almost certainly be modified.
 
 We strongly recommend that every \proglang{R} package associated with
-a Tragula article includes a vignette.  This vignette should be based
-on the Tragula article, although it might include extra material.  A
-good way to do this is to use the \proglang{jss} headers (use the the
-\code{nojss} option: ``\verb+\documentclass[nojss]{jss}+''; an example
-may be found at \url{https://github.com/RobinHankin/permutations}).
-In the vignette, cite the Tragula article along with the other
-references.  This device maintains a distinction between the static
-Tragula article and the mutable vignette; and states, low-key, that
+a \tragula\ article includes a vignette.  This vignette should be
+based on the \tragula\ article, although it might include extra
+material.  A good way to do this is to use the \proglang{jss} headers
+(use the the \code{nojss} option:
+``\verb+\documentclass[nojss]{jss}+''; an example may be found at
+\url{https://github.com/RobinHankin/permutations} or
+\url{https://CRAN.R-project.org/package=permutations}).  In the
+vignette, cite the \tragula\ article along with the other references.
+This device maintains a distinction between the static
+\tragula\ article and the mutable vignette; and states, low-key, that
 the work has been rigorously peer-reviewed.
 
-Post-acceptance, you should include pointers to the Tragula article in
-the \proglang{R} package documentation: include a reference to the
-article in the \verb+\references{}+ section of any appropriate
+Post-acceptance, you should include pointers to the \tragula\ article
+in the regular \proglang{R} package documentation: include a reference
+to the article in the \verb+\references{}+ section of any appropriate
 \verb+.Rd+ files; and also include a \verb+CITATION+ file in the
 \verb+inst/+ directory, which will be given to you in a standard
 format when the article becomes live.
