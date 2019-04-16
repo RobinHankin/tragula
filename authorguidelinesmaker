@@ -1,5 +1,6 @@
 #! /bin/bash
 
+## No need to execute tragularize here as author_guidelines.Rnw is not a package vignette (cf permmaker)
 
 R CMD Sweave author_guidelines.Rnw
 pdflatex author_guidelines
