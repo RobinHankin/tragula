@@ -189,6 +189,32 @@ publications in the Journal of Statistical Software (JSS,
 authors'' tab and the \code{jss.pdf} style guide give technical
 advice.
 
+The style file imports two PDF figures: \code{tragula_word.pdf} and
+\code{tragula_knot.pdf}.  
+
+\begin{itemize}
+  \item File \code{tragula_word.pdf} uses syncopate bold at 48pt (all
+    capitals); the source document is available at
+
+\url{https://docs.google.com/document/d/e/2PACX-1vR6y-EVoIo4EOFy6P45AwN_-KCSH808KM8SBXsIn7l0UVk4_cJxImV8ilH4FBF_BCwN9_7lBQ29458b/pub}
+
+\item File \code{tragula_knot.pdf} is a five-fold rotationally
+  symmetric ornamental knot created by the \pkg{knotR} package with
+  name \code{ornamental20}.  It is created in an \proglang{R} session
+  by 
+  
+  \begin{Schunk}
+    \begin{Sinput}
+      > library("knotR")
+      > pdf(file="tragula_knot.pdf")
+      > knotplot(ornamental20, gap=2)
+      > dev.off()
+    \end{Sinput}
+  \end{Schunk}
+  
+  (the production file has been cropped so that image fits on the page better).
+\end{itemize}
+
 I would like to thank Achim Zeileis again for his help and
 encouragement.  For \tragula\, the typesetting are generally those of
 JSS, with one exception: do not capitalize unless absolutely
@@ -198,6 +224,8 @@ instead of ``\verb+:+'' to indicate mappings.  Commands such as
 \verb+\author+ and \verb+title+ are unchanged from jss; they are
 largely self-evident but the jss style guide gives some more technical
 information.
+
+
 
 Citation management must be via BibTeX; most of the time \verb+\citet+
 or \verb+\citep+ will be appropriate, but macros \verb+\citealt+,
