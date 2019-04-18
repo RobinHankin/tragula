@@ -1,3 +1,3 @@
 #! /bin/bash
 
-cat $1 |sed -e s/nojss/article/ |sed -e s/jss/tragula/ > example_article_$1
+cat $1 |sed -e 's/nojss/article/' |sed -e 's/jss/tragula/' | sed -e 's/%% \\\Repository/   \\\Repository/' > example_article_$1
