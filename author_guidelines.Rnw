@@ -187,7 +187,8 @@ modification of the \pkg{jss} document class, which is used for
 publications in the Journal of Statistical Software (JSS,
 \url{http://www.jstatsoft.org/}).  There, the ``instructions to
 authors'' tab and the \code{jss.pdf} style guide give technical
-advice.
+advice.  I would like to thank Achim Zeileis again for his help and
+encouragement.
 
 The style file imports two PDF figures: \code{tragula_word.pdf} and
 \code{tragula_knot.pdf}.  
@@ -215,17 +216,16 @@ The style file imports two PDF figures: \code{tragula_word.pdf} and
   (the production file has been cropped so that image fits on the page better).
 \end{itemize}
 
-I would like to thank Achim Zeileis again for his help and
-encouragement.  For \tragula\, the typesetting are generally those of
-JSS, with one exception: do not capitalize unless absolutely
-necessary.  Use sentence case everywhere, including headings.  New
-sentences are indicated with {\em two} spaces; use \verb+\colon+
+For \tragula\, the typesetting conventions are generally those of JSS,
+with one exception: do not capitalize unless absolutely necessary
+(that is, use upper case only for the first word of a sentence, proper
+nouns, and abbreviations); use sentence case for headings.
+
+New sentences are indicated with {\em two} spaces; use \verb+\colon+
 instead of ``\verb+:+'' to indicate mappings.  Commands such as
 \verb+\author+ and \verb+title+ are unchanged from jss; they are
 largely self-evident but the jss style guide gives some more technical
 information.
-
-
 
 Citation management must be via BibTeX; most of the time \verb+\citet+
 or \verb+\citep+ will be appropriate, but macros \verb+\citealt+,
