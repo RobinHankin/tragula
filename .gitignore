@@ -26,6 +26,22 @@ knot.Rnw
 knot.bib
 screenshot_inkscape_7_6.png
 
+
+# Files copied from submodule lorentz:
+
+example_article_lorentz.Rnw
+lorentz.Rnw
+lorentz.bib
+
+# Files copied from submodule spray:
+
+example_article_spray.Rnw
+spray.Rnw
+spray.bib
+four_dimensional_knight.svg
+
+
+
 # Files that are created in the submodule:
 
 .submodules
