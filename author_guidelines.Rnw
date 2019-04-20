@@ -88,7 +88,8 @@ on quality open-source software, written in \proglang{R}.  Submissions
 are expected to include a software component (typically in the form of
 an \proglang{R} package), and this will be reviewed alongside the
 manuscript and considered jointly.  Packages are expected to pass
-\code{R CMD check} cleanly.
+\code{R CMD check} cleanly and to follow the tenets laid out in the
+most recent version of \emph{Writing \proglang{R} extensions}.
 
 \tragula\ is an inclusive publication and welcomes submissions
 that add value to the \proglang{R} community through mathematics, or
@@ -223,8 +224,8 @@ nouns, and abbreviations); use sentence case for headings.
 
 New sentences are indicated with {\em two} spaces; use \verb+\colon+
 instead of ``\verb+:+'' to indicate mappings.  Commands such as
-\verb+\author+ and \verb+title+ are unchanged from jss; they are
-largely self-evident but the jss style guide gives some more technical
+\verb+\author+ and \verb+title+ are unchanged from JSS; they are
+largely self-evident but the JSS style guide gives some more technical
 information.
 
 Citation management must be via BibTeX; most of the time \verb+\citet+
@@ -238,7 +239,7 @@ should be indicated using the \verb+\pkg+ macro, as in ``the \pkg{mvp}
 package~\citep{mvp2018}''.  Citing of software can be problematic but
 try to follow the citation guidelines provided by the software itself
 (in the case of \proglang{R} packages, \code{citation("pkgname")}
-gives the preferred \proglang{BibTeX} entry).
+gives the preferred BibTeX entry).
 
 Inline equations should use dollars, as in $y=x^2$; but if an equation
 is too high (e.g., a fraction or complicated integral), use display
@@ -311,9 +312,10 @@ will almost certainly be modified.
 We strongly recommend that every \proglang{R} package associated with
 a \tragula\ article includes a vignette.  This vignette should be
 based on the \tragula\ article, although it might include extra
-material.  A good way to do this is to use the \proglang{jss} headers
-(use the the \code{nojss} option:
-``\verb+\documentclass[nojss]{jss}+''; an example may be found at
+material.  A good way to do this is to use the JSS headers, so that
+\proglang{R}'s package management systems can find the correct style
+files (use the \code{nojss} option:
+``\verb+\documentclass[nojss]{jss}+'').  An example may be found at
 \url{https://github.com/RobinHankin/permutations} or
 \url{https://CRAN.R-project.org/package=permutations}).  In the
 vignette, cite the \tragula\ article along with the other references.
