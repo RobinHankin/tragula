@@ -14,8 +14,8 @@
 
 %% just as usual
 \author{Robin K. S. Hankin\\Auckland University of Technology\And
-  A. N. Other\\National University of Ruritania\AND
-  N. O. Body\\Loamshire Polytechnic
+  Trin Tragula\\National University of Ruritania\AND
+  Dan Streetmentioner\\Loamshire Polytechnic
 }
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
