@@ -10,5 +10,5 @@ all: tragula.bst tragula.cls
 
 clean:
 	rm -f *.log *.out *.aux *.tex *.bbl *.blg *.pdf *png *.Rnw *.bib *.jpg *.svg
-	git checkout tragula_knot.pdf tragula_word.pdf author_guidelines.Rnw template.bib
+	git checkout tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf author_guidelines.Rnw template.bib
 
