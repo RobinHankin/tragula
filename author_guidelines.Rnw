@@ -14,8 +14,8 @@
 
 %% just as usual
 \author{Robin K. S. Hankin\\Auckland University of Technology\And
-  Trin Tragula\\National University of Ruritania\AND
-  Dan Streetmentioner\\Loamshire Polytechnic
+  Trin Tragula\\University of Maximegalon\AND
+  Dan Streetmentioner\\Museum of Diseased Imaginings
 }
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
@@ -56,12 +56,19 @@
 %% The address of (at least) one author should be given
 %% in the following format:
 \Address{
-  Robin K. S. Hankin\\
+  Robin K. S. Hankin\orcid{https://orcid.org/0000-0001-5982-0415}\\
   Auckland University of Technology\\
   2-14 Wakefield Street\\
   Auckland, New Zealand\\
   E-mail: \email{hankin.robin@gmail.com}\\
   URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}
+  
+  %% Subsequent authors may be added in the same format
+  Trin Tragula\orcid{https://orcid.org/0000-0002-1825-0097}\\
+  c/o Total Perspective Vortex\\
+  Frogstar World B
+
+  Dan Streetmentioner\orcid{https://orcid.org/0000-0002-1825-0097}\\
 }
 
 
@@ -329,9 +336,6 @@ to the article in the \verb+\references{}+ section of any appropriate
 \verb+.Rd+ files; and also include a \verb+CITATION+ file in the
 \verb+inst/+ directory, which will be given to you in a standard
 format when the article becomes live.
-
-
-
 
 
 \bibliography{template}
