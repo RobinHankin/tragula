@@ -199,8 +199,9 @@ authors'' tab and the \code{jss.pdf} style guide give technical
 advice.  I would like to thank Achim Zeileis again for his help and
 encouragement.
 
-The style file imports two PDF figures: \code{tragula_word.pdf} and
-\code{tragula_knot.pdf}.  
+Processing \tragula\ documents imports three PDF figures:
+\code{tragula_word.pdf}, \code{tragula_knot.pdf}, and
+\code{ORCID_id.pdf}.
 
 \begin{itemize}
   \item File \code{tragula_word.pdf} uses syncopate bold at 48pt (all
@@ -223,6 +224,9 @@ The style file imports two PDF figures: \code{tragula_word.pdf} and
   \end{Schunk}
   
   (the production file has been cropped so that image fits on the page better).
+  \item File \code{ORCID_id.pdf} is used under author affiliations and
+    is available at
+    \url{https://orcid.org/trademark-and-id-display-guidelines}.
 \end{itemize}
 
 For \tragula\, the typesetting conventions are generally those of JSS,
