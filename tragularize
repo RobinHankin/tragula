@@ -1,7 +1,8 @@
 #! /bin/bash
 
-cat $1                                            |\
-    sed -e 's/nojss/article/'                     |\
-    sed -e 's/jss/tragula/'                       |\
-    sed -e 's/%% \\\Repository/   \\\Repository/' >\
+cat $1                                              |\
+    sed -e 's/nojss/article/'                       |\
+    sed -e 's/jss/tragula/'                         |\
+    sed -e 's/Hankin\\\\%\\orcid/Hankin\\orcid/'    |\
+    sed -e 's/%% \\\Repository/   \\\Repository/'   >\
 example_article_$1
