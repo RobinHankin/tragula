@@ -133,6 +133,7 @@
   Affiliation\\
   Address, Country\\
   E-mail: \email{name@address}\\
+ 
 }
 
 \Reviewer{Firstname Lastname\\Affiliation}
@@ -501,6 +502,7 @@
 \newcommand{\VAR}{\mathsf{VAR}}
 \newcommand{\COV}{\mathsf{COV}}
 \newcommand{\Prob}{\mathsf{P}}
+\newcommand{\orcid}[1]{\href{#1}{{\includegraphics[height=5mm,width=5mm]{ORCID_iD.pdf}}}}
 \endinput
 %%
 %% End of file `jss.cls'.
