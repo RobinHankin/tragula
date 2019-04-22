@@ -64,11 +64,12 @@
   URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}
   
   %% Subsequent authors may be added in the same format
-  Trin Tragula\orcid{https://orcid.org/0000-0002-1825-0097}\\
-  c/o Total Perspective Vortex\\
+  Trin Tragula\orcid{https://orcid.org/0000-0002-1825-0097}\\ 
+  University of Maximegalon\\
   Frogstar World B
 
-  Dan Streetmentioner\orcid{https://orcid.org/0000-0002-1825-0097}\\
+  Dan Streetmentioner\\ %% orcid number not essential
+  Museum of Diseased Imaginings %% affiliation can be as precise or as vague as you wish  
 }
 
 
