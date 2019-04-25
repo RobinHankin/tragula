@@ -14,8 +14,8 @@
 
 %% just as usual
 \author{Robin K. S. Hankin\\Auckland University of Technology\And
-  Trin Tragula\\University of Maximegalon\AND
-  Dan Streetmentioner\\Museum of Diseased Imaginings
+  Veet Voojagig\\University of Maximegalon\AND
+  Dan Streetmentioner\\University of Maximegalon
 }
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
@@ -61,15 +61,15 @@
   2-14 Wakefield Street\\
   Auckland, New Zealand\\
   E-mail: \email{hankin.robin@gmail.com}\\
-  URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}
+  URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}\\
   
   %% Subsequent authors may be added in the same format
-  Trin Tragula\orcid{https://orcid.org/0000-0002-1825-0097}\\ 
+  Veet Voojagig\orcid{https://orcid.org/0000-0002-1825-0097}\\ 
   University of Maximegalon\\
-  Frogstar World B
 
   Dan Streetmentioner\\ %% orcid number not essential
-  Museum of Diseased Imaginings %% affiliation can be as precise or as vague as you wish  
+  Faculty of Divinity and Water Polo\\  %% affiliation can be as precise or as vague as you wish  
+  University of Maximegalon
 }
 
 
