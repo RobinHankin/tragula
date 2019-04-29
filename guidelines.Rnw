@@ -274,10 +274,12 @@ consistency if possible.
 
 \section{Reviewer guidelines}
 
-Because of the editorial policy of \tragula, we expect reviewers to be
-drawn from a wider circle than usual for academic journals.  Here we
-offer some guidance to reviewers who may not have been part of the
-formal peer-review process before.
+Reviewing can look very good on one's CV as it is a valuable
+contribution to the scholarly ecology.  Because of the editorial
+policy of \tragula, we expect reviewers to be drawn from a wider
+circle than usual for academic journals.  Here we offer some guidance
+to reviewers who may not have been part of the formal peer-review
+process before.
 
 If you have been asked to review a \tragula\ article, this means that
 the editor considers you to be an authority on the subject in
@@ -323,9 +325,8 @@ very much appreciated if you could suggest alternative reviewers.
 \subsection{Nice or nasty?}
 
 Reviewers are enormously influential in the scholarly world.  Editors
-depend cruually on their reviews and the tone of the review result in
-submissions being accepted or rejected.  Reviewing can look very good
-on one's CV as it is a valuable contribution to the scholarly ecology.
+depend crucially on their reviews and the tone of a review can result
+in submissions being accepted or rejected.  
 
 Some reviewers tend to view submissions very favourably, then
 gradually add more and more negative elements to their review as they
@@ -333,8 +334,9 @@ find them.  Conversely, some reviewers start with a negative view and
 gradually become convinced that the article is high quality.  Either
 approach is fine.
 
+Some questions to consider might include the following:
+
 \begin{itemize}
-\item Does the article fit the scope of the journal?
 \item Is the material new?
 \item Does the abstract provide a fair summary?
 \item Is existing work clearly described, and is the new contribution
@@ -381,7 +383,15 @@ programming.
 However, please do not be unkind in your reviews.  Negative feedback
 is important: authors should know why their work is being rejected.
 But comments should be strictly confined to the submission, not the
-authors.
+authors.  Before sending a review, go through it and delete
+unnecessarily harsh or statements.  Check carefully for unclear,
+unfair or biased comments.  Be polite, be firm, but be fair and be
+kind.  If you recommend revision or rejection of the manuscript, do so
+gently.  Add a compliment or compliments if at all possible.  Authors
+will be unhappy with a bad review (it is the editor's job to deal with
+complaints) but should feel that their work was taken seriously and if
+possible should have a good idea of what would be required for an
+acceptable submission.
 
 Try to be constructive if possible.  Quite often reviewers will have
 suggestions that substantially add to the clarity and quality of a
