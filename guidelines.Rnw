@@ -88,7 +88,7 @@
 
 \begin{document}
 
-\section{Introduction}
+\section{Author guidelines}
 
 Good submissions to \tragula\ showcase novel software that
 demonstrates or otherwise enhances mathematical knowledge;
@@ -179,7 +179,7 @@ plot((1:10)^2)  # echo the commands used if practicable
 \end{figure}
 
 
-\section{Typesetting}
+\subsection{Typesetting}
 
 Submissions must be in clean seven bit ascii and follow the house
 style.  Currently only \code{article} styles are supported; start the
@@ -340,23 +340,26 @@ approach is fine.
 \item Is existing work clearly described, and is the new contribution
   clearly placed in this context? 
 \item Is the software well-written? maintainable? comprehensible?  
-  Linked to published methodologies? Does it re-invent the wheeel?
+  Linked to published methodologies? Does it re-invent the wheel?
 \item Are limitations discussed fairly?
 \end{itemize}
 
 The review has one of three outcomes: Accept, Revise, Reject.
 
-\paragraph{Accept}
-Makes a sizable contribution to mathematical software; well-written
-and structured; coherent; software maintanable, clear, novel and
-interesting.  It is fine to recommend acceptance while making
-suggestions for a better submission such as typos and clarifications.
-\paragraph{Revise}
-Has the potential to move to {\em accept} if the authors fix the
-issues.  Well-defined and isolatable faults that have a ready fix. 
-\paragraph{Reject}
-Critical problems which have no clear fix; severely sub-standard;
-patent nonsense; identical or similar software available elsewhere
+\begin{description}
+  \item[Accept] Makes a sizable contribution to mathematical software;
+    well-written and structured; coherent; software maintanable,
+    clear, novel and interesting.  It is fine to recommend acceptance,
+    yet include suggestions for a better submission such as typos and
+    clarifications.  The suggestions should be small in terms of
+    effort and structure.
+\item[Revise] Has the potential to move to {\em accept} if the authors
+  fix the issues.  Well-defined and isolatable faults that have a
+  ready fix.
+\item[Reject] Critical problems which have no clear fix; severely
+  sub-standard; patent nonsense; identical or similar software
+  available elsewhere
+\end{description}
 
 You should feel free to say {\em good} things about a submission.  If
 you find some aspect of a submission is particularly interesting or
@@ -371,20 +374,24 @@ review process: do not feel the need to be overly polite or to protect
 the feelings of the authors.  In particular, if you do not understand
 some part of the submission, do not feel embarrassed to say so:
 remember that you are an expert in the field, and editors will find
-such candid comments valuable.  Authors can often be prevailed upon to
-be more clear or succinct with well-placed comments.
+such candid comments valuable.  Authors often find that succinct and
+well-placed feedback can catalyse much improved writing and
+programming.
+
+However, please do not be unkind in your reviews.  Negative feedback
+is important: authors should know why their work is being rejected.
+But comments should be strictly confined to the submission, not the
+authors.
 
 Try to be constructive if possible.  Quite often reviewers will have
 suggestions that substantially add to the clarity and quality of a
 submission.  Reviewers often make the mistake of not making explicit
 suggestions because they are ``obvious''; but a direct suggestion is
-often a helpful spur to improvement.  Remember that the authors have
-right of reply and are free to decline to carry out a suggestion (but
-the editor may well take a dim view of this strategy).
-
-However, please do not be unkind in your reviews.  Negative feedback
-should be strictly confined to the submission, not the authors.
-
+often a helpful spur to improvement.  It also helps editors decide
+whether the reviews have been properly engaged with.  Remember that
+the authors have right of reply and are free to decline to carry out a
+suggestion (but the editor may well take a dim view of this strategy,
+unless the authors give clear reasons for not doing so).
 
 
 \section{Review and publication process}
