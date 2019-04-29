@@ -324,7 +324,8 @@ very much appreciated if you could suggest alternative reviewers.
 
 Reviewers are enormously influential in the scholarly world.  Editors
 depend cruually on their reviews and the tone of the review result in
-submissions being accepted or rejected.  
+submissions being accepted or rejected.  Reviewing can look very good
+on one's CV as it is a valuable contribution to the scholarly ecology.
 
 Some reviewers tend to view submissions very favourably, then
 gradually add more and more negative elements to their review as they
@@ -342,6 +343,47 @@ approach is fine.
   Linked to published methodologies? Does it re-invent the wheeel?
 \item Are limitations discussed fairly?
 \end{itemize}
+
+The review has one of three outcomes: Accept, Revise, Reject.
+
+\paragraph{Accept}
+Makes a sizable contribution to mathematical software; well-written
+and structured; coherent; software maintanable, clear, novel and
+interesting.  It is fine to recommend acceptance while making
+suggestions for a better submission such as typos and clarifications.
+\paragraph{Revise}
+Has the potential to move to {\em accept} if the authors fix the
+issues.  Well-defined and isolatable faults that have a ready fix. 
+\paragraph{Reject}
+Critical problems which have no clear fix; severely sub-standard;
+patent nonsense; identical or similar software available elsewhere
+
+You should feel free to say {\em good} things about a submission.  If
+you find some aspect of a submission is particularly interesting or
+insightful or otherwise impressive, please feel free to say so.
+Authors like this, of course, but so do editors as your comments help
+them to get a feel for the quality of the submission.
+
+Reviews should be critical in the sense that they involve careful
+informed judgement.  But criticism in the sense of passing
+unfavourable feedback or fault-finding is also a necessary part of the
+review process: do not feel the need to be overly polite or to protect
+the feelings of the authors.  In particular, if you do not understand
+some part of the submission, do not feel embarrassed to say so:
+remember that you are an expert in the field, and editors will find
+such candid comments valuable.  Authors can often be prevailed upon to
+be more clear or succinct with well-placed comments.
+
+Try to be constructive if possible.  Quite often reviewers will have
+suggestions that substantially add to the clarity and quality of a
+submission.  Reviewers often make the mistake of not making explicit
+suggestions because they are ``obvious''; but a direct suggestion is
+often a helpful spur to improvement.  Remember that the authors have
+right of reply and are free to decline to carry out a suggestion (but
+the editor may well take a dim view of this strategy).
+
+However, please do not be unkind in your reviews.  Negative feedback
+should be strictly confined to the submission, not the authors.
 
 
 
