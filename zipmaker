@@ -1,2 +1,2 @@
-# This file creates author_guidelines.zip for authors to download
-zip author_guidelines.zip author_guidelines.Rnw author_guidelines.tex template.bib tragula.bst tragula.cls tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf
+# This file creates guidelines.zip for authors to download
+zip guidelines.zip guidelines.Rnw guidelines.tex template.bib tragula.bst tragula.cls tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf
