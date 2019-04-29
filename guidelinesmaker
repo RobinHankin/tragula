@@ -1,11 +1,11 @@
 #! /bin/bash
 
-## No need to execute tragularize here as author_guidelines.Rnw is not a package vignette (cf permmaker)
+## No need to execute tragularize here as guidelines.Rnw is not a package vignette (cf permmaker)
 
-R CMD Sweave author_guidelines.Rnw
-pdflatex author_guidelines
-bibtex author_guidelines
-pdflatex author_guidelines
-pdflatex author_guidelines
+R CMD Sweave guidelines.Rnw
+pdflatex guidelines
+bibtex guidelines
+pdflatex guidelines
+pdflatex guidelines
 
 
