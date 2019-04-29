@@ -20,7 +20,7 @@
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
 
-\title{Guide to authors}
+\title{Guidelines for Tragula: help for authors, editors, and reviewers}
 %\VignetteIndexEntry{The foo package}
 
 %% for pretty printing and a nice hypersummary also set:
@@ -31,13 +31,14 @@
 %% an abstract and keywords
 
 \Abstract{This document outlines the academic and typesetting
-  conventions for \tragula.  Use file \code{author\_guidelines.Rnw} as
-  a starting point for a \tragula\ submission; gradually replace the
-  content with your own work.  The abstract goes here, not more than a
-  few sentences.  You can follow ISO 214:1976 if you wish, no
-  obligation.  Do not include citations here.  Editorial policy in a
-  nutshell: \tragula\ is a peer-reviewed journal that showcases
-  novel mathematical applications of \proglang{R}.}
+  conventions for \tragula, and gives some guidelines for reviewers.
+  Authors should use file \code{author\_guidelines.Rnw} as a starting
+  point for a \tragula\ submission; gradually replace the content with
+  your own work.  The abstract goes here, not more than a few
+  sentences.  You can follow ISO 214:1976 if you wish, no obligation.
+  Do not include citations here.  Editorial policy in a nutshell:
+  \tragula\ is a peer-reviewed journal that showcases novel
+  mathematical applications of \proglang{R}.}
    
 \Keywords{key word one, key word two, squares \proglang{R}}
 \Plainkeywords{key word one, key word two, squares, R}
@@ -271,6 +272,76 @@ that is, using the same font for the symbol in the equation and the
 code segment.  Decide this on a case-by-case basis, but aim for
 consistency if possible.
 
+\section{Reviewer guidelines}
+
+Because of the editorial policy of \tragula, we expect reviewers to be
+drawn from a wider circle than usual for academic journals.  Here we
+offer some guidance to reviewers who may not have been part of the
+formal peer-review process before.
+
+If you have been asked to review a \tragula\ article, this means that
+the editor considers you to be an authority on the subject in
+question.  However, note that being ``an authority'' in the context of
+\tragula\ editing can have many manifestations, and you should not
+feel that you need expertise in all of them to offer a competent
+review.  A typical submission will showcase novel mathematical
+software and the editor might solicit your opinion as any one of:
+\begin{itemize}
+\item A {\bf software} expert (perhaps you have written similar or
+  overlapping software)
+\item A {\bf mathematical} expert (perhaps your area of research is
+  close to the subject of the submission
+\item An {\bf educational} expert (perhaps you teach material
+  discussed in the submission)
+\end{itemize}
+      
+Having competence in any single criterion of the above list would mean
+that your opinion is valuable to us.  You may wish to differ though,
+and before you accept or decline an invitation to review, consider the
+following questions:
+
+\begin{itemize}
+  \item Does the submission match your area of expertise?  Editors
+    often make mistakes.  Only accept if you feel you can give a
+    constructive review.
+  \item Is there either a real or perception of a conflict of
+    interest?  If so, disclose this to the editor when you reply.
+  \item Do you have time?  Reviewing can take a long time: before you
+    commit yourself, make sure you can meet the deadline (although
+    extensions can be granted).
+\end{itemize}
+
+If you need to find out more about reviewing and the peer review
+process, please feel free to ask for more guidance.
+
+Respond to the invitation as soon as you can (even you decide to
+decline); a delay in your slows down the review process and means more
+waiting for the author.  If you do decline the invitation, it would be
+very much appreciated if you could suggest alternative reviewers.
+
+
+\subsection{Nice or nasty?}
+
+Reviewers are enormously influential in the scholarly world.  Editors
+depend cruually on their reviews and the tone of the review result in
+submissions being accepted or rejected.  
+
+Some reviewers tend to view submissions very favourably, then
+gradually add more and more negative elements to their review as they
+find them.  Conversely, some reviewers start with a negative view and
+gradually become convinced that the article is high quality.  Either
+approach is fine.
+
+\begin{itemize}
+\item Does the article fit the scope of the journal?
+\item Is the material new?
+\item Does the abstract provide a fair summary?
+\item Is existing work clearly described, and is the new contribution
+  clearly placed in this context? 
+\item Is the software well-written? maintainable? comprehensible?  
+  Linked to published methodologies? Does it re-invent the wheeel?
+\item Are limitations discussed fairly?
+\end{itemize}
 
 
 
