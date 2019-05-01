@@ -364,7 +364,7 @@ The review has one of three outcomes: Accept, Revise, Reject.
 \end{description}
 
 You should feel free to say {\em good} things about a submission.  If
-you find some aspect of a submission is particularly interesting or
+you find some aspect of a submission to be particularly interesting or
 insightful or otherwise impressive, please feel free to say so.
 Authors like this, of course, but so do editors as your comments help
 them to get a feel for the quality of the submission.
@@ -372,36 +372,41 @@ them to get a feel for the quality of the submission.
 Reviews should be critical in the sense that they involve careful
 informed judgement.  But criticism in the sense of passing
 unfavourable feedback or fault-finding is also a necessary part of the
-review process: do not feel the need to be overly polite or to protect
-the feelings of the authors.  In particular, if you do not understand
-some part of the submission, do not feel embarrassed to say so:
-remember that you are an expert in the field, and editors will find
-such candid comments valuable.  Authors often find that succinct and
-well-placed feedback can catalyse much improved writing and
-programming.
+review process, so do not feel the need to be overly polite or to
+protect the feelings of the authors.  In particular, if you do not
+understand some part of the submission, do not feel embarrassed to say
+so: remember that you are an expert in the field, and editors will
+find such candid comments valuable.  Authors often find that succinct
+and well-placed feedback from reviewers can catalyse much improved
+writing and programming.  One important component of the peer review
+process is anonymity: your identity will not be revealed to the
+authors (or anyone else) so you can speak freely.
 
 However, please do not be unkind in your reviews.  Negative feedback
 is important: authors should know why their work is being rejected.
-But comments should be strictly confined to the submission, not the
+Comments should be strictly confined to the submission, not the
 authors.  Before sending a review, go through it and delete
-unnecessarily harsh or statements.  Check carefully for unclear,
-unfair or biased comments.  Be polite, be firm, but be fair and be
-kind.  If you recommend revision or rejection of the manuscript, do so
-gently.  Add a compliment or compliments if at all possible.  Authors
-will be unhappy with a bad review (it is the editor's job to deal with
-complaints) but should feel that their work was taken seriously and if
-possible should have a good idea of what would be required for an
-acceptable submission.
+unnecessarily harsh, cruel, or severe statements.  Check carefully for
+unclear, unfair or biased comments.  Be polite, be firm, but be fair
+and be kind.  If you recommend rejection of the manuscript, do so
+gently.  If you recommend revision, try to motivate the authors to do
+the required work, as motivated workers often produce higher quality
+writing and software.  Add a compliment or compliments if at all
+possible.  Authors will be unhappy with a bad review (it is the
+editor's job to deal with complaints) but should feel that their work
+was taken seriously and if possible should have a good idea of what
+would be required for an acceptable submission.
 
 Try to be constructive if possible.  Quite often reviewers will have
 suggestions that substantially add to the clarity and quality of a
 submission.  Reviewers often make the mistake of not making explicit
-suggestions because they are ``obvious''; but a direct suggestion is
-often a helpful spur to improvement.  It also helps editors decide
-whether the reviews have been properly engaged with.  Remember that
-the authors have right of reply and are free to decline to carry out a
-suggestion (but the editor may well take a dim view of this strategy,
-unless the authors give clear reasons for not doing so).
+suggestions because they are ``obvious''; but a direct and unambiguous
+suggestion is often a helpful spur to improvement.  It also helps
+editors decide whether the reviews have been properly engaged with.
+Remember that the authors have right of reply and are free to decline
+to carry out a suggestion (but the editor may well take a dim view of
+this strategy, unless the authors give clear reasons for not doing
+so).
 
 
 \section{Review and publication process}
@@ -430,7 +435,7 @@ if appropriate.  The typical flow is as follows:
   \item Revise and resubmit: reviews passed to author for
     consideration.  Author responds to the comments with a
     point-by-point rebuttal (note that providing a git commit hash is
-    an extremely effective way of doing this).
+    an extremely effective way of supporting this).
   \item Reject.
   \end{itemize}
 \item Repeat point (4) as necessary, either with or without further
@@ -440,7 +445,85 @@ if appropriate.  The typical flow is as follows:
 Rejected manuscripts may not be resubmitted.  Details of current
 editorial board membership can be found at \url{http://www.aut.ac.nz}.
 
-\subsection{Post-publication maintenance}
+\subsection{Rebuttal}
+
+The majority of submissions which are ultimately published go through
+at least one round of revision.  One component of the process is the
+authors {\em rebuttal}.  This is a point-by-point response to the
+reviews.  Authors should consider the rebuttal as an opportunity to
+show the editors that any issues raised by the reviews have been dealt
+with.  Editors might, at their discretion, ask for guidance from
+reviewers but generally it is expected that editors will be able to
+assess the rebuttal themselves.  It is important that the whole review
+is included in the rebuttal so the editor can easily see the response
+to all the comments.  Rebuttals can be provided in PDF form, or ascii.
+A typical rebuttal might look like this:
+
+{\small
+\begin{verbatim}
+   > I found the paper to be carefully written and structured and an
+   > interesting read.  The manuscript represents a respectable
+   > advancement of knowledge in computational foobology, and I would be
+   > happy to recommend publication.
+
+     Thank you. 
+
+   > However, I have a few comments.  Is equation 3 presented as new?  It
+   > appears in Smith and Jones (1951).  Is variable x real or complex?
+
+     Equation 3 is not presented as new, and we have added a citation to
+     Smith and Jones as its source.  Variable x is, as stated in the
+     previous paragraph, real.
+
+   > Function foo() contains a bug:
+
+   >  foo(5)
+   >  Error in 1 <- x : invalid (do_set) left-hand side to assignment
+   > 
+
+     Fixed.  Old version:
+
+     R> foo
+     function(...){1 <- x}
+
+     new version:
+
+     R> foo
+     function(...){1}
+
+     https://github.com/RobinHankin/lorentz/commit/b55e1db4
+
+
+   > The documentation for function bar() is confusing and incomplete,
+   > specifically it gives no examples and I could not understand how
+   > the function was intended to be used.
+
+     The vignette contains multiple informative use-cases.
+     Nevertheless we have included more documentation in foo.Rd:
+
+     https://github.com/RobinHankin/lorentz/commit/c9fd8b22
+
+
+   > The manuscript does not address Smithification which would be very
+   > desirable.
+
+     We feel that Smithification is beyond the scope of the
+     submission, as this violates the assumption of Jonesness.  However,
+     we have included a brief discussion of the Smithification in "Further
+     work" section at the end.
+\end{verbatim}
+}
+
+Observe how the reviewer makes comments ranging from individual typos
+right through to overarching views on the entirety of the manuscript.
+Authors should either accommodate the comments, or give a good reason
+why not.  See how the rebuttal includes commit hashes which enable
+editors to evaluate any patches.  If the manuscript itself is under
+version control, sometimes it makes sense to quote the commit hash,
+sometimes not.
+
+\section{Post-publication maintenance}
+
 
 The accepted manuscript will be hosted online alongside the
 accompanying software; but it is inevitable that the software and
