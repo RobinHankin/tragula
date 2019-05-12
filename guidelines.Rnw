@@ -237,13 +237,13 @@ nouns, and abbreviations); use sentence case for headings.
 
 New sentences are indicated with {\em two} spaces; use \verb+\colon+
 instead of ``\verb+:+'' to indicate mappings.  Commands such as
-\verb+\author+ and \verb+title+ are unchanged from JSS; they are
+\verb+\author+ and \verb+\title+ are unchanged from JSS; they are
 largely self-evident but the JSS style guide gives some more technical
 information.
 
 Citation management must be via BibTeX; most of the time \verb+\citet+
 or \verb+\citep+ will be appropriate, but macros \verb+\citealt+,
-\verb+\citealp+, \verb+\citeauthor+, \verb+\citeyear+ give greater
+\verb+\citealp+, \verb+\citeauthor+, and \verb+\citeyear+ give greater
 control over punctuation.  A good citation might be: ``see
 \citet{lowry1951} for an example''.  Subsequent citations of
 many-author articles should be abbreviated as in ``\citet{lowry1951}
@@ -306,7 +306,7 @@ following questions:
   \item Does the submission match your area of expertise?  Editors
     often make mistakes.  Only accept if you feel you can give a
     constructive review.
-  \item Is there either a real or perception of a conflict of
+  \item Is there either a real or perceived conflict of
     interest?  If so, disclose this to the editor when you reply.
   \item Do you have time?  Reviewing can take a long time: before you
     commit yourself, make sure you can meet the deadline (although
@@ -333,7 +333,6 @@ gradually add more and more negative elements to their review as they
 find them.  Conversely, some reviewers start with a negative view and
 gradually become convinced that the article is high quality.  Either
 approach is fine.
-
 Some questions to consider might include the following:
 
 \begin{itemize}
@@ -449,7 +448,7 @@ editorial board membership can be found at \url{http://www.aut.ac.nz}.
 
 The majority of submissions which are ultimately published go through
 at least one round of revision.  One component of the process is the
-authors {\em rebuttal}.  This is a point-by-point response to the
+{\em rebuttal}.  This is a point-by-point response to the
 reviews.  Authors should consider the rebuttal as an opportunity to
 show the editors that any issues raised by the reviews have been dealt
 with.  Editors might, at their discretion, ask for guidance from
