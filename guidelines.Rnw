@@ -429,10 +429,8 @@ A review has one of four recommendations:
   work presents no reasonable improvement.
 \end{description}
 
-It is in everyone's interest to have actionable, constructive, helpful
-and positive feedback whatever the decision.
-
-
+The editor will come to a decision based on the available reviews,
+which may not all make the same recommendation.
 
 \section{Review and publication process}
 
@@ -457,7 +455,7 @@ if appropriate.  The typical flow is as follows:
 \item Section editor chooses one of the following:
   \begin{itemize}
   \item Accept: submission passed to typesetting and hosting
-  \item Revise and resubmit: reviews passed to author for
+  \item Revise or resubmit: reviews passed to author for
     consideration.  Author responds to the comments with a
     point-by-point rebuttal (note that providing a git commit hash is
     an extremely effective way of supporting this).
