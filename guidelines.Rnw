@@ -410,19 +410,19 @@ so).
 
 \section{Review and publication process}
 
-The submission process is managed via email but a more formal system
-may be introduced in the future.  Submissions are made in the first
-instance to the editor in chief, who will delegate (if in scope) to a
-member of the editorial board.  \tragula\ review cannot be
-double-blind due to the nature of open-source repositories.  The
-software and manuscript will be reviewed jointly by at least two
-reviewers, one of whom can be the editor.  Referees' confidentiality
-is absolute and will be respected (although referees may, at their
-discretion, waive anonymity in the interests of a better publication).
-It is strongly suggested that software be presented as a working
-\proglang{R} package, which is expected to pass \code{R CMD check}
-cleanly.  Decisions will be made in the light of reviews and rebuttals
-if appropriate.  The typical flow is as follows:
+The submission and review process is managed via OJS but this may be
+modified in the future.  Submissions are made in the first instance to
+the editor in chief, who will delegate (if in scope) to a member of
+the editorial board.  \tragula\ review cannot be double-blind due to
+the nature of open-source repositories.  The software and manuscript
+will be reviewed jointly by at least two reviewers, one of whom can be
+the editor.  Referees' confidentiality is absolute and will be
+respected (although referees may, at their discretion, waive anonymity
+in the interests of a better publication).  It is strongly suggested
+that software be presented as a working \proglang{R} package, which is
+expected to pass \code{R CMD check} cleanly.  Decisions will be made
+in the light of reviews and rebuttals if appropriate.  The typical
+flow is as follows:
 
 \begin{enumerate}
 \item Author submits manuscript and software to editor-in-chief.
