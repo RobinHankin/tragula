@@ -311,29 +311,34 @@ following questions:
   \item Do you have time?  Reviewing can take a long time: before you
     commit yourself, make sure you can meet the deadline (although
     extensions can be granted).
+  \item Are you excited by the prospect of the submisssion?  Are you
+    likely to use the associated software?  If so, your views are
+    valuable to us.
 \end{itemize}
 
 If you need to find out more about reviewing and the peer review
 process, please feel free to ask for more guidance.
 
 Respond to the invitation as soon as you can (even you decide to
-decline); a delay in your slows down the review process and means more
-waiting for the author.  If you do decline the invitation, it would be
-very much appreciated if you could suggest alternative reviewers.
+decline); a delay slows down the review process and means more waiting
+for the author.  If you do decline the invitation, it would be very
+much appreciated if you could suggest alternative reviewers.
 
 
 \subsection{Nice or nasty?}
 
 Reviewers are enormously influential in the scholarly world.  Editors
 depend crucially on their reviews and the tone of a review can result
-in submissions being accepted or rejected.  
+in submissions being accepted or rejected; and authors often find that
+succinct and well-placed feedback from reviewers can catalyse much
+improved writing and programming.
 
 Some reviewers tend to view submissions very favourably, then
 gradually add more and more negative elements to their review as they
 find them.  Conversely, some reviewers start with a negative view and
 gradually become convinced that the article is high quality.  Either
-approach is fine.
-Some questions to consider might include the following:
+approach is fine.  Some questions to consider might include the
+following:
 
 \begin{itemize}
 \item Is the material new?
@@ -344,23 +349,6 @@ Some questions to consider might include the following:
   Linked to published methodologies? Does it re-invent the wheel?
 \item Are limitations discussed fairly?
 \end{itemize}
-
-The review has one of three outcomes: Accept, Revise, Reject.
-
-\begin{description}
-  \item[Accept] Makes a sizable contribution to mathematical software;
-    well-written and structured; coherent; software maintanable,
-    clear, novel and interesting.  It is fine to recommend acceptance,
-    yet include suggestions for a better submission such as typos and
-    clarifications.  The suggestions should be small in terms of
-    effort and structure.
-\item[Revise] Has the potential to move to {\em accept} if the authors
-  fix the issues.  Well-defined and isolatable faults that have a
-  ready fix.
-\item[Reject] Critical problems which have no clear fix; severely
-  sub-standard; patent nonsense; identical or similar software
-  available elsewhere
-\end{description}
 
 You should feel free to say {\em good} things about a submission.  If
 you find some aspect of a submission to be particularly interesting or
@@ -375,11 +363,9 @@ review process, so do not feel the need to be overly polite or to
 protect the feelings of the authors.  In particular, if you do not
 understand some part of the submission, do not feel embarrassed to say
 so: remember that you are an expert in the field, and editors will
-find such candid comments valuable.  Authors often find that succinct
-and well-placed feedback from reviewers can catalyse much improved
-writing and programming.  One important component of the peer review
-process is anonymity: your identity will not be revealed to the
-authors (or anyone else) so you can speak freely.
+find such candid comments valuable.  One important component of the
+peer review process is anonymity: your identity will not be revealed
+to the authors (or anyone else) so you can speak freely.
 
 However, please do not be unkind in your reviews.  Negative feedback
 is important: authors should know why their work is being rejected.
@@ -408,6 +394,46 @@ this strategy, unless the authors give clear reasons for not doing
 so).
 
 
+\subsection{Review outcomes}
+
+A review has one of four recommendations:
+
+\begin{description}
+\item[Request revisions] This is indicated if the submission is high
+  quality in the sense of making a respectable contribution to
+  mathematical software but has flaws or omissions that may be
+  addressed readily.  The submission must be fundamentally
+  well-written and structured; the software maintainable, clear, novel
+  and interesting.  Most ultimately successful submissions will come
+  under this category following the first round of review.
+\item[Resubmit for review] This means that the reviewers or the editor
+  found value in the submission, but need to see substantial revisions
+  before considering it again.  Typically the submission is
+  fundamentally flawed in a way that may or may not be rectifiable.
+  The authors are invited to engage with the reviews and to submit
+  revised work, although there is no guarantee that the submission
+  will be accepted.  Any resubmission will be given a new submission
+  coding.
+\item[Accept submission] This recommendation is consistent with minor
+  typographical errors which can be pointed out at this stage.
+\item[Decline submission] This can be for one of two reasons: firstly
+  the submission might be classified as an {\em editorial reject},
+  sometimes known as a {\em desk reject}.  This is because the
+  submission is not in scope for the journal; it makes no statement
+  about the quality of the work.  The implication is that the authors
+  should send the work elsewhere for consideration.  Secondly, the
+  submission might be in scope for the journal but be of low quality.
+  Typically, this recommendation is for submissions with critical
+  problems which have no clear fix; severely sub-standard work; patent
+  nonsense; identical or similar software available and the current
+  work presents no reasonable improvement.
+\end{description}
+
+It is in everyone's interest to have actionable, constructive, helpful
+and positive feedback whatever the decision.
+
+
+
 \section{Review and publication process}
 
 The submission and review process is managed via OJS but this may be
@@ -416,13 +442,13 @@ the editor in chief, who will delegate (if in scope) to a member of
 the editorial board.  \tragula\ review cannot be double-blind due to
 the nature of open-source repositories.  The software and manuscript
 will be reviewed jointly by at least two reviewers, one of whom can be
-the editor.  Referees' confidentiality is absolute and will be
-respected (although referees may, at their discretion, waive anonymity
-in the interests of a better publication).  It is strongly suggested
-that software be presented as a working \proglang{R} package, which is
-expected to pass \code{R CMD check} cleanly.  Decisions will be made
-in the light of reviews and rebuttals if appropriate.  The typical
-flow is as follows:
+the editor.  As discussed above, referees' confidentiality is absolute
+and will be respected (although referees may, at their discretion,
+waive anonymity in the interests of a better publication).  It is
+strongly suggested that software be presented as a working
+\proglang{R} package, which is expected to pass \code{R CMD check}
+cleanly.  Decisions will be made in the light of reviews and rebuttals
+if appropriate.  The typical flow is as follows:
 
 \begin{enumerate}
 \item Author submits manuscript and software to editor-in-chief.
