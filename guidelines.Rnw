@@ -2,10 +2,14 @@
 \documentclass[article]{tragula}
 \usepackage{dsfont}
 \usepackage{bbm}
-\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{wasysym}
 \usepackage{xypic}
 \newcommand{\tragula}{{\em Tragula}}
+
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% declarations for tragula.cls
@@ -20,7 +24,7 @@
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
 
-\title{Guidelines for Tragula: help for authors, editors, and reviewers}
+\title{Guidelines for \tragula: help for authors, editors, and reviewers}
 %\VignetteIndexEntry{The foo package}
 
 %% for pretty printing and a nice hypersummary also set:
@@ -83,8 +87,6 @@
 %% need no \usepackage{Sweave.sty}
 
 %% end of declarations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newsymbol\leqslant 1336
 
 \begin{document}
 
@@ -211,7 +213,9 @@ The \tragula\ style file imports three PDF figures:
   \item File \code{tragula_word.pdf} uses syncopate bold at 48pt (all
     capitals); the source document is available at
 
+\begin{sloppypar}
 \url{https://docs.google.com/document/d/e/2PACX-1vR6y-EVoIo4EOFy6P45AwN_-KCSH808KM8SBXsIn7l0UVk4_cJxImV8ilH4FBF_BCwN9_7lBQ29458b/pub}
+\end{sloppypar}
 
 \item File \code{tragula_knot.pdf} is a five-fold rotationally
   symmetric ornamental knot created by the \pkg{knotR} package with
@@ -230,7 +234,9 @@ The \tragula\ style file imports three PDF figures:
   (the production file has been cropped so that image fits on the page better).
   \item File \code{ORCID_id.pdf} is used under author affiliations and
     is available at
+
     \url{https://orcid.org/trademark-and-id-display-guidelines}.
+
 \end{itemize}
 
 For \tragula\, the typesetting conventions are generally those of JSS,
@@ -244,18 +250,20 @@ instead of ``\verb+:+'' to indicate mappings.  Commands such as
 largely self-evident but the JSS style guide gives some more technical
 information.
 
-Citation management must be via BibTeX; most of the time \verb+\citet+
-or \verb+\citep+ will be appropriate, but macros \verb+\citealt+,
-\verb+\citealp+, \verb+\citeauthor+, and \verb+\citeyear+ give greater
-control over punctuation.  A good citation might be: ``see
-\citet{lowry1951} for an example''.  Subsequent citations of
-many-author articles should be abbreviated as in ``\citet{lowry1951}
-provide details''.  Packages (whether or not on \proglang{CRAN})
-should be indicated using the \verb+\pkg+ macro, as in ``the \pkg{mvp}
-package~\citep{mvp2018}''.  Citing of software can be problematic but
-try to follow the citation guidelines provided by the software itself
-(in the case of \proglang{R} packages, \code{citation("pkgname")}
-gives the preferred BibTeX entry).
+Citation management must be via BibTeX; the style file uses
+\pkg{natbib}.  Most of the time \verb+\citet+ or \verb+\citep+ will be
+appropriate, but macros \verb+\citealt+, \verb+\citealp+,
+\verb+\citeauthor+, and \verb+\citeyear+ give greater control over
+punctuation.  A good citation might be: ``see \citet{lowry1951} for an
+example''.  Subsequent citations of many-author ($\geqslant 3$)
+articles should be abbreviated as in ``\citet{lowry1951} provide
+details''; this is done automatically by the style file.  Packages
+(whether or not on \proglang{CRAN}) should be indicated using the
+\verb+\pkg+ macro, as in ``the \pkg{mvp} package~\citep{mvp2018}''.
+Citing of software can be problematic but try to follow the citation
+guidelines provided by the software itself (in the case of
+\proglang{R} packages, \code{citation("pkgname")} gives the preferred
+BibTeX entry).
 
 Inline equations should use dollars, as in \verb+$y=x^2$+ (resulting
 in $y=x^2$); but if an equation is too high (e.g., a fraction or
