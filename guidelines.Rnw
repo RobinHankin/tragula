@@ -98,7 +98,8 @@ are expected to include a software component (typically in the form of
 an \proglang{R} package), and this will be reviewed alongside the
 manuscript and considered jointly.  Packages are expected to pass
 \code{R CMD check} cleanly and to follow the tenets laid out in the
-most recent version of \emph{Writing \proglang{R} extensions}.
+most recent version of \emph{Writing \proglang{R} extensions}, see
+\url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html}.
 
 \tragula\ is an inclusive publication and welcomes submissions
 that add value to the \proglang{R} community through mathematics, or
@@ -117,7 +118,8 @@ Submitted software and indeed the manuscript must be available under
 an open-source license such as \proglang{GPL} or \proglang{BSD}, and
 preferably maintained under a version control system such as
 \proglang{git}.  Reproducibility is required, and using
-\proglang{Sweave} on \code{Rnw} files facilitates this.
+\proglang{Sweave} on \code{Rnw} files facilitates
+this~\citep{leisch2002}.
 
 Manuscripts are expected to be carefully prepared, and clearly linked
 with the associated software.  There is no upper or lower limit on the
@@ -188,9 +190,10 @@ file with \verb+\documentclass[article]{tragula}+.
 Generally, a submission will be an \verb+.Rnw+ file which may be
 processed using \proglang{Sweave} to produce a \verb+.tex+ file; then
 use pdf\LaTeX\ to create a PDF document.  These steps may be performed
-more straightforwardly using \proglang{RStudio}.  It is a good idea to
-use this file (\verb+article_template.Rnw+) as a starting point, and
-gradually replace the content with your own work.
+more straightforwardly using \proglang{RStudio}, available at
+\url{https://www.rstudio.com/}.  It is a good idea to use this file
+(\verb+article_template.Rnw+) as a starting point, and gradually
+replace the content with your own work.
 
 The \LaTeXe{} document class \pkg{tragula} is a (slight, cosmetic)
 modification of the \pkg{jss} document class, which is used for
@@ -200,7 +203,7 @@ authors'' tab and the \code{jss.pdf} style guide give technical
 advice.  I would like to thank Achim Zeileis again for his help and
 encouragement.
 
-Processing \tragula\ documents imports three PDF figures:
+The \tragula\ style file imports three PDF figures:
 \code{tragula_word.pdf}, \code{tragula_knot.pdf}, and
 \code{ORCID_id.pdf}.
 
@@ -399,6 +402,8 @@ so).
 A review has one of four recommendations:
 
 \begin{description}
+\item[Accept submission] This recommendation is consistent with minor
+  typographical errors which can be pointed out at this stage.
 \item[Request revisions] This is indicated if the submission is high
   quality in the sense of making a respectable contribution to
   mathematical software but has flaws or omissions that may be
@@ -414,8 +419,6 @@ A review has one of four recommendations:
   revised work, although there is no guarantee that the submission
   will be accepted.  Any resubmission will be given a new submission
   coding.
-\item[Accept submission] This recommendation is consistent with minor
-  typographical errors which can be pointed out at this stage.
 \item[Decline submission] This can be for one of two reasons: firstly
   the submission might be classified as an {\em editorial reject},
   sometimes known as a {\em desk reject}.  This is because the
