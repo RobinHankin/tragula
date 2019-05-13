@@ -118,7 +118,7 @@ Submitted software and indeed the manuscript must be available under
 an open-source license such as \proglang{GPL} or \proglang{BSD}, and
 preferably maintained under a version control system such as
 \proglang{git}.  Reproducibility is required, and using
-\proglang{Sweave} on \code{Rnw} files facilitates
+\proglang{Sweave} on \code{.Rnw} files facilitates
 this~\citep{leisch2002}.
 
 Manuscripts are expected to be carefully prepared, and clearly linked
@@ -126,7 +126,7 @@ with the associated software.  There is no upper or lower limit on the
 length of a submission but writing is expected to be terse.
 
 Submissions will be fully and rigorously peer-reviewed as for any
-scholarly publication.  As such, authors are expected to include a
+scholarly publication.  As such, authors are expected to incorporate a
 literature review in which the submission is motivated and compared
 with similar existing work, and the benefits of the current approach
 outlined (one benefit might be that the submission is open-source and
@@ -150,7 +150,7 @@ vignette so that users of your package can understand what is going on
 under the hood, and be confident that you have implemented the
 algorithm correctly.  \end{quote}
 
-(although note carefully that it is not necessary to ``solve a
+(Although note carefully that it is not necessary to ``solve a
 problem'': a manuscript might ``verify a theorem'', ``demonstrate a
 theory'', or even ``popularize an approach'').  Please do not supply a
 long list of command arguments that reproduce the \code{Rd}
@@ -183,7 +183,7 @@ plot((1:10)^2)  # echo the commands used if practicable
 
 \subsection{Typesetting}
 
-Submissions must be in clean seven bit ascii and follow the house
+Submissions must be in clean seven-bit ascii and follow the house
 style.  Currently only \code{article} styles are supported; start the
 file with \verb+\documentclass[article]{tragula}+.
   
@@ -257,11 +257,20 @@ try to follow the citation guidelines provided by the software itself
 (in the case of \proglang{R} packages, \code{citation("pkgname")}
 gives the preferred BibTeX entry).
 
-Inline equations should use dollars, as in $y=x^2$; but if an equation
-is too high (e.g., a fraction or complicated integral), use display
-mode.  All displayed equations must be numbered and labelled, for ease
-of review, and use the \code{equation} environment, as in:
+Inline equations should use dollars, as in \verb+$y=x^2$+ (resulting
+in $y=x^2$); but if an equation is too high (e.g., a fraction or
+complicated integral), use an equation environment.  All displayed
+equations must be numbered and labelled, for ease of review, and use
+the \code{equation} environment, as in:
 
+\begin{verbatim}
+\begin{equation}\label{complex_gaussian}
+  \int_{z\in\mathbb{C}}
+  \frac{\exp\left(-z^*\Gamma z\right)\,dz}{\left|\pi\Gamma\right|}=1.
+    \end{equation}
+\end{verbatim}
+
+resulting in 
 \begin{equation}\label{complex_gaussian}
   \int_{z\in\mathbb{C}}
   \frac{\exp\left(-z^*\Gamma z\right)\,dz}{\left|\pi\Gamma\right|}=1.
@@ -280,9 +289,9 @@ consistency if possible.
 Reviewing can look very good on one's CV as it is a valuable
 contribution to the scholarly ecology.  Because of the editorial
 policy of \tragula, we expect reviewers to be drawn from a wider
-circle than usual for academic journals.  Here we offer some guidance
-to reviewers who may not have been part of the formal peer-review
-process before.
+circle than usual for academic journals, so here we offer some
+guidance to reviewers who may not have been part of the formal
+peer-review process before.
 
 If you have been asked to review a \tragula\ article, this means that
 the editor considers you to be an authority on the subject in
@@ -290,7 +299,7 @@ question.  However, note that being ``an authority'' in the context of
 \tragula\ editing can have many manifestations, and you should not
 feel that you need expertise in all of them to offer a competent
 review.  A typical submission will showcase novel mathematical
-software and the editor might solicit your opinion as any one of:
+software and the editor might solicit your opinion as, for example,
 \begin{itemize}
 \item A {\bf software} expert (perhaps you have written similar or
   overlapping software)
@@ -298,6 +307,7 @@ software and the editor might solicit your opinion as any one of:
   close to the subject of the submission
 \item An {\bf educational} expert (perhaps you teach material
   discussed in the submission)
+  \item An  {\bf industry} expert...
 \end{itemize}
       
 Having competence in any single criterion of the above list would mean
@@ -322,10 +332,10 @@ following questions:
 If you need to find out more about reviewing and the peer review
 process, please feel free to ask for more guidance.
 
-Respond to the invitation as soon as you can (even you decide to
-decline); a delay slows down the review process and means more waiting
-for the author.  If you do decline the invitation, it would be very
-much appreciated if you could suggest alternative reviewers.
+Please respond to the invitation as soon as you can (even you decide
+to decline); a delay slows down the review process and means more
+waiting for the author.  If you do decline the invitation, it would be
+very much appreciated if you could suggest alternative reviewers.
 
 
 \subsection{Nice or nasty?}
@@ -357,23 +367,24 @@ You should feel free to say {\em good} things about a submission.  If
 you find some aspect of a submission to be particularly interesting or
 insightful or otherwise impressive, please feel free to say so.
 Authors like this, of course, but so do editors as your comments help
-them to get a feel for the quality of the submission.
+them to get a feel for the quality of the submission.  Reviews should
+be critical in the sense that they involve careful informed judgement.
 
-Reviews should be critical in the sense that they involve careful
-informed judgement.  But criticism in the sense of passing
-unfavourable feedback or fault-finding is also a necessary part of the
-review process, so do not feel the need to be overly polite or to
-protect the feelings of the authors.  In particular, if you do not
-understand some part of the submission, do not feel embarrassed to say
-so: remember that you are an expert in the field, and editors will
-find such candid comments valuable.  One important component of the
-peer review process is anonymity: your identity will not be revealed
-to the authors (or anyone else) so you can speak freely.
+Criticism in the sense of passing unfavourable feedback or
+fault-finding is a necessary part of the review process, so do not
+feel the need to be overly polite or to protect the feelings of the
+authors.  In particular, if you do not understand some part of the
+submission, do not feel embarrassed to say so: remember that you are
+an expert in the field, and editors will find such candid comments
+valuable.  One important component of the peer review process is
+anonymity: your identity will not be revealed to the authors (or
+anyone else) so you can speak freely.  Editors will mediate between
+authors and reviewers if necessary.
 
 However, please do not be unkind in your reviews.  Negative feedback
 is important: authors should know why their work is being rejected.
 Comments should be strictly confined to the submission, not the
-authors.  Before sending a review, go through it and delete
+authors.  Before sending a review, go through it and check for
 unnecessarily harsh, cruel, or severe statements.  Check carefully for
 unclear, unfair or biased comments.  Be polite, be firm, but be fair
 and be kind.  If you recommend rejection of the manuscript, do so
@@ -399,7 +410,7 @@ so).
 
 \subsection{Review outcomes}
 
-A review has one of four recommendations:
+A reviewer makes one of four recommendations:
 
 \begin{description}
 \item[Accept submission] This recommendation is consistent with minor
@@ -432,8 +443,8 @@ A review has one of four recommendations:
   work presents no reasonable improvement.
 \end{description}
 
-The editor will come to a decision based on the available reviews,
-which may not all make the same recommendation.
+The corresponding editor will come to a decision based on the
+available reviews, which may not all make the same recommendation.
 
 \section{Review and publication process}
 
@@ -453,9 +464,10 @@ if appropriate.  The typical flow is as follows:
 
 \begin{enumerate}
 \item Author submits manuscript and software to editor-in-chief.
-\item If in scope, submission passed to section editor.
+\item If in scope, submission passed to corresponding editor.
 \item Reviews solicited and collated.
-\item Section editor chooses one of the following:
+\item Corresponding editor summarises the reviews and chooses one of
+  the following:
   \begin{itemize}
   \item Accept: submission passed to typesetting and hosting
   \item Revise or resubmit: reviews passed to author for
@@ -475,15 +487,19 @@ editorial board membership can be found at \url{http://www.aut.ac.nz}.
 
 The majority of submissions which are ultimately published go through
 at least one round of revision.  One component of the process is the
-{\em rebuttal}.  This is a point-by-point response to the
-reviews.  Authors should consider the rebuttal as an opportunity to
-show the editors that any issues raised by the reviews have been dealt
-with.  Editors might, at their discretion, ask for guidance from
-reviewers but generally it is expected that editors will be able to
-assess the rebuttal themselves.  It is important that the whole review
-is included in the rebuttal so the editor can easily see the response
-to all the comments.  Rebuttals can be provided in PDF form, or ascii.
-A typical rebuttal might look like this:
+{\em rebuttal}.  This is a point-by-point response to the reviews.
+Authors should consider the rebuttal as an opportunity to show the
+editors that any issues raised by the reviews have been dealt with.
+Editors might, at their discretion, ask for guidance from reviewers
+but generally it is expected that editors will be able to assess the
+rebuttal themselves.  It is important that the whole review is
+included in the rebuttal so the editor can easily see the response to
+all the comments.  Rebuttals can be provided in PDF form, or ascii.  A
+typical rebuttal is a conversation between the reviewer and the
+author, who is responding to the points raised.  One common convention
+is to typeset the rebuttal as an email conversation, marking
+reviewer's comments with a ``\verb+>+''.  A rebuttal might look like
+this:
 
 {\small
 \begin{verbatim}
@@ -553,7 +569,7 @@ sometimes not.
 
 The accepted manuscript will be hosted online alongside the
 accompanying software; but it is inevitable that the software and
-possibly the manuscript will be modified post-acceptance.  The
+documentation will be modified post-acceptance.  The
 \verb+\Repository+ field appears on the final document and points
 readers to the accepted version and furnish easy access to subsequent
 modifications.  \tragula\ papers are ``static'', that is, the accepted
@@ -571,7 +587,7 @@ files (use the \code{nojss} option:
 \url{https://CRAN.R-project.org/package=permutations}).  In the
 vignette, cite the \tragula\ article along with the other references.
 This device maintains a distinction between the static
-\tragula\ article and the mutable vignette; and states, low-key, that
+\tragula\ article and the mutable vignette; and lets readers know that
 the work has been rigorously peer-reviewed.
 
 Post-acceptance, you should include pointers to the \tragula\ article
