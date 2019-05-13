@@ -315,7 +315,8 @@ software and the editor might solicit your opinion as, for example,
   close to the subject of the submission
 \item An {\bf educational} expert (perhaps you teach material
   discussed in the submission)
-  \item An  {\bf industry} expert...
+  \item An {\bf industry} expert (perhaps you use similar software in
+    your work)
 \end{itemize}
       
 Having competence in any single criterion of the above list would mean
