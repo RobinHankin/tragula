@@ -1,15 +1,9 @@
 % -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
 \documentclass[article]{tragula}
-\usepackage{dsfont}
-\usepackage{bbm}
 \usepackage{amssymb}
-\usepackage{wasysym}
-\usepackage{xypic}
+% Feel free to use other standard packages here if needed
+
 \newcommand{\tragula}{{\em Tragula}}
-
-\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% declarations for tragula.cls
