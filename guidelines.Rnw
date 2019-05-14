@@ -196,8 +196,8 @@ modification of the \pkg{jss} document class, which is used for
 publications in the Journal of Statistical Software (JSS,
 \url{http://www.jstatsoft.org/}).  There, the ``instructions to
 authors'' tab and the \code{jss.pdf} style guide give technical
-advice.  I would like to thank Achim Zeileis again for his help and
-encouragement.
+advice.  I would like to thank Achim Zeileis, author of \code{jss.sty}
+and \code{jss.bst}, for his help and encouragement.
 
 The \tragula\ style file imports three PDF figures:
 \code{tragula_word.pdf}, \code{tragula_knot.pdf}, and
