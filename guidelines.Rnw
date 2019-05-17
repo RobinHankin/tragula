@@ -484,7 +484,8 @@ if appropriate.  The typical flow is as follows:
 \end{enumerate}
 
 Rejected manuscripts may not be resubmitted.  Details of current
-editorial board membership can be found at \url{http://www.aut.ac.nz}.
+editorial board membership can be found at
+\url{http://ojs.aut.ac.nz/tragula/}.
 
 \subsection{Rebuttal}
 
