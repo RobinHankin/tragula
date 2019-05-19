@@ -328,8 +328,9 @@ following questions:
     commit yourself, make sure you can meet the deadline (although
     extensions can be granted).
   \item Are you excited by the prospect of the submisssion?  Are you
-    likely to use the associated software?  If so, your views are
-    valuable to us.
+    likely to use the associated software?  Do you have strong
+    opinions about the subject matter? If so, your views are valuable
+    to us.
 \end{itemize}
 
 If you need to find out more about reviewing and the peer review
@@ -435,15 +436,15 @@ A reviewer makes one of four recommendations:
   coding.
 \item[Decline submission] This can be for one of two reasons: firstly
   the submission might be classified as an {\em editorial reject},
-  sometimes known as a {\em desk reject}.  This is because the
-  submission is not in scope for the journal; it makes no statement
-  about the quality of the work.  The implication is that the authors
-  should send the work elsewhere for consideration.  Secondly, the
-  submission might be in scope for the journal but be of low quality.
-  Typically, this recommendation is for submissions with critical
-  problems which have no clear fix; severely sub-standard work; patent
-  nonsense; identical or similar software available and the current
-  work presents no reasonable improvement.
+  sometimes known as a {\em desk reject}.  An editorial reject means
+  that the submission is not in scope for the journal; it makes no
+  statement about the quality of the work.  The implication is that
+  the authors should send the work elsewhere for consideration.
+  Secondly, the submission might be in scope for the journal but be of
+  low quality.  Typically, this recommendation is for submissions with
+  critical problems which have no clear fix; severely sub-standard
+  work; patent nonsense; identical or similar software available and
+  the current work presents no reasonable improvement.
 \end{description}
 
 The corresponding editor will come to a decision based on the
@@ -470,15 +471,8 @@ if appropriate.  The typical flow is as follows:
 \item If in scope, submission passed to corresponding editor.
 \item Reviews solicited and collated.
 \item Corresponding editor summarises the reviews and chooses one of
-  the following:
-  \begin{itemize}
-  \item Accept: submission passed to typesetting and hosting
-  \item Revise or resubmit: reviews passed to author for
-    consideration.  Author responds to the comments with a
-    point-by-point rebuttal (note that providing a git commit hash is
-    an extremely effective way of supporting this).
-  \item Reject.
-  \end{itemize}
+  the four review outcomes as representative of the reviews and the
+  editor's own options.
 \item Repeat point (4) as necessary, either with or without further
   input from referees at the editor's discretion.
 \end{enumerate}
