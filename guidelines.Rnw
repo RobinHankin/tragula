@@ -38,7 +38,7 @@
   \tragula\ is a peer-reviewed journal that showcases novel
   mathematical applications of \proglang{R}.}
    
-\Keywords{key word one, key word two, squares \proglang{R}}
+\Keywords{key word one, key word two, squares, \proglang{R}}
 \Plainkeywords{key word one, key word two, squares, R}
 
 %% publication information
