@@ -549,7 +549,7 @@ this:
 
      We feel that Smithification is beyond the scope of the
      submission, as this violates the assumption of Jonesness.  However,
-     we have included a brief discussion of the Smithification in "Further
+     we have included a brief discussion of Smithification in "Further
      work" section at the end.
 \end{verbatim}
 }
