@@ -1,0 +1,15 @@
+[submodule "knotR"]
+	path = knotR
+	url = https://github.com/RobinHankin/knotR.git
+[submodule "lorentz"]
+	path = lorentz
+	url = https://github.com/RobinHankin/lorentz.git
+[submodule "permutations"]
+	path = permutations
+	url = https://github.com/RobinHankin/permutations.git
+[submodule "spray"]
+	path = spray
+	url = https://github.com/RobinHankin/spray.git
+[submodule "freegroup"]
+	path = freegroup
+	url = https://github.com/RobinHankin/freegroup.git

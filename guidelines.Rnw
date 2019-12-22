@@ -306,7 +306,7 @@ software and the editor might solicit your opinion as, for example,
 \item A {\bf software} expert (perhaps you have written similar or
   overlapping software)
 \item A {\bf mathematical} expert (perhaps your area of research is
-  close to the subject of the submission
+  close to the subject of the submission)
 \item An {\bf educational} expert (perhaps you teach material
   discussed in the submission)
   \item An {\bf industry} expert (perhaps you use similar software in
