@@ -30,7 +30,7 @@
 
 \Abstract{This document outlines the academic and typesetting
   conventions for \tragula, and gives some guidelines for reviewers.
-  Authors should use file \code{author\_guidelines.Rnw} as a starting
+  Authors should use file \code{guidelines.Rnw} as a starting
   point for a \tragula\ submission; gradually replace the content with
   your own work.  The abstract goes here, not more than a few
   sentences.  You can follow ISO 214:1976 if you wish, no obligation.
