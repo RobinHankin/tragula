@@ -188,7 +188,7 @@ processed using \proglang{Sweave} to produce a \verb+.tex+ file; then
 use pdf\LaTeX\ to create a PDF document.  These steps may be performed
 more straightforwardly using \proglang{RStudio}, available at
 \url{https://www.rstudio.com/}.  It is a good idea to use this file
-(\verb+article_template.Rnw+) as a starting point, and gradually
+(\verb+guidelines.Rnw+) as a starting point, and gradually
 replace the content with your own work.
 
 The \LaTeXe{} document class \pkg{tragula} is a (slight, cosmetic)
