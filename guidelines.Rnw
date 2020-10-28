@@ -515,34 +515,24 @@ this:
      Smith and Jones as its source.  Variable x is, as stated in the
      previous paragraph, real.
 
-   > Function foo() contains a bug:
+   > Function subtract() contains a bug:
 
-   >  foo(5)
-   >  Error in 1 <- x : invalid (do_set) left-hand side to assignment
-   > 
+   > > subtract(5,3)
+   > Error in add(x - y) : argument "y" is missing, with no default
 
-     Fixed.  Old version:
+     Fixed:
 
-     R> foo
-     function(...){1 <- x}
-
-     new version:
-
-     R> foo
-     function(...){1}
-
-     https://github.com/RobinHankin/lorentz/commit/b55e1db4
+     https://github.com/RobinHankin/add/issues/1
 
 
-   > The documentation for function bar() is confusing and incomplete,
-   > specifically it gives no examples and I could not understand how
-   > the function was intended to be used.
+   > The documentation for function add() is confusing and incomplete,
+   > specifically it gives only one example and I could not understand
+   > how the function was intended to be used.
 
      The vignette contains multiple informative use-cases.
      Nevertheless we have included more documentation in foo.Rd:
 
-     https://github.com/RobinHankin/lorentz/commit/c9fd8b22
-
+     https://github.com/RobinHankin/add/commit/a984a20686b037877ae85b95e9e4d20ffb305869
 
    > The manuscript does not address Smithification which would be very
    > desirable.
@@ -550,17 +540,18 @@ this:
      We feel that Smithification is beyond the scope of the
      submission, as this violates the assumption of Jonesness.  However,
      we have included a brief discussion of Smithification in "Further
-     work" section at the end.
+     work" at the end.
 \end{verbatim}
 }
 
-Observe how the reviewer makes comments ranging from individual typos
-right through to overarching views on the entirety of the manuscript.
-Authors should either accommodate the comments, or give a good reason
-why not.  See how the rebuttal includes commit hashes which enable
-editors to evaluate any patches.  If the manuscript itself is under
-version control, sometimes it makes sense to quote the commit hash,
-sometimes not.
+(the manuscript is imaginary but the links work).  Observe how the
+reviewer makes comments ranging from individual typos right through to
+overarching views on the entirety of the manuscript.  Authors should
+either accommodate the comments, or give a good reason why not.  See
+how the rebuttal includes commit hashes which enable editors to
+evaluate any patches.  If the manuscript itself is under version
+control, sometimes it makes sense to quote the commit hash, sometimes
+not.  The github ``issues" mechanism can be used too.
 
 \section{Post-publication maintenance}
 
