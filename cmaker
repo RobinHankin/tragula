@@ -1,0 +1,13 @@
+#! /bin/bash
+
+## remember you have to execute submod once
+
+cp crinkled_arc/crinkled_arc.Rnw .
+cp crinkled_arc/crinkled.bib .
+./tragularize crinkled_arc.Rnw 
+R CMD Sweave example_article_crinkled_arc.Rnw
+pdflatex example_article_crinkled_arc
+bibtex example_article_crinkled_arc
+pdflatex example_article_crinkled_arc
+pdflatex example_article_crinkled_arc
+
