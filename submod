@@ -8,25 +8,25 @@
 ## You only need to execute this file once.
 
 if [ ! -d "knotR" ]; then 
-    git submodule add https://github.com/RobinHankin/knotR.git knotR
+    git clone https://github.com/RobinHankin/knotR
 fi
 
 if [ ! -d "lorentz" ]; then 
-    git submodule add https://github.com/RobinHankin/lorentz.git lorentz
+    git clone https://github.com/RobinHankin/lorentz
 fi
 
 if [ ! -d "permutations" ]; then
-    git submodule add https://github.com/RobinHankin/permutations.git permutations
+    git clone https://github.com/RobinHankin/permutations 
 fi
 
 if [ ! -d "spray" ]; then
-    git submodule add https://github.com/RobinHankin/spray.git spray
+    git clone https://github.com/RobinHankin/spray 
 fi
 
 if [ ! -d "freegroup" ]; then
-    git submodule add https://github.com/RobinHankin/freegroup.git freegroup
+    git clone https://github.com/RobinHankin/freegroup
 fi
 
-
-
-
+if [ ! -d "crinkled_arc" ]; then
+    git clone https://github.com/RobinHankin/crinkled_arc
+fi
