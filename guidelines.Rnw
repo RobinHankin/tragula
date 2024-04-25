@@ -11,7 +11,7 @@
 
 
 %% just as usual
-\author{Robin K. S. Hankin\\Auckland University of Technology\And
+\author{Robin K. S. Hankin\\The University of Stirling\And
   Veet Voojagig\\University of Maximegalon\AND
   Dan Streetmentioner\\University of Maximegalon
 }
@@ -56,9 +56,8 @@
 %% in the following format:
 \Address{
   Robin K. S. Hankin\orcid{https://orcid.org/0000-0001-5982-0415}\\
-  Auckland University of Technology\\
-  2-14 Wakefield Street\\
-  Auckland, New Zealand\\
+  The University of Stirling\\
+  Scotland\\
   E-mail: \email{hankin.robin@gmail.com}\\
   URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}\\
   
