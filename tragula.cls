@@ -237,7 +237,7 @@
 \vfill      \end{minipage}%
     \begin{minipage}{0.5\textwidth}
     \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
-    Published by AUT\\
+    Published by The University of Stirling\\
     {Volume~\@Volume, \@Seriesname~\@Issue, \@Year}
     %%    {\@Month{} \@Year}
     \vspace{.3\baselineskip}
