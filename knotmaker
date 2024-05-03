@@ -3,12 +3,12 @@
 ## remember you have to execute submod once
 
 cp knotR/vignettes/* .
-./tragularize knot.Rnw 
-R CMD Sweave example_article_knot.Rnw
-pdflatex example_article_knot
-bibtex example_article_knot
-pdflatex example_article_knot
-pdflatex example_article_knot
+./tragularize knotR.Rnw 
+R CMD Sweave example_article_knotR.Rnw
+pdflatex example_article_knotR
+bibtex example_article_knotR
+pdflatex example_article_knotR
+pdflatex example_article_knotR
 
 
 
