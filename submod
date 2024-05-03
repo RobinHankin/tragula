@@ -1,32 +1,20 @@
 #! /bin/bash
 
-## Executing this file adds submodules.  The submodules are R package
-## directories.  Shell scripts like 'lorentzmaker' use the package
-## vignettes to and create example Tragula articles with names like
-## "example_article_lorentz.pdf".
+## Executing this file adds clones a few other repos.  Most of the
+## clones are R package directories.  Shell scripts like
+## 'lorentzmaker' use the package vignettes to and create example
+## Tragula articles with names like "example_article_lorentz.pdf".
+## The crinkled arc one is an exception as this is not an R package.
 
 ## You only need to execute this file once.
 
-if [ ! -d "knotR" ]; then 
-    git clone https://github.com/RobinHankin/knotR
-fi
 
-if [ ! -d "lorentz" ]; then 
-    git clone https://github.com/RobinHankin/lorentz
-fi
 
-if [ ! -d "permutations" ]; then
-    git clone https://github.com/RobinHankin/permutations 
-fi
+rm -rf knotR lorentz permutations spray freegroup crinkled_arc
 
-if [ ! -d "spray" ]; then
-    git clone https://github.com/RobinHankin/spray 
-fi
-
-if [ ! -d "freegroup" ]; then
-    git clone https://github.com/RobinHankin/freegroup
-fi
-
-if [ ! -d "crinkled_arc" ]; then
-    git clone https://github.com/RobinHankin/crinkled_arc
-fi
+git clone https://github.com/RobinHankin/knotR
+git clone https://github.com/RobinHankin/lorentz
+git clone https://github.com/RobinHankin/permutations 
+git clone https://github.com/RobinHankin/spray 
+git clone https://github.com/RobinHankin/freegroup
+git clone https://github.com/RobinHankin/crinkled_arc
