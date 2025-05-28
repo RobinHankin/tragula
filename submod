@@ -12,7 +12,6 @@
 
 rm -rf knotR lorentz permutations spray freegroup crinkled_arc
 
-git clone https://github.com/RobinHankin/knotR
 git clone https://github.com/RobinHankin/lorentz
 git clone https://github.com/RobinHankin/permutations 
 git clone https://github.com/RobinHankin/spray 
