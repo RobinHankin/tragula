@@ -1,4 +1,5 @@
 all: tragula.bst tragula.cls
+	./submod
 	./permmaker
 	./lorentzmaker
 	./spraymaker
