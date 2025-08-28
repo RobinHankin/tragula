@@ -96,8 +96,8 @@ manuscript and considered jointly.  Packages are expected to pass
 most recent version of \emph{Writing \proglang{R} extensions}, see
 \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html}.
 
-\tragula\ is an inclusive publication and welcomes submissions
-that add value to the \proglang{R} community through mathematics, or
+\tragula\ is an inclusive publication and welcomes submissions that
+add value to the \proglang{R} community through mathematics, or
 conversely add value to the mathematical community through use of
 \proglang{R} (or preferably both).  \proglang{R} is a programming
 environment that includes a general-purpose language and can be used
@@ -107,7 +107,8 @@ branch of mathematics, or indeed the wider scholarly community, and
 uses of \proglang{R} in areas such as linguistics, art, or aesthetics
 are welcome.  Criteria for acceptance are wide and would include
 beauty, elegance, computational slickness, sheer awesomeness,
-curiosity, pedagogical value, etc, etc.
+curiosity, pedagogical value, etc, etc.  Only English submissions will
+be considered.
 
 Submitted software and indeed the manuscript must be available under
 an open-source license such as \proglang{GPL} or \proglang{BSD}, and
