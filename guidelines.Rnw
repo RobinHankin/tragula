@@ -52,7 +52,7 @@
  \Year{YEAR}
  \Submitdate{yyyy-mm-dd}
  \Acceptdate{yyyy-mm-dd}
- \Repository{https://github.com/RobinHankin/tragula}
+ \Repository{https://doi.org/10.9999/nonexistent-article}
 
 %% The address of (at least) one author should be given
 %% in the following format:
