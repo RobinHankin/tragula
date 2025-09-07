@@ -1,0 +1,3 @@
+I'm writing to authors of cool R packages that implement mathematical
+or computational functionality.  Would you like to submit a manuscript
+to Traugula?  I am desigining

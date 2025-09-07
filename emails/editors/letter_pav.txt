@@ -1,0 +1,19 @@
+Dear shabbychef (Steven?)
+
+I am launching a new journal, Tragula, which focusses on computers and
+software in the fields of recreational and pure mathematics.  The idea
+is that submissions add value to the R community through mathematics,
+or conversely add value to the mathematical community through use of R
+(or preferably both).  There seems to be no peer-reviewed outlet for
+publishing work of this type.
+
+I am currently trying to appoint an editorial board, and I was
+attracted your R work, specifically the madness package for
+differentiation).  I thought you would be exactly the kind of person I
+am looking for.  Would you be interested in this?  Let me know either
+way or if you have any comments or suggestions.
+
+Editors will handle no more than 2-3 submissions per year.  If you'd
+like to be involved, let me know and I'd be happy to send you the
+guidelines to authors that sets out editorial policy in a bit more
+detail.

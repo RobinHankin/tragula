@@ -1,0 +1,206 @@
+I'm compiling a list of possible editors.  So far I have
+
+John D. Cook https://www.johndcook.com/blog/2012/12/10/sleeper-theorems/
+Joseph Rickert joseph.rickert@rstudio.com  all-round top intellectual
+Martin Maechler  R master
+Romain Francois R enthusiast
+David Joyner  group theory whiz
+Jeff Erickson jeffe@cs.uiuc.edu  recreational mathematics
+David Wolfe, combinatorical game theory
+Jeremy Chacon, cool R package collator
+Stan Wagon, curator of oddball computational mathematics stuff
+Stephane Laurent, user stla [I think!] on github, makes useful pull requests on my github repos and is the author
+of a number of cool packages.
+Xiangyun Huang, follows me on github where he is XiangyunHuang, loads of cool packages.  Also, people he follows
+David Kahle
+David Singmaster
+Henrik Bengtsson
+Taylor Arnold statsmaths at github
+Michal Bojanowski  on github
+shabbychef [discussed hyper2 with me on github]
+
+
+
+CRAN:
+
+abstractr mattkumar@gmail.com 
+acss signmann+acss@gmail.com
+AcuityView eleanor.caves@gmail.com
+adaptalint 
+adiv
+aimPlot
+algstat
+AllPossibleSpellings
+apercu
+appell
+archivist
+arpr
+arrApply
+arrayhelpers
+asciiruler
+assertr
+astro		Astronomy Functions, Tools and Routines
+astrochron	A Computational Tool for Astrochronology
+astrodatR	Astronomical Data
+astroFns	Astronomy: time and position functions, misc. utilities
+astrolibR	Astronomy Users Library
+autoshiny
+available
+backpipe
+badger
+bandit
+beeswarm
+beanplot
+beginr
+bench
+Bessel
+betalink
+bib2df
+bibtex
+binb
+bit
+bitops
+BoardGames
+BosonSampling
+bvenn
+casino
+cccp
+cgraph
+ChaosGame
+charlatan
+checkr
+CHNOSZ
+chorrrds
+circlize
+CircStats
+circular
+cleanr
+clttools
+coexist
+ColorPalette
+colorRamps	Builds color tables
+colorscience	Color Science Methods and Data
+colorspace	A Toolbox for Manipulating and Assessing Colors and Palettes
+colorSpec	Color Calculations with Emphasis on Spectral Data
+colortools	Tools for colors in a Hue-Saturation-Value (HSV) color model
+colourlovers	R Client for the COLOURlovers API
+colourvalues	Assigns Colours to Values
+colourvision	Colour Vision Models
+colr		Functions to Select and Rename Data
+colt		Command-Line Color Themes
+combinat
+combiter
+compare
+complexplus
+convertr
+CRAC
+cubing
+curry
+CVD
+cycloids
+dagR
+debugme
+dequer
+Deriv
+dichromat
+Directional
+DirichletReg
+dismo
+dodgr
+DYM
+ellipsis
+elo
+emdist
+extrafont
+fakemake
+fizzbuzzR
+frite
+fun
+gap
+gbp
+geosphere
+goodpractice
+GrassmannOptim
+halfcircle
+hasseDiagram
+hindexcalculator
+hues
+hypergea
+janeaustenr
+jpeg
+khroma
+lamW
+LCox
+lhs
+mapproj
+Massign
+matlab
+matpow
+matrixNormal
+mazealls
+mazeGen
+measurements
+meme
+munsell
+numbers
+packcircles
+Pade
+pkgsearch
+planar
+polyclip
+PolynomF
+praise
+rcdd
+rchess
+RConics
+rex
+Rfmtool
+rly
+Rpolyhedra
+rSymPy
+rt3
+RVenn
+s2
+schoenberg
+setter
+shades
+slam
+snowflakes
+sokoban
+SPADAR
+SparseGrid
+stackoverflow
+stoichcalc
+sudoku
+suncalc
+swirl
+symmoments
+tabr
+tictactoe
+tinter
+transport
+TSP
+tufte
+TurtleGraphics
+txtplots
+venn
+VennDiagram
+venneuler
+vertexenum
+wfindr
+wordcloud
+Zseq
+
+
+Bioconductor:
+
+HilbertCurve
+
+Joseph Rickert might be a good suggestion
+
+github:
+
+isoband wilke@austin.utexas.edu
+richfitz/remake 
+
+xkcd
