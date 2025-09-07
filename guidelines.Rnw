@@ -3,7 +3,7 @@
 \usepackage{amssymb}
 % Feel free to use other standard packages here if needed
 
-\newcommand{\tragula}{{\em Tragula}}
+\newcommand{\tragula}{\textsf{Tragula}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% declarations for tragula.cls
@@ -28,15 +28,17 @@
 
 %% an abstract and keywords
 
-\Abstract{This document outlines the academic and typesetting
+\Abstract{This document is part of \code{guidelines.zip}, available on
+  the journal website.  It outlines the academic and typesetting
   conventions for \tragula, and gives some guidelines for reviewers.
-  Authors should use file \code{guidelines.Rnw} as a starting
-  point for a \tragula\ submission; gradually replace the content with
-  your own work.  The abstract goes here, not more than a few
-  sentences.  You can follow ISO 214:1976 if you wish, no obligation.
-  Do not include citations here.  Editorial policy in a nutshell:
-  \tragula\ is a peer-reviewed journal that showcases novel
-  mathematical applications of \proglang{R}.}
+  Authors should download \code{guidelines.zip} and use file
+  \code{guidelines.Rnw} therein as a starting point for a
+  \tragula\ submission; gradually replace the content with your own
+  work.  The abstract goes here, not more than a few sentences.  You
+  can follow ISO 214:1976 if you wish, no obligation.  Do not include
+  citations here.  Editorial policy in a nutshell: \tragula\ is a
+  peer-reviewed journal that showcases novel mathematical applications
+  of \proglang{R}.}
    
 \Keywords{key word one, key word two, squares, \proglang{R}}
 \Plainkeywords{key word one, key word two, squares, R}
@@ -201,7 +203,7 @@ and \code{jss.bst}, for his help and encouragement.
 
 The \tragula\ style file imports three PDF figures:
 \code{tragula_word.pdf}, \code{tragula_knot.pdf}, and
-\code{ORCID_id.pdf}.
+\code{ORCID_id.pdf}.  
 
 \begin{itemize}
   \item File \code{tragula_word.pdf} uses syncopate bold at 48pt (all
@@ -452,19 +454,19 @@ available reviews, which may not all make the same recommendation.
 
 \section{Review and publication process}
 
-The submission and review process is managed via OJS but this may be
-modified in the future.  Submissions are made in the first instance to
-the editor in chief, who will delegate (if in scope) to a member of
-the editorial board.  \tragula\ review cannot be double-blind due to
-the nature of open-source repositories.  The software and manuscript
-will be reviewed jointly by at least two reviewers, one of whom can be
-the editor.  As discussed above, referees' confidentiality is absolute
-and will be respected (although referees may, at their discretion,
-waive anonymity in the interests of a better publication).  It is
-strongly suggested that software be presented as a working
-\proglang{R} package, which is expected to pass \code{R CMD check}
-cleanly.  Decisions will be made in the light of reviews and rebuttals
-if appropriate.  The typical flow is as follows:
+The submission and review process is managed via \proglang{OJS} but
+this may be modified in the future.  Submissions are made in the first
+instance to the editor in chief, who will delegate (if in scope) to a
+member of the editorial board.  \tragula\ review cannot be
+double-blind due to the nature of open-source repositories.  The
+software and manuscript will be reviewed jointly by at least two
+reviewers, one of whom can be the editor.  As discussed above,
+referees' confidentiality is absolute and will be respected (although
+referees may, at their discretion, waive anonymity in the interests of
+a better publication).  It is strongly suggested that software be
+presented as a working \proglang{R} package, which is expected to pass
+\code{R CMD check} cleanly.  Decisions will be made in the light of
+reviews and rebuttals if appropriate.  The typical flow is as follows:
 
 \begin{enumerate}
 \item Author submits manuscript and software to editor-in-chief.
@@ -586,6 +588,36 @@ to the article in the \verb+\references{}+ section of any appropriate
 \verb+inst/+ directory, which will be given to you in a standard
 format when the article becomes live.
 
+\section[Notes on use of Open Journal Systems (OJS)]{Notes
+  on use of Open Journal Systems (\proglang{OJS})}
+
+\tragula\ is hosted on an Open Journal Systems (\proglang{OJS})
+platform; documentation is available
+\href{https://pkp.sfu.ca/software/ojs/}{\bf here}.  Currently we use
+\proglang{OJS} 3.3.021 but expect to upgrade to \proglang{OJS} 3.5.0.0
+at some point.  The standard workflow flowchart given
+\href{https://pkp.sfu.ca/wp-content/uploads/2024/06/OJS-Workflow-and-Platform-2024.png}{\bf
+  here} does not explicitly include the process of galley production,
+which is.  Usually, authors should submit at least the following
+documents:
+
+\begin{itemize}
+\item The manuscript itself in PDF format (sent to reviewers)
+\item The resulting {\tt tex} file and any supplementary files needed
+  by pdf\LaTeX.  Typically these will include a {\tt .bib} file and
+  and PDFs needed for figures, produced by the {\tt .Rnw} (not sent to
+  reviewers)
+\item Any \proglang{R} code needed to establish reproducibility.  This
+  will usually be in the form of an \proglang{R} package or standalone
+  \proglang{R} code (sent to reviewers)
+\end{itemize}
+
+This makes proof-reading and copyediting stages much easier, in
+particular because updated files can be designated as such at upload.
+The submission process presents a checklist that includes some
+technical requirements should be followed.  Note that the source file,
+in {\tt .Rnw} format, is not absolutely required---although it is a
+convenient and acceptable way to ensure reproducibility.
 
 \bibliography{template}
 
