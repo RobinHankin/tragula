@@ -360,7 +360,9 @@ approach is fine.  Some questions to consider might include the
 following:
 
 \begin{itemize}
-\item Is the material new?
+\item Is the material new?  Publication requires novelty, and a
+  contribution to knowledge.  Is the novel aspect of the submission
+  clearly described?
 \item Does the abstract provide a fair summary?
 \item Is existing work clearly described, and is the new contribution
   clearly placed in this context? 
