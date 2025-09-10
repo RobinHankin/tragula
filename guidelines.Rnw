@@ -154,6 +154,17 @@ theory'', or even ``popularize an approach'').  Please do not supply a
 long list of command arguments that reproduce the \code{Rd}
 documentation: the ideal is a structured, heuristic narrative.
 
+\subsection{Types of submissions}
+
+Currently, \tragula\ publishes two classes of submissions: articles
+and snippets.  These have separate sections in issues.  Both have the
+same style file and the same overall criteria for acceptance.
+However, snippets are short-form documents, expressing a single new
+idea in succinct and concise form.  Four or five pages is maybe an
+upper limit.
+
+\subsection{Layout}
+
 Authors are expected to provide germane \proglang{R} idiom that
 showcases their software with succinct and informative examples, as in:
 
