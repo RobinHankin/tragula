@@ -98,6 +98,14 @@ manuscript and considered jointly.  Packages are expected to pass
 most recent version of \emph{Writing \proglang{R} extensions}, see
 \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html}.
 
+There is some overlap between \tragula\ and both {\em The R Journal}
+and the {\em Journal of Statistical Software}.  However,
+\tragula\ emphasises shorter communications that offer succinct
+insight; also there is less emphasis on statistics and more on
+mathematics.  \tragula\ Volume 0, Issue 0 contains some manuscripts
+that were rejected by one or both of these journals but would be
+welcomed here.
+
 \tragula\ is an inclusive publication and welcomes submissions that
 add value to the \proglang{R} community through mathematics, or
 conversely add value to the mathematical community through use of
