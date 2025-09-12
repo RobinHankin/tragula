@@ -1,0 +1,13 @@
+#! /bin/bash
+
+## remember you have to clone the contfrac repo
+
+cp contfrac/vignettes/* .
+cp contfrac/man/figures/contfrac.png .
+./tragularize contfrac.Rnw 
+R CMD Sweave example_article_contfrac.Rnw
+pdflatex example_article_contfrac
+bibtex example_article_contfrac
+pdflatex example_article_contfrac
+pdflatex example_article_contfrac
+
