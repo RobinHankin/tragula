@@ -3,7 +3,7 @@
 ## remember you have to execute submod once
 
 cp ./evitaicossa/inst/evitaicossa.Rnw .
-cp ./evitaicossa/ins/evitaicossa.bib .
+cp ./evitaicossa/inst/evitaicossa.bib .
 cp ./evitaicossa/man/figures/evitaicossa.png .
 ./tragularize evitaicossa.Rnw 
 R CMD Sweave example_article_evitaicossa.Rnw
