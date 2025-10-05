@@ -3,7 +3,7 @@ all: tragula.bst tragula.cls
 	./permmaker
 	./lorentzmaker
 	./spraymaker
-	./freemaker
+	./freegroupmaker
 	./crinkledmaker
 	./guidelinesmaker
 	./evitaicossamaker
