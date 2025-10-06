@@ -8,6 +8,8 @@
 
 ## You only need to execute this file once.
 
+## Also note that the build process requires the packages to be
+## installed.
 
 
 rm -rf knotR lorentz permutations spray freegroup crinkled_arc
