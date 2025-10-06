@@ -2,12 +2,11 @@
 
 ## remember you have to execute submod once
 
-cp ./elliptic/vignettes/residuetheorem.Rnw ./elliptic.Rnw
+cp ./elliptic/vignettes/residuetheorem.Rnw ./residuetheorem.Rnw
 cp ./elliptic/vignettes/elliptic.bib .
-cp ./elliptic/man/figures/elliptic.png .
-./tragularize elliptic.Rnw 
-R CMD Sweave example_article_elliptic.Rnw
-pdflatex example_article_elliptic
-bibtex example_article_elliptic
-pdflatex example_article_elliptic
-pdflatex example_article_elliptic
+./tragularize residuetheorem.Rnw 
+R CMD Sweave example_article_residuetheorem.Rnw
+pdflatex example_article_residuetheorem
+bibtex example_article_residuetheorem
+pdflatex example_article_residuetheorem
+pdflatex example_article_residuetheorem
