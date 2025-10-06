@@ -5,6 +5,7 @@
 cp ./mvp/inst/mvp_tragula.Rnw ./mvp.Rnw
 cp ./mvp/inst/mvp.bib .
 cp ./mvp/man/figures/mvp.png .
+cp ./spray/vignettes/four_dimensional_knight.pdf .
 ./tragularize mvp.Rnw 
 R CMD Sweave example_article_mvp.Rnw
 pdflatex example_article_mvp
