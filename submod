@@ -12,10 +12,13 @@
 
 rm -rf knotR lorentz permutations spray freegroup crinkled_arc
 
-git clone https://github.com/RobinHankin/lorentz
 git clone https://github.com/RobinHankin/permutations 
+git clone https://github.com/RobinHankin/lorentz
 git clone https://github.com/RobinHankin/spray 
 git clone https://github.com/RobinHankin/freegroup
 git clone https://github.com/RobinHankin/crinkled_arc
+git clone https://github.com/RobinHankin/evitaicossa
+git clone https://github.com/RobinHankin/contfrac
 git clone https://github.com/RobinHankin/weyl
+git clone https://github.com/RobinHankin/elliptic
 git clone https://github.com/RobinHankin/mvp

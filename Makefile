@@ -1,11 +1,11 @@
 all: tragula.bst tragula.cls
+	./guidelinesmaker
 	./submod
 	./permmaker
 	./lorentzmaker
 	./spraymaker
 	./freegroupmaker
 	./crinkledmaker
-	./guidelinesmaker
 	./evitaicossamaker
 	./contfracmaker
 	./weylmaker
