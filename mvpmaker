@@ -1,0 +1,13 @@
+#! /bin/bash
+
+## remember you have to execute submod once
+
+cp ./mvp/inst/mvp_tragula.Rnw ./mvp.Rnw
+cp ./mvp/inst/mvp.bib .
+cp ./mvp/man/figures/mvp.png .
+./tragularize mvp.Rnw 
+R CMD Sweave example_article_mvp.Rnw
+pdflatex example_article_mvp
+bibtex example_article_mvp
+pdflatex example_article_mvp
+pdflatex example_article_mvp
