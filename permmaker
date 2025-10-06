@@ -9,7 +9,3 @@ pdflatex example_article_permutations
 bibtex example_article_permutations
 pdflatex example_article_permutations
 pdflatex example_article_permutations
-
-
-
-
