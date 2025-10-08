@@ -98,6 +98,10 @@ manuscript and considered jointly.  Packages are expected to pass
 most recent version of \emph{Writing \proglang{R} extensions}, see
 \url{https://cran.r-project.org/doc/manuals/r-release/R-exts.html}.
 
+\tragula\ is fullu open-access, meaning articles are free to read on
+the journal website.  There are no fees for authors at any stage of
+the publication process.
+
 There is some overlap between \tragula\ and both {\em The R Journal}
 and the {\em Journal of Statistical Software}.  However,
 \tragula\ emphasises shorter communications that offer succinct
