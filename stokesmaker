@@ -1,0 +1,13 @@
+#! /bin/bash
+
+## remember you have to execute submod once
+
+cp stokes/inst/stokes_tragula.Rnw ./stokes.Rnw
+cp stokes/vignettes/stokes.bib .
+cp stokes/man/figures/stokes.png .
+./tragularize stokes.Rnw
+R CMD Sweave example_article_stokes.Rnw 
+pdflatex example_article_stokes
+bibtex   example_article_stokes
+pdflatex example_article_stokes
+pdflatex example_article_stokes
