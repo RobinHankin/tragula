@@ -1,0 +1,13 @@
+#! /bin/bash
+
+## remember you have to execute submod once
+
+cp ./vfunc/inst/vfunc_tragula.Rnw ./vfunc.Rnw
+cp ./vfunc/vignettes/vfunc.bib .
+cp ./vfunc/man/figures/vfunc.png .
+./tragularize vfunc.Rnw 
+R CMD Sweave example_article_vfunc.Rnw
+pdflatex example_article_vfunc
+bibtex example_article_vfunc
+pdflatex example_article_vfunc
+pdflatex example_article_vfunc
