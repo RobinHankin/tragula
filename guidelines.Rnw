@@ -63,7 +63,7 @@
   Robin K. S. Hankin (corresponding author)\\
   University of Stirling\\
   Scotland\\
-  E-mail: \email{hankin.robin@gmail.com}\\
+  email: \email{hankin.robin@gmail.com}\\
   URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}\\
   
   %% Subsequent authors may be added in the same format
