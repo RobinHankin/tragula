@@ -11,9 +11,12 @@
 
 
 %% just as usual
-\author{Robin K. S. Hankin\\University of Stirling\And
-  Veet Voojagig\\University of Maximegalon\AND
-  Dan Streetmentioner\\University of Maximegalon
+\author{Robin K. S. Hankin\orcid{https://orcid.org/0000-0001-5982-0415}\\
+  University of Stirling\And
+  Veet Voojagig\orcid{https://orcid.org/0000-0002-1825-0097}\\
+  University of Maximegalon\AND
+  Dan Streetmentioner\\ %% orcid number desirable but not essential
+  University of Maximegalon
 }
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
@@ -57,17 +60,17 @@
 %% The address of (at least) one author should be given
 %% in the following format:
 \Address{
-  Robin K. S. Hankin\orcid{https://orcid.org/0000-0001-5982-0415}\\
+  Robin K. S. Hankin (corresponding author)\\
   University of Stirling\\
   Scotland\\
   E-mail: \email{hankin.robin@gmail.com}\\
   URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}\\
   
   %% Subsequent authors may be added in the same format
-  Veet Voojagig\orcid{https://orcid.org/0000-0002-1825-0097}\\ 
+  Veet Voojagig\\
   University of Maximegalon\\
 
-  Dan Streetmentioner\\ %% orcid number not essential
+  Dan Streetmentioner\\
   Faculty of Divinity and Water Polo\\  %% affiliation can be as precise or as vague as you wish  
   University of Maximegalon
 }
@@ -645,7 +648,4 @@ in {\tt .Rnw} format, is not absolutely required---although it is a
 convenient and acceptable way to ensure reproducibility.
 
 \bibliography{template}
-
 \end{document}
-
-
