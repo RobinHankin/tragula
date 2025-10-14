@@ -1,6 +1,7 @@
 % -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
 \documentclass[article]{tragula}
 \usepackage{amssymb}
+\usepackage{xcolor}
 % Feel free to use other standard packages here if needed
 
 \newcommand{\tragula}{\textsf{Tragula}}
@@ -582,6 +583,18 @@ how the rebuttal includes commit hashes which enable editors to
 evaluate any patches.  If the manuscript itself is under version
 control, sometimes it makes sense to quote the commit hash, sometimes
 not.  The github ``issues" mechanism can be used too.
+
+To help editors and reviewers identify revisions of the manuscript,
+authors should mark any text added or modified in response to review
+comments using blue text, implemented with the
+\verb+\textcolor{blue}{...}+ command from the {\tt textcolor}
+\LaTeX\ package.  For example:
+
+\textcolor{blue}{Further work might include Smithification of results,
+  although we note that this is not straightforward as it violates the
+  Jonesness assumption.}
+
+The blue highlighting will be removed for the final published version.
 
 \section{Post-publication maintenance}
 
