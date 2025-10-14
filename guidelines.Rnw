@@ -49,12 +49,12 @@
 %% publication information
 %% NOTE: This needs to filled out ONLY IF THE PAPER WAS ACCEPTED.
 %% If it was not (yet) accepted, leave them commented.
- \Volume{VOL}
- \Issue{ISS}
- \Month{MONTH}
- \Year{YEAR}
- \Submitdate{yyyy-mm-dd}
- \Acceptdate{yyyy-mm-dd}
+ \Volume{0}
+ \Issue{0}
+ \Month{0}
+ \Year{0000}
+ \Submitdate{0000-00-00}
+ \Acceptdate{0000-00-00}
  \Repository{https://doi.org/10.9999/nonexistent-article}
 
 %% The address of (at least) one author should be given
