@@ -16,8 +16,7 @@
   University of Stirling\And
   Veet Voojagig\orcid{https://orcid.org/0000-0002-1825-0097}\\
   University of Maximegalon\AND
-  Dan Streetmentioner\\ %% orcid number desirable but not essential
-  University of Maximegalon
+  Dan Streetmentioner %% orcid number desirable but not essential
 }
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
@@ -65,15 +64,14 @@
   University of Stirling\\
   Scotland\\
   email: \email{hankin.robin@gmail.com}\\
-  URL: \url{https://www.aut.ac.nz/profiles/robin-hankin}\\
   
   %% Subsequent authors may be added in the same format
   Veet Voojagig\\
+  Faculty of Divinity and Water Polo\\%% affiliation can be as precise or as vague as you wish  
   University of Maximegalon\\
+  email: \email{vvoojagig@maxi.ac.ursa}\\
 
-  Dan Streetmentioner\\
-  Faculty of Divinity and Water Polo\\  %% affiliation can be as precise or as vague as you wish  
-  University of Maximegalon
+  Dan Streetmentioner\\  %% Dan is an independent researcher, no affiliation
 }
 
 
