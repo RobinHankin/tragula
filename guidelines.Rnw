@@ -27,8 +27,8 @@
 
 %% for pretty printing and a nice hypersummary also set:
 \Plainauthor{Robin K. S. Hankin}
-\Plaintitle{Plain title goes here, you cannot use markup}
-\Shorttitle{Short title here, markup allowed}
+\Plaintitle{Tragula guidelines} % no markup allowed
+\Shorttitle{\tragula\ guidelines} % markup allowed
 
 %% an abstract and keywords
 
