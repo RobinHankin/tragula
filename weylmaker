@@ -2,10 +2,9 @@
 
 ## remember you have to execute submod once
 
-cp ./weyl/inst/weyl_tragula.Rnw ./weyl.Rnw
+cp ./weyl/inst/weyl_tragula.Rnw ./example_article_weyl.Rnw
 cp ./weyl/inst/weyl.bib .
 cp ./weyl/man/figures/weyl.png .
-./tragularize weyl.Rnw 
 R CMD Sweave example_article_weyl.Rnw
 pdflatex example_article_weyl
 bibtex example_article_weyl
