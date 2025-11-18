@@ -1,8 +1,8 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp spray/vignettes/* .
+cp ${base_dir}/spray/vignettes/* .
 ./tragularize spray.Rnw 
 R CMD Sweave example_article_spray.Rnw
 pdflatex example_article_spray

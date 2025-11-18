@@ -1,8 +1,8 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp freegroup/vignettes/* .
+cp ${base_dir}/freegroup/vignettes/* .
 ./tragularize freegroup.Rnw 
 R CMD Sweave example_article_freegroup.Rnw
 pdflatex example_article_freegroup

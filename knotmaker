@@ -1,8 +1,8 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp knotR/vignettes/* .
+cp ${base_dir}/vignettes/* .
 ./tragularize knotR.Rnw 
 R CMD Sweave example_article_knotR.Rnw
 pdflatex example_article_knotR

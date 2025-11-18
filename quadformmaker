@@ -1,10 +1,10 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp ./quadform/inst/quadform_tragula.Rnw ./example_article_quadform.Rnw
-cp ./quadform/inst/quadform.bib .
-cp ./quadform/man/figures/quadform.png .
+cp ${base_dir}/quadform/inst/quadform_tragula.Rnw ./example_article_quadform.Rnw
+cp ${base_dir}/quadform/inst/quadform.bib .
+cp ${base_dir}/quadform/man/figures/quadform.png .
 R CMD Sweave example_article_quadform.Rnw
 pdflatex example_article_quadform
 bibtex example_article_quadform

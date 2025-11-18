@@ -1,8 +1,8 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp permutations/vignettes/* .
+cp ${base_dir}/permutations/vignettes/* .
 ./tragularize permutations.Rnw 
 R CMD Sweave example_article_permutations.Rnw
 pdflatex example_article_permutations

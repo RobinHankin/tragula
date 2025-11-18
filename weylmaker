@@ -1,10 +1,10 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp ./weyl/inst/weyl_tragula.Rnw ./example_article_weyl.Rnw
-cp ./weyl/inst/weyl.bib .
-cp ./weyl/man/figures/weyl.png .
+cp ${base_dir}/weyl/inst/weyl_tragula.Rnw ./example_article_weyl.Rnw
+cp ${base_dir}/weyl/inst/weyl.bib .
+cp ${base_dir}/weyl/man/figures/weyl.png .
 R CMD Sweave example_article_weyl.Rnw
 pdflatex example_article_weyl
 bibtex example_article_weyl

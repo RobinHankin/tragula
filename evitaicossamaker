@@ -1,10 +1,11 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp ./evitaicossa/inst/evitaicossa_tragula.Rnw ./evitaicossa.Rnw
-cp ./evitaicossa/inst/evitaicossa.bib .
-cp ./evitaicossa/man/figures/evitaicossa.png .
+cp ${base_dir}/evitaicossa/inst/evitaicossa_tragula.Rnw ${base_dir}/evitaicossa.Rnw
+cp ${base_dir}/evitaicossa/inst/evitaicossa.bib .
+cp ${base_dir}/evitaicossa/man/figures/evitaicossa.png .
+
 ./tragularize evitaicossa.Rnw 
 R CMD Sweave example_article_evitaicossa.Rnw
 pdflatex example_article_evitaicossa

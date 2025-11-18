@@ -1,10 +1,10 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp ./vfunc/inst/vfunc_tragula.Rnw ./example_article_vfunc.Rnw
-cp ./vfunc/vignettes/vfunc.bib .
-cp ./vfunc/man/figures/vfunc.png .
+cp ${base_dir}/inst/vfunc_tragula.Rnw ./example_article_vfunc.Rnw
+cp ${base_dir}/vignettes/vfunc.bib .
+cp ${base_dir}/man/figures/vfunc.png .
 R CMD Sweave example_article_vfunc.Rnw
 pdflatex example_article_vfunc
 bibtex example_article_vfunc
