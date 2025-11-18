@@ -1,11 +1,11 @@
 #! /bin/bash
 
-## remember you have to execute submod once
+base_dir=~/rstudio
 
-cp ./mvp/inst/mvp_tragula.Rnw ./example_article_mvp.Rnw
-cp ./mvp/inst/mvp.bib .
-cp ./mvp/man/figures/mvp.png .
-cp ./spray/vignettes/four_dimensional_knight.pdf .
+cp ${base_dir}/mvp/inst/mvp_tragula.Rnw ./example_article_mvp.Rnw
+cp ${base_dir}/mvp/inst/mvp.bib .
+cp ${base_dir}/mvp/man/figures/mvp.png .
+cp ${base_dir}/spray/vignettes/four_dimensional_knight.pdf .
 R CMD Sweave example_article_mvp.Rnw
 pdflatex example_article_mvp
 bibtex example_article_mvp
