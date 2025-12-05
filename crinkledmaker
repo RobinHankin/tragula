@@ -2,8 +2,8 @@
 
 base_dir=~/rstudio
 
-cp ${base_dir}/example_article_crinkled_arc.Rnw .
-cp ${base_dir}/crinkled.bib .
+cp ${base_dir}/crinkled_arc/example_article_crinkled_arc.Rnw .
+cp ${base_dir}/crinkled_arc/crinkled.bib .
 R CMD Sweave example_article_crinkled_arc.Rnw
 pdflatex example_article_crinkled_arc
 bibtex example_article_crinkled_arc

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-base_dir=~/rstudoi
+base_dir=~/rstudio
 
 cp ${base_dir}/stokes/inst/stokes_tragula.Rnw ./stokes.Rnw
 cp ${base_dir}/stokes/vignettes/stokes.bib .

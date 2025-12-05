@@ -2,7 +2,7 @@
 
 base_dir=~/rstudio
 
-cp ${base_dir}/evitaicossa/inst/evitaicossa_tragula.Rnw ${base_dir}/evitaicossa.Rnw
+cp ${base_dir}/evitaicossa/inst/evitaicossa_tragula.Rnw ./evitaicossa.Rnw
 cp ${base_dir}/evitaicossa/inst/evitaicossa.bib .
 cp ${base_dir}/evitaicossa/man/figures/evitaicossa.png .
 

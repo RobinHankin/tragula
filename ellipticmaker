@@ -2,7 +2,7 @@
 
 base_dir=~/rstudio
 
-cp ${base_dir}/rstudio/elliptic/vignettes/residuetheorem.Rnw ./residuetheorem.Rnw
+cp ${base_dir}/elliptic/vignettes/residuetheorem.Rnw ./residuetheorem.Rnw
 cp ${base_dir}/elliptic/vignettes/elliptic.bib .
 
 ./tragularize residuetheorem.Rnw 
