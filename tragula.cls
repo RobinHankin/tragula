@@ -236,14 +236,14 @@
       \includegraphics[width=0.75\textwidth,keepaspectratio]{tragula_knot}% library(knotR); knotplot(ornamental20,gap=2)
 \vfill      \end{minipage}%
     \begin{minipage}{0.5\textwidth}
-    \url{https://tuwhera.aut.ac.nz}\\[.3\baselineskip] \nopagebreak
+    \url{https://ojs.stir.ac.uk/tragula}\\[.3\baselineskip] \nopagebreak
     Published by The University of Stirling\\
     {Volume~\@Volume, \@Seriesname~\@Issue, \@Year}
     %%    {\@Month{} \@Year}
     \vspace{.3\baselineskip}
     \end{minipage}%
     \begin{minipage}{0.4\textwidth}
-    \hfill\url{http://aut.ac.nz/}\\[.3\baselineskip] \nopagebreak
+    \hfill\url{https://stir.ac.uk/}\\[.3\baselineskip] \nopagebreak
     \hfill\@Firstdate\\ \nopagebreak
     \hfill\@Seconddate  \nopagebreak
     \vspace{.3\baselineskip}
