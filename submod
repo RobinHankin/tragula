@@ -12,7 +12,7 @@
 ## installed.
 
 
-rm -rf knotR lorentz permutations spray freegroup crinkled_arc
+cd ~/rstudio/
 
 git clone https://github.com/RobinHankin/permutations 
 git clone https://github.com/RobinHankin/lorentz
@@ -26,3 +26,17 @@ git clone https://github.com/RobinHankin/elliptic
 git clone https://github.com/RobinHankin/mvp
 git clone https://github.com/RobinHankin/stokes
 git clone https://github.com/RobinHankin/quadform
+
+R CMD INSTALL ./permutations 
+R CMD INSTALL ./lorentz
+R CMD INSTALL ./spray 
+R CMD INSTALL ./freegroup
+R CMD INSTALL ./evitaicossa
+R CMD INSTALL ./contfrac
+R CMD INSTALL ./weyl
+R CMD INSTALL ./elliptic
+R CMD INSTALL ./mvp
+R CMD INSTALL ./stokes
+R CMD INSTALL ./quadform
+
+

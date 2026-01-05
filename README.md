@@ -1,36 +1,63 @@
 # Tragula example papers and guidelines
 
+TLDR: type `make` at the command line.
+
 This file describes how to create the guidelines document, and also
-how to create four or five example papers that show the kind of tone
+how to create a number of example papers that show the kind of tone
 and content of a good Tragula submission:
 
-* lorentz
-* permutations
-* spray
-* freegroup
+* contfrac 
+* crinkled_arc 
+* evitaicossa 
+* freegroup 
+* lorentz 
+* mvp 
+* permutations 
+* quadform 
+* residuetheorem 
+* spray 
+* stokes 
+* vfunc 
+* weyl 
 
-The source files for the example papers are Rnw files held in cloned
-repos [in earlier versions, submodules of reps].  To access these,
-execute
 
-./submod
+The source files for the example papers are Rnw files held in the
+various repos [in earlier versions, submodules of repos].  The
+Makefile executes shell scripts `contfracmaker`, `permmaker` et seq
+which produce camera-ready PDF manuscripts.  These shell scripts
+assume that the github repos are installed at base directory
+`~/rstudio`; and that the requisite R packages are installed.  These
+are accomplished by script `submod`, which only has to be executed
+once.  The shellscripts are all broadly similar but differ in detail.
+Using `stokesmaker` as an example:
 
-(qv) on the commandline; this will create local clones of github repos
-that contain Tragula-friendly vignettes.
+```
+#! /bin/bash
 
-To compile the example papers and create PDFs, first of all make sure
-that all the packages [lorentz, permutations, spray, freegroup] are
-installed.  Change to the top-level directory, then type 'make' at the
-commandline (this takes a couple of minutes to run).
+base_dir=~/rstudio
 
-The Makefile executes the submod script to create clones of the
-packages. It then executes shell scripts lorentzmaker, permmaker et
-seq.  These will copy Rnw files from the cloned package vignettes.
-Each one of these scripts calls 'tragularize', which makes slight
-modifications to the Rnw files.  This ensures that Tragula style is
-used rather than jss style.  The scripts then execute pdflatex and
-bibtex to create PDF files such as 'example_article_lorentz.pdf' and
-four or five others like it.  The PDF files are then moved to
-directory pdf_example_articles/ and 'make clean' removes artifacts.
+cp ${base_dir}/stokes/inst/stokes_tragula.Rnw ./stokes.Rnw
+cp ${base_dir}/stokes/vignettes/stokes.bib .
+cp ${base_dir}/stokes/man/figures/stokes.png .
+./tragularize stokes.Rnw
+R CMD Sweave example_article_stokes.Rnw 
+pdflatex example_article_stokes
+bibtex   example_article_stokes
+pdflatex example_article_stokes
+pdflatex example_article_stokes
+```
+
+We see that `stokesmaker` expects a clone of the `stokes` repo in base
+directory `~/rstudio`.  It then copies some files from the repo.  It
+then processes `stokes.Rnw` with `tragularize`, creating
+`example_article_stokes.Rnw`.  This is a slight modification of
+`stokes.Rnw`, the modifications ensuring that Tragula style is used
+rather than jss style.  The shellscript then executes pdflatex and
+bibtex to create PDF file `example_article_stokes.pdf`.  This is then
+moved to directory `pdf_example_articles/`.  All the other `foomaker`
+scripts do more or less the same thing.
+
+
+
 
 
