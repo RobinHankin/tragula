@@ -1,0 +1,52 @@
+name: build guidelines.zip
+
+on:
+  push:
+    branches: [ master ]
+    tags:
+      - 'v*.*'  # trigger on version tags like v1.0, v1.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra texlive-luatex texlive-xetex
+
+    - name: Build guidelines.pdf
+      run: |
+        R CMD Sweave guidelines.Rnw
+        pdflatex guidelines
+        bibtex guidelines
+        pdflatex guidelines
+        pdflatex guidelines
+
+    - name: Create guidelines.zip
+      run: |
+        zip -r guidelines.zip \
+          guidelines.pdf guidelines.Rnw guidelines.tex template.bib \
+          tragula.bst tragula.cls tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf
+
+    - name: Upload zip as release asset (if triggered by a tag)
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: guidelines.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Upload zip as workflow artifact (for testing)
+      if: github.ref != 'refs/tags/*'
+      uses: actions/upload-artifact@v3
+      with:
+        name: guidelines-zip
+        path: guidelines.zip
