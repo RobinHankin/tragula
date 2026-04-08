@@ -39,7 +39,7 @@ jobs:
         echo "ZIPFILE=$ZIPFILE" >> $GITHUB_ENV
 
     - name: Upload zip as workflow artifact
-      uses: github/artifact-upload-action@v4
+      uses: actions/upload-artifact@v4
       with:
         name: guidelines-zip
         path: ${{ env.ZIPFILE}}
