@@ -32,21 +32,14 @@ jobs:
 
     - name: Create guidelines.zip
       run: |
-        zip -r guidelines.zip \
+        ZIPFILE="guidelines.zip"
+        zip -r "$ZIPFILE" \
           guidelines.pdf guidelines.Rnw guidelines.tex template.bib \
           tragula.bst tragula.cls tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf
+        echo "ZIPFILE=$ZIPFILE" >> $GITHUB_ENV
 
-    - name: Upload zip as release asset (if triggered by a tag)
-      if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
-      with:
-        files: guidelines.zip
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Upload zip as workflow artifact (for testing)
-      if: github.ref != 'refs/tags/*'
+    - name: Upload zip as workflow artifact
       uses: actions/upload-artifact@v3
       with:
         name: guidelines-zip
-        path: guidelines.zip
+        path: ${{ env.ZIPFILE}}
