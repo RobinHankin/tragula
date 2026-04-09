@@ -1,2 +1,8 @@
-# This file creates guidelines.zip for authors to download
+# This file creates guidelines.zip for authors to download.  File
+# guidelines.pdf is created by executable shell script
+# "guidelinesmaker".
+
+# Alternatively, guidelines.zip is created by github Actions, in the
+# workflow specified in tragula/.github/workflows/build-guidelines.yml
+
 zip guidelines.zip guidelines.pdf guidelines.Rnw guidelines.tex template.bib tragula.bst tragula.cls tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf
