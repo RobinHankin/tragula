@@ -270,7 +270,7 @@
       \includegraphics[height=6mm,keepaspectratio]{tragula_word}\\[-3mm]
       %% \hfill{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Month{} \@Year}\\[-3mm]
       %% {\small\it \@Month{} \@Year, Volume~\@Volume, \@Seriesname~\@Issue.%
-      %% \hfill \tt\href{http://tuwhera.aut.ac.nz/}{http://tuwhera.aut.ac.nz/}}
+      %% \hfill \tt\href{https://ojs.stir.ac.uk/tragula/}{https://ojs.stir.ac.uk/tragula/}}
     }
     {\color{mygray}\hrule height 1pt}
 {Volume~\@Volume, \@Seriesname~\@Issue}, {\@Year}
