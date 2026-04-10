@@ -237,7 +237,7 @@
 \vfill      \end{minipage}%
     \begin{minipage}{0.5\textwidth}
     \url{https://ojs.stir.ac.uk/tragula}\\[.3\baselineskip] \nopagebreak
-    Published by The University of Stirling\\
+    Published by the University of Stirling\\
     {Volume~\@Volume, \@Seriesname~\@Issue, \@Year}
     %%    {\@Month{} \@Year}
     \vspace{.3\baselineskip}
