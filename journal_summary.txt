@@ -1,4 +1,5 @@
-this file contains some stuff that was on the editorial dashboard under
+this file contains some stuff that was on ojs-dev, in the editorial
+dashboard under
 
 Settings -> workflow -> submission
 
