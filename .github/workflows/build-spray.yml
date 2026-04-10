@@ -20,7 +20,8 @@ jobs:
           texlive-fonts-recommended \
           texlive-bibtex-extra \
           texlive-luatex \
-          texlive-xetex
+          texlive-xetex \
+          texlive-fonts-extra
 
     - name: Set up R
       uses: r-lib/actions/setup-r@v2
