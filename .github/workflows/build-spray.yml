@@ -1,4 +1,4 @@
-name: Build Example PDFs
+name: Build example_article_spray.pdf
 
 on:
   push:
@@ -30,8 +30,8 @@ jobs:
         git clone https://github.com/robinhankin/spray.git
         cp spray/vignettes/* .
 
-        chmod +x scripts/tragularize
-        scripts/tragularize spray.Rnw
+        chmod +x ./tragularize
+        ./tragularize spray.Rnw
 
         R CMD Sweave example_article_spray.Rnw
         pdflatex example_article_spray
