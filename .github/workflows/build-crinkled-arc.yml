@@ -1,0 +1,52 @@
+name: Build example_article_crinckled_arc.pdf
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          texlive-latex-extra \
+          texlive-fonts-recommended \
+          texlive-bibtex-extra \
+          texlive-luatex \
+          texlive-xetex \
+          texlive-fonts-extra
+
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+
+
+    - name: Install spray package from CRAN
+      run: 
+        Rscript -e 'install.packages("spray", repos="https://cloud.r-project.org")'
+
+    - name: Build crinkled arc example
+      run: |
+        git clone https://github.com/robinhankin/crinkled_arc.git
+        cp crinkled_arc/* .
+
+#        chmod +x ./tragularize
+#        ./tragularize foo.Rnw
+
+        R CMD Sweave example_article_crinkled_arc.Rnw
+        pdflatex example_article_crinkled_arc
+        bibtex example_article_crinkled_arc
+        pdflatex example_article_crinkled_arc
+        pdflatex example_article_crinkled_arc
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v4
+      with:
+        name: example_article_crinkled_arc
+        path: example_article_crinkled_arc.pdf
