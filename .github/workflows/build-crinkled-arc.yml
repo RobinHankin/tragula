@@ -1,4 +1,4 @@
-name: Build example_article_crinckled_arc.pdf
+name: Build example_article_crinkled_arc.pdf
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
 
 
     - name: Install spray package from CRAN
-      run: 
+      run: |
         Rscript -e 'install.packages("spray", repos="https://cloud.r-project.org")'
 
     - name: Build crinkled arc example
