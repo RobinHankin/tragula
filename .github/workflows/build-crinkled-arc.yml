@@ -35,10 +35,6 @@ jobs:
       run: |
         git clone https://github.com/robinhankin/crinkled_arc.git
         cp crinkled_arc/* .
-
-#        chmod +x ./tragularize
-#        ./tragularize foo.Rnw
-
         R CMD Sweave example_article_crinkled_arc.Rnw
         pdflatex example_article_crinkled_arc
         bibtex example_article_crinkled_arc
