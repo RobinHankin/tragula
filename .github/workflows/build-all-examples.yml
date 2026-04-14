@@ -28,8 +28,15 @@ jobs:
 
 
     - name: Install spray package from CRAN
-      run: 
-        Rscript -e 'install.packages("spray", repos="https://cloud.r-project.org")'
+      run: |
+        Rscript -e 'install.packages("spray"      , repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("evitaicossa", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("quadform"   , repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("elliptic"   , repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("freegroup"  , repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("mvp"        , repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("stokes"     , repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("vfunc"      , repos="https://cloud.r-project.org")'
 
     - name: make a directory for the finished example articles
       run: |
