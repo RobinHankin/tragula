@@ -38,6 +38,7 @@ jobs:
         Rscript -e 'install.packages("stokes"     , repos="https://cloud.r-project.org")'
         Rscript -e 'install.packages("vfunc"      , repos="https://cloud.r-project.org")'
         Rscript -e 'install.packages("hypergeo"   , repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("Deriv"      , repos="https://cloud.r-project.org")'
 
     - name: make a directory for the finished example articles
       run: |
