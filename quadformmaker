@@ -10,3 +10,4 @@ pdflatex example_article_quadform
 bibtex example_article_quadform
 pdflatex example_article_quadform
 pdflatex example_article_quadform
+
