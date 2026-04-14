@@ -44,6 +44,8 @@ jobs:
     - name: make a directory for the finished example articles
       run: |
         mkdir -p example_articles
+        export TEXINPUTS=".:$(Rscript -e 'cat(file.path(R.home("share"), "texmf", "tex", "latex"))'):$TEXINPUTS"
+
 
     - name: Build all example articles
       run: |
