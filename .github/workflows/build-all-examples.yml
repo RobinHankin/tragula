@@ -35,7 +35,7 @@ jobs:
       run: |
         mkdir -p example_articles
 
-    - name: Build spray example
+    - name: Build all example articles
       run: |
         git clone https://github.com/robinhankin/spray.git
         cp spray/vignettes/* .
@@ -61,7 +61,10 @@ jobs:
 
 
         git clone https://github.com/robinhankin/evitaicossa.git
-        cp -r evitaicossa/inst/* .
+        cp evitaicossa/inst/evitaicossa_tragula.Rnw ./evitaicossa.Rnw
+        cp evitaicossa/inst/evitaicossa.bib .
+        cp evitaicossa/man/figures/evitaicossa.png .
+
         chmod +x ./tragularize
         ./tragularize evitaicossa.Rnw
         R CMD Sweave example_article_evitaicossa.Rnw
