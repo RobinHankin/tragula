@@ -31,7 +31,7 @@ jobs:
         git clone https://github.com/robinhankin/quadform.git
         cp quadform/inst/quadform_tragula.Rnw ./example_article_quadform.Rnw
         cp quadform/inst/quadform.bib .
-        cp /quadform/man/figures/quadform.png .
+        cp quadform/man/figures/quadform.png .
         R CMD Sweave example_article_quadform.Rnw
         pdflatex example_article_quadform
         bibtex example_article_quadform
