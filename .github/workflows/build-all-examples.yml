@@ -1,0 +1,150 @@
+name: Build all example_article PDF files
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          texlive-latex-extra \
+          texlive-fonts-recommended \
+          texlive-bibtex-extra \
+          texlive-luatex \
+          texlive-xetex \
+          texlive-fonts-extra
+
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+
+
+    - name: Install spray package from CRAN
+      run: 
+        Rscript -e 'install.packages("spray", repos="https://cloud.r-project.org")'
+
+    - name: make a directory for the finished example articles
+      run: |
+        mkdir -p example_articles
+
+    - name: Build spray example
+      run: |
+        git clone https://github.com/robinhankin/spray.git
+        cp spray/vignettes/* .
+
+        chmod +x ./tragularize
+        ./tragularize spray.Rnw
+        R CMD Sweave example_article_spray.Rnw
+        pdflatex example_article_spray
+        bibtex example_article_spray
+        pdflatex example_article_spray
+        pdflatex example_article_spray
+        cp example_article_spray.pdf example_articles/
+
+
+        git clone https://github.com/robinhankin/crinkled_arc.git
+        cp crinkled_arc/* .
+        R CMD Sweave example_article_crinkled_arc.Rnw
+        pdflatex example_article_crinkled_arc
+        bibtex example_article_crinkled_arc
+        pdflatex example_article_crinkled_arc
+        pdflatex example_article_crinkled_arc
+        cp example_article_crinkled_arc.pdf example_articles/
+
+
+        git clone https://github.com/robinhankin/evitaicossa.git
+        cp evitaicossa/inst/* .
+        chmod +x ./tragularize
+        ./tragularize evitaicossa.Rnw
+        R CMD Sweave example_article_evitaicossa.Rnw
+        pdflatex example_article_evitaicossa
+        bibtex example_article_evitaicossa
+        pdflatex example_article_evitaicossa
+        pdflatex example_article_evitaicossa
+        cp example_article_evitaicossa.pdf example_articles/
+
+
+        git clone https://github.com/robinhankin/quadform.git
+        cp quadform/inst/quadform_tragula.Rnw ./example_article_quadform.Rnw
+        cp quadform/inst/quadform.bib .
+        cp quadform/man/figures/quadform.png .
+        R CMD Sweave example_article_quadform.Rnw
+        pdflatex example_article_quadform
+        bibtex example_article_quadform
+        pdflatex example_article_quadform
+        pdflatex example_article_quadform
+        cp example_article_quadform.pdf example_articles/
+
+
+        git clone https://github.com/robinhankin/elliptic.git
+        cp elliptic/vignettes/residuetheorem.Rnw ./residuetheorem.Rnw
+        cp elliptic/vignettes/elliptic.bib .
+        ./tragularize residuetheorem.Rnw 
+        R CMD Sweave example_article_residuetheorem.Rnw
+        pdflatex example_article_residuetheorem
+        bibtex example_article_residuetheorem
+        pdflatex example_article_residuetheorem
+        pdflatex example_article_residuetheorem
+        cp example_article_residuetheorem.pdf example_articles/
+
+
+        git clone https://github.com/robinhankin/freegroup.git
+        cp freegroup/vignettes/* .
+        ./tragularize freegroup.Rnw 
+        R CMD Sweave example_article_freegroup.Rnw
+        pdflatex example_article_freegroup
+        bibtex example_article_freegroup
+        pdflatex example_article_freegroup
+        pdflatex example_article_freegroup
+        cp example_article_freegroup.pdf example_articles/
+
+        git clone https://github.com/robinhankin/mvp.git
+        cp mvp/inst/mvp_tragula.Rnw ./example_article_mvp.Rnw
+        cp mvp/inst/mvp.bib .
+        cp mvp/man/figures/mvp.png .
+        cp spray/vignettes/four_dimensional_knight.pdf .
+        R CMD Sweave example_article_mvp.Rnw
+        pdflatex example_article_mvp
+        bibtex example_article_mvp
+        pdflatex example_article_mvp
+        pdflatex example_article_mvp
+        cp example_article_mvp.pdf example_articles/
+
+
+        git clone https://github.com/robinhankin/stokes.git
+        cp stokes/inst/stokes_tragula.Rnw ./stokes.Rnw
+        cp stokes/vignettes/stokes.bib .
+        cp stokes/man/figures/stokes.png .
+        ./tragularize stokes.Rnw
+        R CMD Sweave example_article_stokes.Rnw 
+        pdflatex example_article_stokes
+        bibtex   example_article_stokes
+        pdflatex example_article_stokes
+        pdflatex example_article_stokes
+        cp example_article_stokes.pdf example_articles/
+
+
+        git clone https://github.com/robinhankin/vfunc.git
+        cp vfunc/inst/vfunc_tragula.Rnw ./example_article_vfunc.Rnw
+        cp vfunc/vignettes/vfunc.bib .
+        cp /vfunc/man/figures/vfunc.png .
+        R CMD Sweave example_article_vfunc.Rnw
+        pdflatex example_article_vfunc
+        bibtex example_article_vfunc
+        pdflatex example_article_vfunc
+        pdflatex example_article_vfunc
+        cp example_article_vfunc.pdf example_articles/
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v4
+      with:
+        name: example-articles
+        path: example_article_spray.pdf
