@@ -22,7 +22,8 @@ jobs:
           texlive-luatex \
           texlive-xetex \
           texlive-fonts-extra \
-          texlive-science
+          texlive-science \
+	  latexmk
 
     - name: Set up R
       uses: r-lib/actions/setup-r@v2
@@ -56,20 +57,14 @@ jobs:
         chmod +x ./tragularize
         ./tragularize spray.Rnw
         R CMD Sweave example_article_spray.Rnw
-        pdflatex example_article_spray
-        bibtex example_article_spray
-        pdflatex example_article_spray
-        pdflatex example_article_spray
+        latexmk -pdf example_article_spray.tex
         cp example_article_spray.pdf example_articles/
 
 
         git clone https://github.com/robinhankin/crinkled_arc.git
         cp -r crinkled_arc/* .
         R CMD Sweave example_article_crinkled_arc.Rnw
-        pdflatex example_article_crinkled_arc
-        bibtex example_article_crinkled_arc
-        pdflatex example_article_crinkled_arc
-        pdflatex example_article_crinkled_arc
+        latexmk -pdf example_article_crinkled_arc.tex
         cp example_article_crinkled_arc.pdf example_articles/
 
 
@@ -81,10 +76,7 @@ jobs:
         chmod +x ./tragularize
         ./tragularize evitaicossa.Rnw
         R CMD Sweave example_article_evitaicossa.Rnw
-        pdflatex example_article_evitaicossa
-        bibtex example_article_evitaicossa
-        pdflatex example_article_evitaicossa
-        pdflatex example_article_evitaicossa
+        latexmk -pdf example_article_evitaicossa.tex
         cp example_article_evitaicossa.pdf example_articles/
 
 
@@ -93,10 +85,7 @@ jobs:
         cp quadform/inst/quadform.bib .
         cp quadform/man/figures/quadform.png .
         R CMD Sweave example_article_quadform.Rnw
-        pdflatex example_article_quadform
-        bibtex example_article_quadform
-        pdflatex example_article_quadform
-        pdflatex example_article_quadform
+        latexmk -pdf example_article_quadform.tex
         cp example_article_quadform.pdf example_articles/
 
 
@@ -105,10 +94,7 @@ jobs:
         cp elliptic/vignettes/elliptic.bib .
         ./tragularize residuetheorem.Rnw 
         R CMD Sweave example_article_residuetheorem.Rnw
-        pdflatex example_article_residuetheorem
-        bibtex example_article_residuetheorem
-        pdflatex example_article_residuetheorem
-        pdflatex example_article_residuetheorem
+        latexmk -pdf example_article_residuetheorem.tex
         cp example_article_residuetheorem.pdf example_articles/
 
 
@@ -116,10 +102,7 @@ jobs:
         cp freegroup/vignettes/* .
         ./tragularize freegroup.Rnw 
         R CMD Sweave example_article_freegroup.Rnw
-        pdflatex example_article_freegroup
-        bibtex example_article_freegroup
-        pdflatex example_article_freegroup
-        pdflatex example_article_freegroup
+        latexmk -pdf example_article_freegroup.tex
         cp example_article_freegroup.pdf example_articles/
 
         git clone https://github.com/robinhankin/mvp.git
@@ -128,10 +111,7 @@ jobs:
         cp mvp/man/figures/mvp.png .
         cp spray/vignettes/four_dimensional_knight.pdf .
         R CMD Sweave example_article_mvp.Rnw
-        pdflatex example_article_mvp
-        bibtex example_article_mvp
-        pdflatex example_article_mvp
-        pdflatex example_article_mvp
+        latexmk -pdf example_article_mvp.tex
         cp example_article_mvp.pdf example_articles/
 
 
@@ -141,10 +121,7 @@ jobs:
         cp stokes/man/figures/stokes.png .
         ./tragularize stokes.Rnw
         R CMD Sweave example_article_stokes.Rnw 
-        pdflatex example_article_stokes
-        bibtex   example_article_stokes
-        pdflatex example_article_stokes
-        pdflatex example_article_stokes
+        latexmk -pdf example_article_stokes.tex
         cp example_article_stokes.pdf example_articles/
 
 
@@ -153,10 +130,7 @@ jobs:
         cp vfunc/vignettes/vfunc.bib .
         cp vfunc/man/figures/vfunc.png .
         R CMD Sweave example_article_vfunc.Rnw
-        pdflatex example_article_vfunc
-        bibtex example_article_vfunc
-        pdflatex example_article_vfunc
-        pdflatex example_article_vfunc
+        latexmk -pdf example_article_vfunc.tex
         cp example_article_vfunc.pdf example_articles/
 
 
