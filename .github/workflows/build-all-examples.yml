@@ -23,7 +23,7 @@ jobs:
           texlive-xetex \
           texlive-fonts-extra \
           texlive-science \
-	  latexmk
+          latexmk
 
     - name: Set up R
       uses: r-lib/actions/setup-r@v2
