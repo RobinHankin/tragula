@@ -20,15 +20,12 @@ jobs:
     - name: Install LaTeX
       run: |
         sudo apt-get update
-        sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra texlive-luatex texlive-xetex
+        sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra texlive-luatex texlive-xetex -y latexmk
 
     - name: Build guidelines.pdf
       run: |
         R CMD Sweave guidelines.Rnw
-        pdflatex guidelines
-        bibtex guidelines
-        pdflatex guidelines
-        pdflatex guidelines
+        latexmk -pdf guidelines.tex
 
     - name: Create guidelines.zip
       run: |
