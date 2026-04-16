@@ -32,14 +32,14 @@ jobs:
 
     - name: Create guidelines.zip
       run: |
-        ZIPFILE="guidelines.zip"
-        zip -r "$ZIPFILE" \
+        zip -r guidelines.zip \
           guidelines.pdf guidelines.Rnw guidelines.tex template.bib \
           tragula.bst tragula.cls tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf
-        echo "ZIPFILE=$ZIPFILE" >> $GITHUB_ENV
 
     - name: Upload zip as workflow artifact
       uses: actions/upload-artifact@v4
       with:
-        name: guidelines-zip
-        path: ${{ env.ZIPFILE}}
+        name: guidelines-files
+        path: |
+          guidelines.zip
+          guidelines.pdf
