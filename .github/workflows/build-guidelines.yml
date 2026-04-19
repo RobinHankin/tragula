@@ -29,7 +29,7 @@ jobs:
           latexmk
 
     - name: Build guidelines.pdf
-      run: bash scripts/guidelinesmaker
+      run: bash guidelinesmaker
 
     - name: Create guidelines.zip
       run: |
