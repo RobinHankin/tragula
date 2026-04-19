@@ -1,11 +1,9 @@
-#! /bin/bash
+#! /usr/bin/env bash
+set -e
 
 ## No need to execute tragularize here as guidelines.Rnw is not a package vignette (cf permmaker)
 
 R CMD Sweave guidelines.Rnw
-pdflatex guidelines
-bibtex guidelines
-pdflatex guidelines
-pdflatex guidelines
+latexmk -pdf guidelines.tex
 
 
