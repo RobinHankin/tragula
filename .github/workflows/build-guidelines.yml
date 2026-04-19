@@ -29,9 +29,7 @@ jobs:
           latexmk
 
     - name: Build guidelines.pdf
-      run: |
-        R CMD Sweave guidelines.Rnw
-        latexmk -pdf guidelines.tex
+      run: bash scripts/guidelinesmaker
 
     - name: Create guidelines.zip
       run: |
