@@ -5,11 +5,4 @@ base_dir=~/rstudio
 cp ${base_dir}/vignettes/* .
 ./tragularize knotR.Rnw 
 R CMD Sweave example_article_knotR.Rnw
-pdflatex example_article_knotR
-bibtex example_article_knotR
-pdflatex example_article_knotR
-pdflatex example_article_knotR
-
-
-
-
+latexmk -pdf example_article_knotR.tex

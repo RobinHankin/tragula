@@ -8,8 +8,4 @@ cp ${base_dir}/evitaicossa/man/figures/evitaicossa.png .
 
 ./tragularize evitaicossa.Rnw 
 R CMD Sweave example_article_evitaicossa.Rnw
-pdflatex example_article_evitaicossa
-bibtex example_article_evitaicossa
-pdflatex example_article_evitaicossa
-pdflatex example_article_evitaicossa
-
+latexmk -pdf example_article_evitaicossa.tex

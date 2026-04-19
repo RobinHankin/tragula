@@ -6,8 +6,4 @@ cp ${base_dir}/quadform/inst/quadform_tragula.Rnw ./example_article_quadform.Rnw
 cp ${base_dir}/quadform/inst/quadform.bib .
 cp ${base_dir}/quadform/man/figures/quadform.png .
 R CMD Sweave example_article_quadform.Rnw
-pdflatex example_article_quadform
-bibtex example_article_quadform
-pdflatex example_article_quadform
-pdflatex example_article_quadform
-
+latexmk -pdf example_article_quadform.tex

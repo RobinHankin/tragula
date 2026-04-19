@@ -5,8 +5,5 @@ base_dir=~/rstudio
 cp ${base_dir}/crinkled_arc/example_article_crinkled_arc.Rnw .
 cp ${base_dir}/crinkled_arc/crinkled.bib .
 R CMD Sweave example_article_crinkled_arc.Rnw
-pdflatex example_article_crinkled_arc
-bibtex example_article_crinkled_arc
-pdflatex example_article_crinkled_arc
-pdflatex example_article_crinkled_arc
+latexmk -pdf example_article_crinkled_arc.tex
 

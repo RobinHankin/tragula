@@ -5,8 +5,4 @@ base_dir=~/rstudio
 cp ${base_dir}/freegroup/vignettes/* .
 ./tragularize freegroup.Rnw 
 R CMD Sweave example_article_freegroup.Rnw
-pdflatex example_article_freegroup
-bibtex example_article_freegroup
-pdflatex example_article_freegroup
-pdflatex example_article_freegroup
-
+latexmk -pdf example_article_freegroup.tex

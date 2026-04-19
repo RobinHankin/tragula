@@ -5,11 +5,4 @@ base_dir=~/rstudio
 cp ${base_dir}/spray/vignettes/* .
 ./tragularize spray.Rnw 
 R CMD Sweave example_article_spray.Rnw
-pdflatex example_article_spray
-bibtex example_article_spray
-pdflatex example_article_spray
-pdflatex example_article_spray
-
-
-
-
+latexmk -pdf example_article_spray.tex

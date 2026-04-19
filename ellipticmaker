@@ -7,7 +7,4 @@ cp ${base_dir}/elliptic/vignettes/elliptic.bib .
 
 ./tragularize residuetheorem.Rnw 
 R CMD Sweave example_article_residuetheorem.Rnw
-pdflatex example_article_residuetheorem
-bibtex example_article_residuetheorem
-pdflatex example_article_residuetheorem
-pdflatex example_article_residuetheorem
+latexmk -pdf example_article_residuetheorem.tex

@@ -6,8 +6,4 @@ cp ${base_dir}/contfrac/inst/example_article_contfrac.Rnw .
 cp ${base_dir}/contfrac/vignettes/contfrac.bib .
 cp ${base_dir}/contfrac/man/figures/contfrac.png .
 R CMD Sweave example_article_contfrac.Rnw
-pdflatex example_article_contfrac
-bibtex example_article_contfrac
-pdflatex example_article_contfrac
-pdflatex example_article_contfrac
-
+latexmk -pdf example_article_contfrac.tex
