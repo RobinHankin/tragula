@@ -7,4 +7,4 @@ cp ${base_dir}/mvp/inst/mvp.bib .
 cp ${base_dir}/mvp/man/figures/mvp.png .
 cp ${base_dir}/spray/vignettes/four_dimensional_knight.pdf .
 R CMD Sweave example_article_mvp.Rnw
-latexmk -pdf example_article_mvp.pdf
+latexmk -pdf example_article_mvp.tex
