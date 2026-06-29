@@ -108,7 +108,7 @@ There is some overlap between \tragula\ and both {\em The R Journal}
 and the {\em Journal of Statistical Software}.  However,
 \tragula\ emphasises shorter communications that offer succinct
 insight; also there is less emphasis on statistics and more on
-mathematics.  \tragula\ Volume 0, Issue 0 contains some manuscripts
+mathematics.  The sample issue of \tragula\ contains some manuscripts
 that were rejected by one or both of these journals but would be
 welcomed here.
 
