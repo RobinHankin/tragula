@@ -260,7 +260,6 @@
   \AtEndDocument{\makefooter}
 \fi
 %% required packages
-\RequirePackage{hyperref}
 %% new \maketitle
 \def\@myoddhead{
   %%  {\color{white} JSS}\\[-1.42cm]
