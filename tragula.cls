@@ -415,8 +415,9 @@
   \refstepcounter{subsubsection}%
   {\large \textit{#2}} \nopagebreak
   \vskip \postSskip \nopagebreak}
+
 \newcommand{\jsssubsubsecnn}[1]{\vskip \preSskip%
-  {\large\textit #1} \nopagebreak
+  {\large\itshape #1} \nopagebreak
   \vskip \postSskip \nopagebreak}
 
 \newcommand{\jsssimplesec}[2][default]{\vskip \preLskip%
