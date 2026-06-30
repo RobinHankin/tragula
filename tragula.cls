@@ -53,7 +53,7 @@
 \ProcessOptions
 \LoadClass[11pt,a4paper,twoside]{article}
 %% required packages
-\RequirePackage{graphicx,color,ae,fancyvrb}
+\RequirePackage{graphicx,color,fancyvrb}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{hyperref}
 \IfFileExists{upquote.sty}{\RequirePackage{upquote}}{}
