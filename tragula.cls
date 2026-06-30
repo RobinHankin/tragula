@@ -90,6 +90,8 @@
 \newcommand{\Issue}[1]{\def\@Issue{#1}}
 \newcommand{\Submitdate}[1]{\def\@Submitdate{#1}}
 \newcommand{\Repository}[1]{\def\@Repository{#1}}
+\newcommand{\DOI}[1]{\def\@DOI{#1}}
+\def\@DOI{}
 %% for articles and code snippets
 \newcommand{\Acceptdate}[1]{\def\@Acceptdate{#1}}
 \newcommand{\Abstract}[1]{\def\@Abstract{#1}}
@@ -273,9 +275,14 @@
       %% \hfill \tt\href{https://ojs.stir.ac.uk/tragula/}{https://ojs.stir.ac.uk/tragula/}}
     }
     {\color{mygray}\hrule height 1pt}
-{Volume~\@Volume, \@Seriesname~\@Issue}, {\@Year}
-    \hfill\vphantom{$h^{h^{h^h}}$}
-    \url{\@Repository}\\
+    {Volume~\@Volume, \@Seriesname~\@Issue}, {\@Year}%
+    \hfill
+    \begin{tabular}[t]{r}
+    \ifx\@DOI\empty\else
+    \small\ttfamily\href{https://doi.org/\@DOI}{https://doi.org/\@DOI}\\
+    \fi
+    \small\url{\@Repository}
+    \end{tabular}
   }
 }
 \if@review
@@ -493,11 +500,7 @@
 \let\proglang=\textsf
 \newcommand{\pkg}[1]{{\fontseries{b}\selectfont #1}}
 \newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
-\ifx\csname urlstyle\endcsname\relax
-  \newcommand\@doi[1]{doi:\discretionary{}{}{}#1}\else
-  \newcommand\@doi{doi:\discretionary{}{}{}\begingroup
-\urlstyle{tt}\Url}\fi
-\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{\normalfont\texttt{\@doi{#1}}}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{\normalfont\texttt{doi:#1}}}
 \newcommand{\E}{\mathsf{E}}
 \newcommand{\VAR}{\mathsf{VAR}}
 \newcommand{\COV}{\mathsf{COV}}
