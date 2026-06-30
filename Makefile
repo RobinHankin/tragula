@@ -16,6 +16,6 @@ all: tragula.bst tragula.cls
 	mv example_article_permutations.pdf example_article_lorentz.pdf example_article_spray.pdf example_article_freegroup.pdf guidelines.pdf example_article_evitaicossa.pdf example_article_contfrac.pdf example_article_weyl.pdf example_article_residuetheorem.pdf example_article_mvp.pdf example_article_stokes.pdf example_article_vfunc.pdf example_article_quadform.pdf ./pdf_example_articles/
 
 clean:
-	rm -f *.log *.out *.aux *.tex *.bbl *.blg *.pdf *png *.Rnw *.bib *.jpg *.svg *.Rmd *.fls *latexmk
+	rm -f *.log *.out *.aux *.tex *.bbl *.blg *.pdf *png *.Rnw *.bib start.jpg superflip.jpg *.svg *.Rmd *.fls *latexmk
 	git checkout tragula_knot.pdf tragula_word.pdf ORCID_iD.pdf guidelines.Rnw template.bib
 
