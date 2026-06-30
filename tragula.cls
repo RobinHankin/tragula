@@ -278,7 +278,7 @@
     \hfill
     \begin{tabular}[t]{r}
     \ifx\@DOI\empty\else
-    \small\ttfamily\href{https://doi.org/\@DOI}{https://doi.org/\@DOI}\\
+    \small\ttfamily\href{https://doi.org/\@DOI}{\url{doi: \@DOI}}\\
     \fi
     \small\url{\@Repository}
     \end{tabular}
