@@ -353,7 +353,7 @@
     \vskip 0.1in
   \fi
    {\centering
-   {\LARGE\bf \@title\par}
+   {\LARGE\bfseries \@title\par}
    \vskip 0.2in plus 1fil minus 0.1in
    {
        \def\and{\unskip\enspace{\rm and}\enspace}%
@@ -416,7 +416,7 @@
   {\large \textit{#2}} \nopagebreak
   \vskip \postSskip \nopagebreak}
 \newcommand{\jsssubsubsecnn}[1]{\vskip \preSskip%
-  {\textit{\large #1}} \nopagebreak
+  {\large\textit #1} \nopagebreak
   \vskip \postSskip \nopagebreak}
 
 \newcommand{\jsssimplesec}[2][default]{\vskip \preLskip%
@@ -497,7 +497,7 @@
 \def\@codex#1{{\normalfont\ttfamily\hyphenchar\font=-1 #1}\egroup}
 %%\let\code=\texttt
 \let\proglang=\textsf
-\newcommand{\pkg}[1]{{\fontseries{b}\selectfont #1}}
+\newcommand{\pkg}[1]{\textbf{#1}}
 \newcommand{\email}[1]{\href{mailto:#1}{\normalfont\texttt{#1}}}
 \newcommand{\doi}[1]{\href{https://doi.org/#1}{\normalfont\texttt{doi:#1}}}
 \newcommand{\E}{\mathsf{E}}
