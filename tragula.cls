@@ -261,7 +261,7 @@
 \fi
 %% required packages
 %% new \maketitle
-\def\@myoddhead{
+\newcommand{\@myoddhead}{%
   %%  {\color{white} JSS}\\[-1.42cm]
   %%  \rule{10mm}{1mm}
   \vspace{-2em}
