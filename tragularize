@@ -1,10 +1,11 @@
 #! /bin/bash
 
-cat $1                                              |\
-    sed -e 's/nojss/article/'                       |\
-    sed -e 's/jss/tragula/'                         |\
+cat $1 |\
+    sed -e 's/\\documentclass\[nojss\]{jss}/\\documentclass[article]{tragula}/' |\
     sed -e 's#\\author{Robin K\. S\. Hankin}#\\author{Robin K. S. Hankin\\orcid{https://orcid.org/0000-0001-5982-0415}\\\\ University of Stirling}#' |\
     sed -e 's/%% \\\Repository/\\\Repository/'   >\
     sed -e 's/%% \\\DOI/\\\DOI/'   >\
 example_article_$1
+
+
 
