@@ -4,7 +4,7 @@
 %% File tragula.cls is maintained at https://github.com/RobinHankin/tragula.git
 \def\fileversion{2.2}
 \def\filename{tragula}
-\def\filedate{2013/04/06}
+\def\filedate{2026/06/30}
 %%
 %% Package `tragula' to use with LaTeX2e for use in the  Tragula journal
 %% License: GPL-2
