@@ -41,10 +41,7 @@ cp ${base_dir}/stokes/vignettes/stokes.bib .
 cp ${base_dir}/stokes/man/figures/stokes.png .
 ./tragularize stokes.Rnw
 R CMD Sweave example_article_stokes.Rnw 
-pdflatex example_article_stokes
-bibtex   example_article_stokes
-pdflatex example_article_stokes
-pdflatex example_article_stokes
+latexmk -pdf example_article_stokes.tex
 ```
 
 We see that `stokesmaker` expects a clone of the `stokes` repo in base
