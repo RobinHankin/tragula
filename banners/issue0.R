@@ -52,8 +52,8 @@ dotted.lines <-
     g(1.0,0.0),NA
   )
 
-plot(P(z=solid.lines, params=p),  xlim = c(-4,4), ylim = c(-6,0), type="l", asp=1)
-lines(P(z=dotted.lines, params=p),xlim = c(-4,4), ylim = c(-6,0), type="l", lty=2)
+plot(P(z=solid.lines, params=p),  xlim = c(-4,4), ylim = c(-6,0), type="l", asp=1, lwd=2)
+lines(P(z=dotted.lines, params=p),xlim = c(-4,4), ylim = c(-6,0), type="l", lty=2, lwd=2)
 dev.off()
 
 
