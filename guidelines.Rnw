@@ -180,8 +180,8 @@ your package already contains a vignette, then converting it to a
   possibly the salient parts of the underlying \proglang{R} or
   \proglang{C++} implementation
   
-\item Formatting: ensure headings and code snippets match \tragula
-  typesetting guidelines.
+\item Formatting: ensure headings and code snippets match
+  \tragula\ typesetting guidelines.
 \end{itemize}
 
 \subsection{Types of submissions}
@@ -192,6 +192,17 @@ same style file and the same overall criteria for acceptance.
 However, snippets are short-form documents, expressing a single new
 idea in succinct and concise form.  Four or five pages is maybe an
 upper limit.
+
+The snippet format is particularly suitable in cases where an
+\proglang{R} package implements an algorithm that already has a
+peer-reviewed article.  One might hold that writing a
+\tragula\ article is thus superfluous.  However, this mindset treats
+software as a passive by-product of a published article.
+\tragula\ takes the view that value lies in the gap between a theory
+paper and the \proglang{R} package code.  A theoretical paper explains
+the mathematics to statisticians---but a \tragula\ article explains
+the software architecture to \proglang{R} developers, and gives a way
+to highlight and showcase their software.
 
 \subsection{Layout}
 
