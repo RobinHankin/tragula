@@ -423,6 +423,11 @@ following:
 \item Are limitations discussed fairly?
 \end{itemize}
 
+If the theoretical methodology for the submission has been published
+previously, that is OK.  The value of the submission lies in the
+implementation and how it operates in the wider ecology of the
+\proglang{R} world.
+
 You should feel free to say {\em good} things about a submission.  If
 you find some aspect of a submission to be particularly interesting or
 insightful or otherwise impressive, please feel free to say so.
