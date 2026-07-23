@@ -167,7 +167,22 @@ algorithm correctly.  \end{quote}
 problem'': a manuscript might ``verify a theorem'', ``demonstrate a
 theory'', or even ``popularize an approach'').  Please do not supply a
 long list of command arguments that reproduce the \code{Rd}
-documentation: the ideal is a structured, heuristic narrative.
+documentation: the ideal is a structured, heuristic narrative.  If
+your package already contains a vignette, then converting it to a
+\tragula\ submission is easy, and should take less than 60 minutes.
+
+\begin{itemize}
+\item Strip out the boilerplate: remove standard setup code or basic
+  installation instructions (not needed for \tragula.)
+  
+\item Focus the narrative: highlight the motivation for the package,
+  the design patterns, and the underlying data structures, and
+  possibly the salient parts of the underlying \proglang{R} or
+  \proglang{C++} implementation
+  
+\item Formatting: ensure headings and code snippets match \tragula
+  typesetting guidelines.
+\end{itemize}
 
 \subsection{Types of submissions}
 
