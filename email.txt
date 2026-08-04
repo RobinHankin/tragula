@@ -1,5 +1,0 @@
-We love your package! I noticed your vignette covers the software
-mechanics really well.  Would you be open to re-formatting it as a
-brief article/snippet for Tragula? You can essentially submit your
-existing .Rmd source with minimal edits.
-
