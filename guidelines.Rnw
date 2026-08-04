@@ -665,12 +665,11 @@ format when the article becomes live.
 \tragula\ is hosted on an Open Journal Systems (\proglang{OJS})
 platform; documentation is available
 \href{https://pkp.sfu.ca/software/ojs/}{\bf here}.  Currently we use
-\proglang{OJS} 3.3.021 but expect to upgrade to \proglang{OJS} 3.5.0.0
-at some point.  The standard workflow flowchart given
+\proglang{OJS} 3.5.0.3.  The standard workflow flowchart given
 \href{https://pkp.sfu.ca/wp-content/uploads/2024/06/OJS-Workflow-and-Platform-2024.png}{\bf
   here} does not explicitly include the process of galley production,
-which is.  Usually, authors should submit at least the following
-documents:
+which is managed separately via email correspondence with the author.
+Usually, authors should submit at least the following documents:
 
 \begin{itemize}
 \item The manuscript itself in PDF format (sent to reviewers)
