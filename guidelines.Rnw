@@ -31,17 +31,19 @@
 
 %% an abstract and keywords
 
+
+
 \Abstract{This document is part of \code{guidelines.zip}, available on
-  the journal website.  It outlines the academic and typesetting
-  conventions for \tragula, and gives some guidelines for reviewers.
-  Authors should download \code{guidelines.zip} and use file
-  \code{guidelines.Rnw} therein as a starting point for a
-  \tragula\ submission; gradually replace the content with your own
-  work.  The abstract goes here, not more than a few sentences.  You
-  can follow ISO 214:1976 if you wish, no obligation.  Do not include
-  citations here.  Editorial policy in a nutshell: \tragula\ is a
-  peer-reviewed journal that showcases novel mathematical applications
-  of \proglang{R}.}
+  the journal website, \url{https://ojs.stir.ac.uk/tragula}.  It
+  outlines the academic and typesetting conventions for \tragula, and
+  gives some guidelines for reviewers.  Authors should download
+  \code{guidelines.zip} and use file \code{guidelines.Rnw} therein as
+  a starting point for a \tragula\ submission; gradually replace the
+  content with your own work.  The abstract goes here, not more than a
+  few sentences.  You can follow ISO 214:1976 if you wish, no
+  obligation.  Do not include citations here.  Editorial policy in a
+  nutshell: \tragula\ is a peer-reviewed journal that showcases novel
+  mathematical applications of \proglang{R}.}
    
 \Keywords{key word one, key word two, squares, \proglang{R}}
 \Plainkeywords{key word one, key word two, squares, R}
