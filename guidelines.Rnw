@@ -16,7 +16,8 @@
   University of Stirling\And
   Veet Voojagig\orcid{https://orcid.org/0000-0002-1825-0097}\\
   University of Maximegalon\AND
-  Dan Streetmentioner %% orcid number desirable but not essential
+  Dan Streetmentioner\\ %% orcid number desirable but not essential
+  Independent Scholar
 }
 %% the \author{} macro specifes a list of authors; use \And to
 %% separate authors and \AND to indicate a new line. 
