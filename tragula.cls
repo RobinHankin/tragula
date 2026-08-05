@@ -9,7 +9,7 @@
 %% Package `tragula' to use with LaTeX2e for use in the  Tragula journal
 %% License: GPL-2
 %% Copyright: (C) Achim Zeileis and Robin Hankin
-%% Please report errors to hankin.robin@gmail.com
+%% Please report errors to tragula@stir.ac.uk
 %%
 \NeedsTeXFormat{LaTeX2e}[2022-11-01]
 \ProvidesClass{tragula}[\filedate\space\fileversion\space tragula class by Achim Zeileis and modified by Robin Hankin]
